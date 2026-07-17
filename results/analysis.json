@@ -1,0 +1,489 @@
+{
+ "quants": [
+  "F16",
+  "Q8_0",
+  "Q6_K",
+  "Q4_K_M",
+  "Q3_K_M",
+  "Q2_K"
+ ],
+ "n": 500,
+ "models": {
+  "qwen2.5-7b-instruct": {
+   "baseline": "F16",
+   "accuracy": {
+    "F16": {
+     "acc": 0.92,
+     "ci": [
+      0.8929,
+      0.9407
+     ]
+    },
+    "Q8_0": {
+     "acc": 0.92,
+     "ci": [
+      0.8929,
+      0.9407
+     ]
+    },
+    "Q6_K": {
+     "acc": 0.924,
+     "ci": [
+      0.8974,
+      0.9441
+     ]
+    },
+    "Q4_K_M": {
+     "acc": 0.918,
+     "ci": [
+      0.8906,
+      0.939
+     ]
+    },
+    "Q3_K_M": {
+     "acc": 0.914,
+     "ci": [
+      0.8862,
+      0.9355
+     ]
+    },
+    "Q2_K": {
+     "acc": 0.86,
+     "ci": [
+      0.8268,
+      0.8877
+     ]
+    }
+   },
+   "vs_base": {
+    "Q8_0": {
+     "answers_changed": 0,
+     "flips_gained": 0,
+     "flips_lost": 0,
+     "net": 0,
+     "correctness_agreement": 0.92
+    },
+    "Q6_K": {
+     "answers_changed": 3,
+     "flips_gained": 2,
+     "flips_lost": 0,
+     "net": 2,
+     "correctness_agreement": 0.92
+    },
+    "Q4_K_M": {
+     "answers_changed": 9,
+     "flips_gained": 3,
+     "flips_lost": 4,
+     "net": -1,
+     "correctness_agreement": 0.912
+    },
+    "Q3_K_M": {
+     "answers_changed": 22,
+     "flips_gained": 8,
+     "flips_lost": 11,
+     "net": -3,
+     "correctness_agreement": 0.898
+    },
+    "Q2_K": {
+     "answers_changed": 70,
+     "flips_gained": 17,
+     "flips_lost": 47,
+     "net": -30,
+     "correctness_agreement": 0.826
+    }
+   },
+   "showcase": [
+    {
+     "id": "Mercury_7234308",
+     "question": "A scientist maps a long region in which earthquakes originate and determines this region is a transform plate boundary. Which evidence would cause the scientist to reevaluate this determination?",
+     "choices": [
+      "Volcanism also characterizes the region.",
+      "Earthquake centers in the region occur at shallow depths.",
+      "The region shows extensive faulting of sediments.",
+      "Equal crust densities are found on opposite sides of the region."
+     ],
+     "answer": "A",
+     "answers_by_quant": {
+      "F16": "A",
+      "Q8_0": "A",
+      "Q6_K": "A",
+      "Q4_K_M": "D",
+      "Q3_K_M": "D",
+      "Q2_K": "A"
+     }
+    },
+    {
+     "id": "Mercury_SC_400062",
+     "question": "A plateau is most likely formed by",
+     "choices": [
+      "runoff from a river.",
+      "weathering by waves.",
+      "erosion of rock debris.",
+      "a buildup of cooled lava."
+     ],
+     "answer": "D",
+     "answers_by_quant": {
+      "F16": "D",
+      "Q8_0": "D",
+      "Q6_K": "D",
+      "Q4_K_M": "C",
+      "Q3_K_M": "C",
+      "Q2_K": "C"
+     }
+    },
+    {
+     "id": "TAKS_2009_8_36",
+     "question": "How many elements are in the compound Mg(OH)2?",
+     "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "answer": "B",
+     "answers_by_quant": {
+      "F16": "B",
+      "Q8_0": "B",
+      "Q6_K": "B",
+      "Q4_K_M": "D",
+      "Q3_K_M": "B",
+      "Q2_K": "B"
+     }
+    },
+    {
+     "id": "Mercury_7027720",
+     "question": "A student has built a model in which sheets of cork floating in a tub of water represent tectonic plates. To make the sheet representing an ocean plate more accurate in the model system, the student should",
+     "choices": [
+      "cut several holes in it.",
+      "attach small weights to it.",
+      "cut it into a smaller shape.",
+      "replace it with a thin sheet of copper."
+     ],
+     "answer": "B",
+     "answers_by_quant": {
+      "F16": "B",
+      "Q8_0": "B",
+      "Q6_K": "B",
+      "Q4_K_M": "D",
+      "Q3_K_M": "B",
+      "Q2_K": "B"
+     }
+    }
+   ]
+  },
+  "mistral-7b-instruct-v0.3": {
+   "baseline": "F16",
+   "accuracy": {
+    "F16": {
+     "acc": 0.754,
+     "ci": [
+      0.7144,
+      0.7897
+     ]
+    },
+    "Q8_0": {
+     "acc": 0.756,
+     "ci": [
+      0.7165,
+      0.7916
+     ]
+    },
+    "Q6_K": {
+     "acc": 0.75,
+     "ci": [
+      0.7102,
+      0.786
+     ]
+    },
+    "Q4_K_M": {
+     "acc": 0.75,
+     "ci": [
+      0.7102,
+      0.786
+     ]
+    },
+    "Q3_K_M": {
+     "acc": 0.74,
+     "ci": [
+      0.6998,
+      0.7765
+     ]
+    },
+    "Q2_K": {
+     "acc": 0.638,
+     "ci": [
+      0.595,
+      0.6789
+     ]
+    }
+   },
+   "vs_base": {
+    "Q8_0": {
+     "answers_changed": 3,
+     "flips_gained": 2,
+     "flips_lost": 1,
+     "net": 1,
+     "correctness_agreement": 0.752
+    },
+    "Q6_K": {
+     "answers_changed": 12,
+     "flips_gained": 4,
+     "flips_lost": 6,
+     "net": -2,
+     "correctness_agreement": 0.742
+    },
+    "Q4_K_M": {
+     "answers_changed": 36,
+     "flips_gained": 13,
+     "flips_lost": 15,
+     "net": -2,
+     "correctness_agreement": 0.724
+    },
+    "Q3_K_M": {
+     "answers_changed": 55,
+     "flips_gained": 17,
+     "flips_lost": 24,
+     "net": -7,
+     "correctness_agreement": 0.706
+    },
+    "Q2_K": {
+     "answers_changed": 156,
+     "flips_gained": 35,
+     "flips_lost": 93,
+     "net": -58,
+     "correctness_agreement": 0.568
+    }
+   },
+   "showcase": [
+    {
+     "id": "MCAS_2001_8_4",
+     "question": "Suppose 20 g of liquid hydrogen peroxide is heated so it completely breaks down into liquid water and oxygen gas. Which best describes the total mass of the water and oxygen that was produced?",
+     "choices": [
+      "more than 20 g because of the addition of heat",
+      "more than 20 g because there are now two substances",
+      "less than 20 g because oxygen gas is very light",
+      "20 g because no matter is added or removed"
+     ],
+     "answer": "D",
+     "answers_by_quant": {
+      "F16": "D",
+      "Q8_0": "D",
+      "Q6_K": "D",
+      "Q4_K_M": "C",
+      "Q3_K_M": "D",
+      "Q2_K": "D"
+     }
+    },
+    {
+     "id": "Mercury_180373",
+     "question": "How are sedimentary rocks made?",
+     "choices": [
+      "Magma or lava is cooled.",
+      "Materials are pressed together.",
+      "Chemical reactions change minerals.",
+      "Earthquakes cause small pieces to fall."
+     ],
+     "answer": "B",
+     "answers_by_quant": {
+      "F16": "B",
+      "Q8_0": "B",
+      "Q6_K": "B",
+      "Q4_K_M": "A",
+      "Q3_K_M": "A",
+      "Q2_K": "A"
+     }
+    },
+    {
+     "id": "AKDE&ED_2008_8_47",
+     "question": "As stream velocity decreases, which factor will likely increase?",
+     "choices": [
+      "erosion of the stream bank",
+      "deposition of material in the stream",
+      "amount of material carried downstream",
+      "size of the particles carried downstream"
+     ],
+     "answer": "B",
+     "answers_by_quant": {
+      "F16": "B",
+      "Q8_0": "B",
+      "Q6_K": "B",
+      "Q4_K_M": "A",
+      "Q3_K_M": "B",
+      "Q2_K": "B"
+     }
+    },
+    {
+     "id": "Mercury_7177398",
+     "question": "The particles within a substance are in constant motion. The particles in which of these substances have the lowest amount of kinetic energy?",
+     "choices": [
+      "the wax of a candle at room temperature",
+      "the water in a glass of ice water",
+      "the steam from a cup of coffee",
+      "the ice cube in a glass of tea"
+     ],
+     "answer": "D",
+     "answers_by_quant": {
+      "F16": "D",
+      "Q8_0": "D",
+      "Q6_K": "D",
+      "Q4_K_M": "A",
+      "Q3_K_M": "D",
+      "Q2_K": "D"
+     }
+    },
+    {
+     "id": "Mercury_7108868",
+     "question": "Certain lakes in the northeastern part of the United States have had decreases in pH levels, causing the deaths of many fish. What is the most likely reason for this change in pH levels?",
+     "choices": [
+      "nuclear power plants",
+      "hydroelectric power plants",
+      "coal-burning factories",
+      "noncommercial farms"
+     ],
+     "answer": "C",
+     "answers_by_quant": {
+      "F16": "C",
+      "Q8_0": "C",
+      "Q6_K": "C",
+      "Q4_K_M": "A",
+      "Q3_K_M": "D",
+      "Q2_K": "D"
+     }
+    },
+    {
+     "id": "Mercury_400828",
+     "question": "If an ion has three more electrons than protons, it has a",
+     "choices": [
+      "mass of +3.",
+      "mass of -3.",
+      "charge of +3.",
+      "charge of -3."
+     ],
+     "answer": "D",
+     "answers_by_quant": {
+      "F16": "D",
+      "Q8_0": "D",
+      "Q6_K": "D",
+      "Q4_K_M": "C",
+      "Q3_K_M": "D",
+      "Q2_K": "D"
+     }
+    },
+    {
+     "id": "MCAS_2000_4_36",
+     "question": "Which is NOT a pathway for transportation?",
+     "choices": [
+      "radio tower",
+      "road",
+      "runway",
+      "pipeline"
+     ],
+     "answer": "A",
+     "answers_by_quant": {
+      "F16": "A",
+      "Q8_0": "A",
+      "Q6_K": "A",
+      "Q4_K_M": "D",
+      "Q3_K_M": "D",
+      "Q2_K": "D"
+     }
+    },
+    {
+     "id": "Mercury_SC_407302",
+     "question": "Water is found underground in many areas. Pumping large amounts of water from an underground limestone area will most likely cause which to occur?",
+     "choices": [
+      "faulting in the limestone",
+      "flooding of streams around the area",
+      "the land above the limestone to sink",
+      "a change in the type of rock that forms in that area"
+     ],
+     "answer": "C",
+     "answers_by_quant": {
+      "F16": "C",
+      "Q8_0": "C",
+      "Q6_K": "C",
+      "Q4_K_M": "A",
+      "Q3_K_M": "C",
+      "Q2_K": "C"
+     }
+    },
+    {
+     "id": "VASoL_2009_5_30",
+     "question": "Which of these objects is translucent?",
+     "choices": [
+      "A student's notebook",
+      "A mirror on the bus",
+      "A brick wall of the school",
+      "A student's sunglass lenses"
+     ],
+     "answer": "D",
+     "answers_by_quant": {
+      "F16": "D",
+      "Q8_0": "D",
+      "Q6_K": "D",
+      "Q4_K_M": "A",
+      "Q3_K_M": "D",
+      "Q2_K": "D"
+     }
+    },
+    {
+     "id": "NYSEDREGENTS_2010_8_16",
+     "question": "When do organs and organ systems begin to develop in humans?",
+     "choices": [
+      "before fertilization",
+      "before birth",
+      "during childhood",
+      "during adulthood"
+     ],
+     "answer": "B",
+     "answers_by_quant": {
+      "F16": "B",
+      "Q8_0": "B",
+      "Q6_K": "B",
+      "Q4_K_M": "A",
+      "Q3_K_M": "B",
+      "Q2_K": "A"
+     }
+    },
+    {
+     "id": "NYSEDREGENTS_2012_8_19",
+     "question": "Which factor would most likely limit the number of mice living in an area?",
+     "choices": [
+      "plentiful resources",
+      "stable climate",
+      "more predators",
+      "less competition"
+     ],
+     "answer": "C",
+     "answers_by_quant": {
+      "F16": "C",
+      "Q8_0": "C",
+      "Q6_K": "C",
+      "Q4_K_M": "D",
+      "Q3_K_M": "D",
+      "Q2_K": "C"
+     }
+    },
+    {
+     "id": "Mercury_402539",
+     "question": "During an experiment, a class heated a balloon that had an initial circumference of 25 cm. The circumference increased to 27 cm. Which is the best conclusion that can be drawn?",
+     "choices": [
+      "The molecules inside the balloon lost energy to the outside.",
+      "The molecules inside the balloon gained energy from the heat.",
+      "The energy of the molecules inside the balloon remained the same.",
+      "The molecules inside the balloon were escaping outside."
+     ],
+     "answer": "B",
+     "answers_by_quant": {
+      "F16": "B",
+      "Q8_0": "B",
+      "Q6_K": "B",
+      "Q4_K_M": "C",
+      "Q3_K_M": "B",
+      "Q2_K": "C"
+     }
+    }
+   ]
+  }
+ }
+}
