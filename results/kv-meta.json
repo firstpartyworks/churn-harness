@@ -1,0 +1,24 @@
+{
+ "llama_cpp_bin": "/bulk/bench/llama.cpp/build/bin",
+ "llama_cpp_commit": "432d7ff",
+ "server_flags": "-ngl 99 -c 2048 --no-webui -fa on --parallel 4 -ctk <K> -ctv <V>",
+ "gpu": "Tesla V100-PCIE-32GB (CUDA_DEVICE_ORDER=PCI_BUS_ID device 0)",
+ "sampling": "temp 0, seed 0, grammar single-letter, cache_prompt false, n_predict 2",
+ "models": {
+  "qwen7b": {
+   "label": "qwen2.5-7b-instruct-F16w",
+   "file": "/fast/quant-churn/qwen2.5-7b-instruct-f16.gguf",
+   "bytes": 15237853600
+  },
+  "mistral7b": {
+   "label": "mistral-7b-instruct-v0.3-F16w",
+   "file": "/fast/quant-churn/mistral-7b-instruct-v0.3-f16.gguf",
+   "bytes": 14497337312
+  },
+  "qwen27b": {
+   "label": "Qwen3.6-27B-Q8_0w",
+   "file": "/bulk/models/models/Qwen3.6-27B-Q8_0.gguf",
+   "bytes": 28595763424
+  }
+ }
+}
