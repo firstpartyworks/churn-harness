@@ -151,12 +151,62 @@ At **7,806 tokens deep** (100-question pad, n=400): q8_0 still **0**
 changed; q4_0 K+V changes its **first answer — 1/400** (Mercury_416379,
 equatorial-Pacific upwelling → atmospheric CO2: correct A at f16-deep,
 flips to wrong D at q4-deep; a lost answer, not a swap between wrongs).
-Both depths deterministic (rep2 byte-identical through the cached-prefix
-path). The dose-response shape on 3.6-27B: 0 flips at 2K, 0 at 4.9K,
-1 at 7.8K — the crack appears where error has had tokens to accumulate,
-consistent with real-world reports living at 12K+ session depths. One
-flip is one flip: chart it as the onset point, never extrapolate a curve
-from it on screen.
+
+**Agentic-scale rungs** (pad drawn from the remaining 665 questions of the
+real ARC-Challenge test set — `arc-challenge-padpool.json`, zero overlap
+with targets; pad sized by the model's own tokenizer; every depth's rep2
+byte-identical):
+- **20,551 tokens** (286-question session): q8_0 **0/400**; q4_0 **1/400 —
+  the SAME question as at 7.8K** (Mercury_416379 again).
+- **41,037 tokens** (563-question session): q8_0 **0/400**; q4_0 **1/400 —
+  a different question (Mercury_SC_415006), flipped wrong→right** (a
+  gained answer; Mercury_416379 healed).
+
+The full curve on 3.6-27B q4_0 cache: 2 flips at 2K (n=500), then
+0 → 1 → 1 → 1 at 4.9K/7.8K/20.5K/41K (n=400). **It does not accumulate —
+the damage flat-lines at ~0.25% and behaves like decision-boundary jitter**
+(one marginal question flips at two depths, heals at the third while
+another flips the opposite direction). An earlier draft of this file
+called the 7.8K flip an "onset point"; the 20K/40K rungs refute the
+implied climb — do not script any depth-escalation narrative for this
+model. Meanwhile **q8_0 = 0 flips at every depth: 1,600 deep-context
+comparisons through 41K tokens without one changed answer.**
+
+Scope: this bounds MC answer-selection with a quantized PREFILL cache.
+Real sessions also stream thousands of DECODED tokens through the
+quantized cache; generation-quality degradation there remains untested by
+this instrument (and by every published flip metric). Reported real-world
+q4-cache degradation on this model most plausibly lives on that axis —
+say exactly this on camera, with the 41K receipts behind it.
+
+## Compound: Q4 weights x Q4 cache (run 2026-08-12, stock rig, short context)
+
+Completes the 2x2 factorial with video #7. Both models' rep2 checks PASS.
+Flip sets vs the original full-weight/f16-cache baseline: W = weights-only
+flips, C = cache-only flips, B = both-quantized flips.
+
+**Mistral-7B** (Q4_K_M weights replicate video #7 exactly — 36 flips):
+| config | accuracy | changed vs F16w+f16c |
+|---|---|---|
+| F16w + f16 cache | 75.4% | — |
+| Q4_K_M w + f16 cache | 75.0% | 36 |
+| F16w + q4_0 cache | 74.4% | 34 |
+| **Q4_K_M w + q4_0 cache** | **73.0%** | **46** |
+
+Set algebra: overlap W∩C = 12; union = 58; **17 compound-only flips**
+(questions NEITHER factor flips alone — genuine interaction, not
+addition); 29 of the union's flips HEAL under the compound (errors
+partially cancel). Net: the compound config changes 9.2% of answers —
+more than either factor alone, less than their sum — and the accuracy
+CIs STILL overlap the baseline (73.0% [69.0–76.7] vs 75.4% [71.4–79.0]).
+The scoreboard shrugs at every cell of the factorial; the answer sheet
+never does.
+
+**Qwen3.6-27B** — the "27B on a 24GB card" config (Q4_K_M weights +
+q4_0 cache; weight effect measured vs the Q8_0-weight baseline, the
+closest full-precision stand-in that fits a 32GB card): W = 2, C = 2,
+B = **3 changed in 500** (97.4% vs 97.6%), zero compound-only flips.
+The people's config is measurably fine on this model.
 
 Scope honesty for the script: this bounds MC answer-selection at the
 depths tested. Reported real-world degradation may live deeper still, or —
