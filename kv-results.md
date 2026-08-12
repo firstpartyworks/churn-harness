@@ -172,6 +172,21 @@ implied climb — do not script any depth-escalation narrative for this
 model. Meanwhile **q8_0 = 0 flips at every depth: 1,600 deep-context
 comparisons through 41K tokens without one changed answer.**
 
+**Architecture context (verified from the GGUF metadata, scriptable as
+fact):** Qwen3.6-27B is hybrid — `full_attention_interval = 4`, so only
+16 of its 64 layers carry a conventional KV cache (GQA, 4 KV heads); the
+other 48 are SSM layers whose recurrent state the cache-type flags never
+touch. Cache quantization therefore reaches 25% of this model's
+sequence-mixing layers, vs 100% on Qwen2.5/Mistral — and the f16 cache at
+40K costs only ~600MB, which is why the full-precision baseline fits at
+depths where dense-attention models must quantize. The family's
+robustness is CONSISTENT with the shrunken exposure surface, but the
+counterfactual (a full-attention Qwen3.6) doesn't exist, and Mistral —
+full attention in every layer — churns without collapsing, so hybrid-ness
+is neither proven cause nor necessary condition. Script it as "the cache
+quantization only ever touches a quarter of this model" (fact), not "and
+that's why it survives" (unproven).
+
 Scope: this bounds MC answer-selection with a quantized PREFILL cache.
 Real sessions also stream thousands of DECODED tokens through the
 quantized cache; generation-quality degradation there remains untested by
