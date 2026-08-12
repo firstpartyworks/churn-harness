@@ -257,6 +257,13 @@ generates 2 tokens). No flip-counter sees generation quality. Say so.
 - Cite: Dutta et al. 2407.09141 (flips metric), arXiv 2607.08734 (K/Q
   sensitivity mechanism), TurboQuant paper + PR #21089 + discussion #20969
   (status as of 2026-08-11).
+- "K is more quant-sensitive than V" is existing community folklore
+  (llama.cpp discussions, Ollama KV-quant write-ups) — present our K/V
+  split as QUANTIFYING it per-question, not discovering it. The novel
+  slice remains the flip counts, the model split, and the depth curve.
+- Scoop re-check run 2026-08-12 (search + video lane): still clear — new
+  method papers (KVLinC, MixKVQ) evaluate with aggregates; no per-question
+  flip benchmark, no video. Re-check once more at lock per the brief.
 - Hardware claims: two Dell R730s (V100 32GB, P40 24GB, P4 8GB). Nothing else.
 
 ## Runtime
