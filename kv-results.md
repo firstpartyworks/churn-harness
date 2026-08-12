@@ -105,6 +105,66 @@ implementation from a method limit here, and the video must not claim
 "TurboQuant doesn't work," only "the code you can get today is not mainline,
 cannot serve on GPU, and did not rescue this model in our test."
 
+## Ternary-lab fork: Bonsai + our tq3_0 port (run 2026-08-12)
+
+Fork = /bulk/ternary-lab/llama.cpp @ 8fb14733e — carries OUR TurboQuant-family
+cache type `tq3_0` (lucebox WHT port + packed-decode CUDA work; ~3-bit,
+predates and is unrelated to the upstream PR's tbq naming). NOT the stock
+rig; self-contained per model with own f16 baselines + determinism repeats
+(both PASS) on the V100. Label all of this on-screen as our fork.
+
+**Ternary-Bonsai-27B Q2_g64** (stock ternary QAT — the production config,
+n=500): baseline 93.8%. q8_0 K+V: **0 changed**. q4_0 K+V: 1 changed.
+q4_0 K only: 5. **tq3_0 K+V: 6 changed (93.2%)** — six flips in 500 at
+~3 bits per cache element, on a model already at 2-bit weights. Coherence
+probes clean. The 2-bit-weights + 3-bit-cache stack is behaviorally sound.
+
+**Qwen2.5-7B on the same fork**: f16 baseline 92.0% (matches stock rig
+exactly). q4_0 K+V: 24.2%, 375/500 changed — the collapse reproduces with
+identical numbers on a fourth binary. **tq3_0 K+V: 25.4%, 376/500 changed —
+our port does NOT rescue the collapser either**, with its own distinct
+failure texture (modal-verb loops vs q4_0's word-intrusion loops).
+
+Combined with the upstream PR result: two independent TurboQuant/WHT
+implementations, same verdict on this model. The rotation trick does not
+save Qwen2.5's K cache at 3–4 bits — and the SAME tq3_0 that fails there is
+6-flips-clean on Bonsai. Model-dependence is the entire story; no sub-8-bit
+cache setting tested is universally safe.
+
+## Deep context — Qwen3.6-27B (run 2026-08-12)
+
+The short-context all-clear on 3.6-27B contradicts real-world reports
+(John's own long-session experience included) of q4-cache degradation. The
+depth leg re-asks the last 400 questions from inside a genuine quiz
+session: the first 60/100 questions of the set rendered as user/assistant
+chat history (no target overlaps the pad; no answer leakage), stock rig,
+Q8_0 weights, `--parallel 1`, prefix caching (rep2 must be — and was —
+byte-identical through the cached-prefix path).
+
+At **4,886 tokens deep** (60-question pad, n=400): q8_0 K+V changed **0**
+answers vs the deep-f16 baseline; q4_0 K+V changed **0**. Depth alone
+(f16 short vs f16 deep, same questions) moved 6/400 answers — context
+reshapes a few decisions before quantization is even involved, and then
+cache quantization at this depth adds nothing.
+
+At **7,806 tokens deep** (100-question pad, n=400): q8_0 still **0**
+changed; q4_0 K+V changes its **first answer — 1/400** (Mercury_416379,
+equatorial-Pacific upwelling → atmospheric CO2: correct A at f16-deep,
+flips to wrong D at q4-deep; a lost answer, not a swap between wrongs).
+Both depths deterministic (rep2 byte-identical through the cached-prefix
+path). The dose-response shape on 3.6-27B: 0 flips at 2K, 0 at 4.9K,
+1 at 7.8K — the crack appears where error has had tokens to accumulate,
+consistent with real-world reports living at 12K+ session depths. One
+flip is one flip: chart it as the onset point, never extrapolate a curve
+from it on screen.
+
+Scope honesty for the script: this bounds MC answer-selection at the
+depths tested. Reported real-world degradation may live deeper still, or —
+more likely — in open-ended generation quality over accumulating
+DECODED tokens (a live session writes its own output through the
+quantized cache turn after turn; this instrument prefills the pad and
+generates 2 tokens). No flip-counter sees generation quality. Say so.
+
 ## Showcase flips (payoff shot candidates, Mistral q4_0)
 
 - **"The best way to separate salt from water"** (Mercury_7212398): B
