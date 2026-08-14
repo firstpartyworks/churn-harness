@@ -67,6 +67,8 @@ for model in models:
             }
     if all(k in runs for k in ("q8_0k-q8_0v", "q4_0k-q4_0v")):
         for k, q in QS.items():
+            if k not in base or k not in runs["q8_0k-q8_0v"] or k not in runs["q4_0k-q4_0v"]:
+                continue
             if (base[k]["ok"] and runs["q8_0k-q8_0v"][k]["ok"]
                     and not runs["q4_0k-q4_0v"][k]["ok"]):
                 m["showcase"].append({

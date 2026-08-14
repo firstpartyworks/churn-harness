@@ -194,6 +194,24 @@ this instrument (and by every published flip metric). Reported real-world
 q4-cache degradation on this model most plausibly lives on that axis —
 say exactly this on camera, with the 41K receipts behind it.
 
+## Qwen3.8-27B — day-of-release column (run 2026-08-14)
+
+Qwen3.8-27B (released 2026-08-14; unsloth Q6_K, stock file) through the
+standard short-context grid the same day, stock rig binary, thinking
+disabled, determinism rep2 byte-identical. GGUF-verified architecture:
+identical to Qwen3.6-27B in every per-layer detail (same
+`full_attention_interval = 4`, same GDN dims, same GQA/head-dim); the only
+structural delta is the native MTP layer (65th block, `nextn.*`). The
+official card's "Gated Attention" is their name for the full-attention
+layers of the hybrid — Qwen3.6 has the identical gated structure.
+
+n=500, baseline 96.4% (Q6_K weights): q8_0 K+V **0 changed**; q4_0 K+V
+**3 changed** (0.6%, CI 0.2–1.8%, net +1); q4_0 K-only 1; V-only 0.
+The architecture-constant prediction held: new pre/post-training on the
+same hybrid did not change cache-quant sensitivity. Scriptable beat:
+"released this morning, measured the same day." Weights are Q6_K (Q8_0
+would fit only marginally beside its cache) — own baseline, per protocol.
+
 ## Compound: Q4 weights x Q4 cache (run 2026-08-12, stock rig, short context)
 
 Completes the 2x2 factorial with video #7. Both models' rep2 checks PASS.

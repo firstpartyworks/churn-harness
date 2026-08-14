@@ -40,10 +40,11 @@ MODELS = {
     "qwen7b": ("qwen2.5-7b-instruct-F16w", "/fast/quant-churn/qwen2.5-7b-instruct-f16.gguf"),
     "mistral7b": ("mistral-7b-instruct-v0.3-F16w", "/fast/quant-churn/mistral-7b-instruct-v0.3-f16.gguf"),
     "qwen27b": ("Qwen3.6-27B-Q8_0w", "/bulk/models/models/Qwen3.6-27B-Q8_0.gguf"),
+    "qwen38": ("Qwen3.8-27B-Q6_Kw", "/bulk/models/models/Qwen3.8-27B-Q6_K.gguf"),
 }
 # thinking models: grammar-forcing a letter inside an open <think> block
 # measures noise, not the model — render with thinking disabled
-THINK_OFF = {"qwen27b"}
+THINK_OFF = {"qwen27b", "qwen38"}
 CT_KWARGS = {}
 GRAMMAR = 'root ::= "A" | "B" | "C" | "D"'
 
