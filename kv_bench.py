@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""KV-cache quantization answer-churn bench (finding #36 — the follow-up to
+"""KV-cache quantization answer-churn bench (the follow-up to
 run_bench.py's weight-quant ladder).
 
 Same instrument as run_bench.py: 500 ARC-Challenge questions, temp 0, fixed
@@ -17,13 +17,19 @@ only variable).
 
 Writes results/kv-<model>-<K>k-<V>v.json ({qid: {"ans": "A", "ok": true}})
 and results/kv-meta.json (binary commit, flags, model files).
+
+Setup:
+  export CHURN_LLAMA_BIN=/path/to/llama.cpp/build/bin
+  export CHURN_MODELS_DIR=/path/to/ggufs   # holds the files named in MODELS
+
 Run: python3 kv_bench.py [--model qwen7b|mistral7b|qwen27b|all]
 """
 import argparse, json, os, subprocess, sys, time, urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).parent
-BIN = Path(os.environ.get("CHURN_LLAMA_BIN", "/bulk/bench/llama.cpp/build/bin"))
+BIN = Path(os.environ.get("CHURN_LLAMA_BIN", ""))
+MODELS_DIR = Path(os.environ.get("CHURN_MODELS_DIR", str(HERE / "models")))
 PORT = 4989
 
 # (cache-type-k, cache-type-v) legs, baseline first
@@ -35,12 +41,13 @@ MODES = [
     ("f16", "q4_0"),   # V-only control
 ]
 
-# weights are a fixed file per model — never requantized by this script
+# weights are a fixed file per model — never requantized by this script.
+# (label used in result filenames, gguf filename in CHURN_MODELS_DIR)
 MODELS = {
-    "qwen7b": ("qwen2.5-7b-instruct-F16w", "/fast/quant-churn/qwen2.5-7b-instruct-f16.gguf"),
-    "mistral7b": ("mistral-7b-instruct-v0.3-F16w", "/fast/quant-churn/mistral-7b-instruct-v0.3-f16.gguf"),
-    "qwen27b": ("Qwen3.6-27B-Q8_0w", "/bulk/models/models/Qwen3.6-27B-Q8_0.gguf"),
-    "qwen38": ("Qwen3.8-27B-Q6_Kw", "/bulk/models/models/Qwen3.8-27B-Q6_K.gguf"),
+    "qwen7b": ("qwen2.5-7b-instruct-F16w", "qwen2.5-7b-instruct-f16.gguf"),
+    "mistral7b": ("mistral-7b-instruct-v0.3-F16w", "mistral-7b-instruct-v0.3-f16.gguf"),
+    "qwen27b": ("Qwen3.6-27B-Q8_0w", "Qwen3.6-27B-Q8_0.gguf"),
+    "qwen38": ("Qwen3.8-27B-Q6_Kw", "Qwen3.8-27B-Q6_K.gguf"),
 }
 # thinking models: grammar-forcing a letter inside an open <think> block
 # measures noise, not the model — render with thinking disabled
@@ -64,8 +71,7 @@ def serve(gguf, ctk, ctv):
         [str(BIN / "llama-server"), "-m", str(gguf), "--port", str(PORT),
          "-ngl", "99", "-c", "2048", "--no-webui", "-fa", "on",
          "--parallel", "4", "-ctk", ctk, "-ctv", ctv],
-        env={"LD_LIBRARY_PATH": str(BIN), "CUDA_VISIBLE_DEVICES": "0",
-             "CUDA_DEVICE_ORDER": "PCI_BUS_ID"},
+        env={**os.environ, "LD_LIBRARY_PATH": str(BIN)},
         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     for _ in range(300):
         try:
@@ -128,9 +134,10 @@ def check_template(name):
 def run_model(key):
     global CT_KWARGS
     CT_KWARGS = {"enable_thinking": False} if key in THINK_OFF else {}
-    name, gguf = MODELS[key]
-    if not Path(gguf).exists():
-        sys.exit(f"missing model file: {gguf}")
+    name, fname = MODELS[key]
+    gguf = MODELS_DIR / fname
+    if not gguf.exists():
+        sys.exit(f"missing model file: {gguf} (set CHURN_MODELS_DIR)")
     results_dir = HERE / "results"
     results_dir.mkdir(exist_ok=True)
     legs = list(MODES) + [("f16", "f16", "rep2")]
@@ -166,13 +173,20 @@ def write_meta():
     commit = subprocess.run(
         ["git", "-C", str(BIN.parent.parent), "rev-parse", "--short", "HEAD"],
         capture_output=True, text=True).stdout.strip()
+    try:
+        gpu = subprocess.run(
+            ["nvidia-smi", "--query-gpu=name", "--format=csv,noheader"],
+            capture_output=True, text=True).stdout.strip() or "unknown"
+    except FileNotFoundError:
+        gpu = "unknown"
     meta = {
         "llama_cpp_bin": str(BIN), "llama_cpp_commit": commit,
         "server_flags": "-ngl 99 -c 2048 --no-webui -fa on --parallel 4 -ctk <K> -ctv <V>",
-        "gpu": "Tesla V100-PCIE-32GB (CUDA_DEVICE_ORDER=PCI_BUS_ID device 0)",
+        "gpu": gpu,
         "sampling": "temp 0, seed 0, grammar single-letter, cache_prompt false, n_predict 2",
-        "models": {k: {"label": n, "file": f, "bytes": Path(f).stat().st_size}
-                   for k, (n, f) in MODELS.items() if Path(f).exists()},
+        "models": {k: {"label": n, "file": str(MODELS_DIR / f),
+                       "bytes": (MODELS_DIR / f).stat().st_size}
+                   for k, (n, f) in MODELS.items() if (MODELS_DIR / f).exists()},
     }
     (HERE / "results" / "kv-meta.json").write_text(json.dumps(meta, indent=1))
 
@@ -181,6 +195,8 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default="all", choices=[*MODELS, "all"])
     args = ap.parse_args()
+    if not BIN.is_dir():
+        sys.exit("set CHURN_LLAMA_BIN to your llama.cpp build/bin directory")
     write_meta()
     for key in MODELS:
         if args.model in (key, "all"):

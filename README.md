@@ -92,11 +92,61 @@ choice, widen the grammar and diff whatever your "answer" is; the
 determinism trick (temp 0 + seed + grammar + no prompt cache) is the part
 that carries.
 
+## KV-cache churn
+
+Same instrument, opposite variable: `kv_bench.py` holds the weights
+constant and walks the KV cache type f16 → q8_0 → q4_0 (plus K-only /
+V-only splits), so any answer diff is attributable to cache quantization
+alone. The f16-cache baseline runs twice as the instrument check, and
+flash attention stays on for every leg (quantized V cache requires it —
+keeping it on everywhere means cache type is the only variable).
+
+```bash
+export CHURN_LLAMA_BIN=/path/to/llama.cpp/build/bin
+export CHURN_MODELS_DIR=/path/to/ggufs
+
+python3 kv_bench.py --model qwen7b
+python3 kv_analyze.py                # accuracy/CI + flip counts per mode
+```
+
+Models are rows in `MODELS` in `kv_bench.py` — a result-file label plus a
+GGUF filename looked up in `CHURN_MODELS_DIR`. Findings from our runs
+(four models, plus depth, K/V-split, compound and rescue experiments) are
+written up in [kv-results.md](kv-results.md).
+
+### Deep-context runs
+
+Short-context flips understate what long sessions see, so `kv_deep.py`
+asks the same questions from thousands of tokens deep. The prompt is a
+genuine quiz session — held-out questions from
+`arc-challenge-padpool.json` as user/assistant chat history (sized to
+the target depth with the model's own tokenizer, zero overlap with the
+targets) — then the target question:
+
+```bash
+export CHURN_LLAMA_BIN=/path/to/llama.cpp/build/bin
+
+python3 kv_deep.py --gguf /path/to/model.gguf --depths 8k,20k,40k
+```
+
+- The f16 baseline runs twice per depth over the cached prefix; the two
+  sheets must match byte-for-byte or the script flags that depth as
+  untrustworthy.
+- `--legs q8_0,q4_0,q4_0:f16` picks the cache legs (`K:V` syntax for
+  splits), `--think-off` is required for thinking models (the template
+  check aborts with a hint if you forget), `--limit 25` does a quick
+  smoke pass without polluting full result sheets.
+- Context is depth + `--ctx-headroom`; if the f16 cache at that size
+  doesn't fit your GPU, the server log under `logs/` says so.
+- `--questions` / `--padpool` swap in your own datasets (same shape as
+  above; the script refuses to run if they overlap).
+
 ## Data attribution
 
-`arc-challenge-500.json` is a 500-question subset of the ARC-Challenge
-test set (Clark et al., Allen Institute for AI, 2018,
-https://allenai.org/data/arc), redistributed under CC BY-SA 4.0.
+`arc-challenge-500.json` (500 questions) and `arc-challenge-padpool.json`
+(665 held-out questions, used only as deep-context padding) are disjoint
+subsets of the ARC-Challenge test set (Clark et al., Allen Institute for
+AI, 2018, https://allenai.org/data/arc), redistributed under CC BY-SA 4.0.
 
 ## License
 

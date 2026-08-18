@@ -1,37 +1,41 @@
 #!/usr/bin/env python3
-"""KV-cache churn on the ternary-lab fork (finding #36, experiment 3).
+"""KV-cache churn with a ternary (tq3_0) cache type — experimental legs.
 
-Fork = /bulk/ternary-lab/llama.cpp @ 8fb14733e — carries our tq3_0 KV cache
-type (lucebox WHT TurboQuant port + packed-decode CUDA work), sm70 build,
-V100 only. NOT the stock bench rig; all numbers self-contained per model
-with their own f16 baseline + determinism repeat on THIS binary.
+Requires a llama.cpp build that carries a ternary KV-cache type (tq3_0 is
+NOT upstream; point CHURN_LLAMA_BIN at a build that has it). Because the
+binary differs from the stock one, all numbers are self-contained per
+model — own f16 baseline + determinism repeat on THIS binary; never diff
+across binaries.
 
-Model A: Ternary-Bonsai-27B-Q2_g64 (stock ternary QAT, Miso's brain file,
-thinking disabled) — f16(+rep2)/q8_0/q4_0/q4_0-K-only/tq3_0.
-Model B: Qwen2.5-7B-Instruct F16 (the collapser) — f16(+rep2)/q4_0/tq3_0.
-The B-model tq3_0 leg is the headline: does OUR TurboQuant port survive
-the collapse that naive q4_0 causes and the upstream PR snapshot failed
-to fix? Coherence probes on the interesting legs.
+Per MODELS row: f16(+rep2) baseline, the standard quantized legs, then
+the tq3_0 leg. Coherence probes run on the interesting legs (grammar-
+forced letters can hide babble; the probes surface it).
+
+Setup:
+  export CHURN_LLAMA_BIN=/path/to/ternary-llama.cpp/build/bin
+  export CHURN_MODELS_DIR=/path/to/ggufs
 """
-import json, subprocess, time, urllib.request
+import json, os, subprocess, sys, time, urllib.request
 from pathlib import Path
 
-BENCH = Path("/bulk/company/videos/quant-churn/bench")
-BIN = Path("/bulk/ternary-lab/llama.cpp/build/bin")
+HERE = Path(__file__).parent
+BIN = Path(os.environ.get("CHURN_LLAMA_BIN", ""))
+MODELS_DIR = Path(os.environ.get("CHURN_MODELS_DIR", str(HERE / "models")))
 PORT = 4992
-QS = json.loads((BENCH / "arc-challenge-500.json").read_text())
+QS = json.loads((HERE / "arc-challenge-500.json").read_text())
 GRAMMAR = 'root ::= "A" | "B" | "C" | "D"'
-OUT = Path("/home/chambejp/.claude/jobs/ea560999/tmp")
-RESULTS = BENCH / "results"
+LOGS = HERE / "logs"
+RESULTS = HERE / "results"
 
+# (label, gguf in CHURN_MODELS_DIR, think_off, legs)
 MODELS = {
     "bonsai": ("tlab-Bonsai-27B-Q2g64w",
-               "/home/chambejp/models/Ternary-Bonsai-27B-gguf/Ternary-Bonsai-27B-Q2_g64.gguf",
-               True,   # thinking model (Qwen3.6 rebuild)
+               "Ternary-Bonsai-27B-Q2_g64.gguf",
+               True,   # thinking model
                [("f16", "f16", ""), ("f16", "f16", "-rep2"), ("q8_0", "q8_0", ""),
                 ("q4_0", "q4_0", ""), ("q4_0", "f16", ""), ("tq3_0", "tq3_0", "")]),
     "qwen7b": ("tlab-qwen2.5-7b-instruct-F16w",
-               "/fast/quant-churn/qwen2.5-7b-instruct-f16.gguf",
+               "qwen2.5-7b-instruct-f16.gguf",
                False,
                [("f16", "f16", ""), ("f16", "f16", "-rep2"),
                 ("q4_0", "q4_0", ""), ("tq3_0", "tq3_0", "")]),
@@ -48,13 +52,12 @@ def post(path, payload, timeout=300):
 
 
 def serve(gguf, ctk, ctv, logname):
-    log = open(OUT / logname, "w")
+    log = open(LOGS / logname, "w")
     proc = subprocess.Popen(
-        [str(BIN / "llama-server"), "-m", gguf, "--port", str(PORT),
+        [str(BIN / "llama-server"), "-m", str(gguf), "--port", str(PORT),
          "-ngl", "99", "-c", "2048", "--no-webui", "-fa", "on",
          "--parallel", "4", "-ctk", ctk, "-ctv", ctv],
-        env={"LD_LIBRARY_PATH": str(BIN), "CUDA_VISIBLE_DEVICES": "0",
-             "CUDA_DEVICE_ORDER": "PCI_BUS_ID"},
+        env={**os.environ, "LD_LIBRARY_PATH": str(BIN)},
         stdout=log, stderr=log)
     for _ in range(300):
         try:
@@ -82,7 +85,6 @@ def check_template(name):
     tail = p[-140:].replace("\n", "\\n")
     print(f"[{name}] template tail: ...{tail}", flush=True)
     if p.rstrip().endswith("<think>"):
-        import sys
         sys.exit(f"template for {name} ends with OPEN <think> — refusing to bench garbage")
 
 
@@ -119,7 +121,16 @@ def probe(tag):
         print(f"Q: {prompt}\nA: {res['content'].strip()[:200]}\n", flush=True)
 
 
-for key, (name, gguf, think_off, legs) in MODELS.items():
+if not BIN.is_dir():
+    sys.exit("set CHURN_LLAMA_BIN to a llama.cpp build/bin that has the "
+             "ternary cache types")
+LOGS.mkdir(exist_ok=True)
+RESULTS.mkdir(exist_ok=True)
+for key, (name, fname, think_off, legs) in MODELS.items():
+    gguf = MODELS_DIR / fname
+    if not gguf.exists():
+        print(f"[{key}] missing model file {gguf} — skipping", flush=True)
+        continue
     CT_KWARGS = {"enable_thinking": False} if think_off else {}
     for ctk, ctv, suffix in legs:
         out_file = RESULTS / f"kv-{name}-{ctk}k-{ctv}v{suffix}.json"

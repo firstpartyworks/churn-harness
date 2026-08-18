@@ -1,39 +1,43 @@
 #!/usr/bin/env python3
-"""Compound quantization churn (finding #36) — Q4 weights x Q4 cache.
+"""Compound quantization churn — Q4 weights x Q4 cache.
 
-Completes the 2x2 factorial: video #7 measured weight-quant churn at f16
-cache; the KV grid measured cache-quant churn at full-precision weights.
-These legs add the missing cells — Q4_K_M weights with f16 cache (weight
-effect re-anchored on this binary) and Q4_K_M weights with q4_0 cache
-(the compound config people actually run) — so flipped-question sets can
-be tested for additivity vs interaction against the SAME original
-baselines. Stock rig, V100, short context (the regime where each factor's
-solo effect is already measured).
+Completes the 2x2 factorial: run_bench.py measures weight-quant churn at
+f16 cache; kv_bench.py measures cache-quant churn at full-precision
+weights. These legs add the missing cells — Q4_K_M weights with f16 cache
+(weight effect re-anchored on this binary) and Q4_K_M weights with q4_0
+cache (the compound config people actually run) — so flipped-question
+sets can be tested for additivity vs interaction against the SAME
+original baselines. Short context (the regime where each factor's solo
+effect is already measured).
 
-Models: Mistral-7B Q4_K_M (solo effects: 36/500 weights, 34/500 cache)
-and Qwen3.6-27B Q4_K_M (solo cache effect: 2/500; weight effect unknown —
-measured here vs the Q8_0-weight baseline, caveat: Q8_0 stands in for
-full precision, measured 0-3 flips at 7B scale).
+Each MODELS row names the kv_bench.py result prefix it factors against;
+run kv_bench.py on the full-precision weights first.
+
+Setup:
+  export CHURN_LLAMA_BIN=/path/to/llama.cpp/build/bin
+  export CHURN_MODELS_DIR=/path/to/ggufs
 """
-import json, subprocess, time, urllib.request
+import json, os, subprocess, sys, time, urllib.request
 from pathlib import Path
 
-BENCH = Path("/bulk/company/videos/quant-churn/bench")
-BIN = Path("/bulk/bench/llama.cpp/build/bin")
+HERE = Path(__file__).parent
+BIN = Path(os.environ.get("CHURN_LLAMA_BIN", ""))
+MODELS_DIR = Path(os.environ.get("CHURN_MODELS_DIR", str(HERE / "models")))
 PORT = 4989
-QS = json.loads((BENCH / "arc-challenge-500.json").read_text())
+QS = json.loads((HERE / "arc-challenge-500.json").read_text())
 GRAMMAR = 'root ::= "A" | "B" | "C" | "D"'
-OUT = Path("/home/chambejp/.claude/jobs/ea560999/tmp")
-RESULTS = BENCH / "results"
+LOGS = HERE / "logs"
+RESULTS = HERE / "results"
 
+# (label, gguf in CHURN_MODELS_DIR, think_off, kv_bench baseline prefix, legs)
 MODELS = {
     "mistral": ("mistral-7b-instruct-v0.3-Q4KMw",
-                "/fast/quant-churn/mistral-7b-instruct-v0.3-Q4_K_M.gguf",
+                "mistral-7b-instruct-v0.3-Q4_K_M.gguf",
                 False,
                 "kv-mistral-7b-instruct-v0.3-F16w",
                 [("f16", "f16", ""), ("f16", "f16", "-rep2"), ("q4_0", "q4_0", "")]),
     "qwen27b": ("Qwen3.6-27B-Q4KMw",
-                "/bulk/models/models/Qwen3.6-27B-Q4_K_M.gguf",
+                "Qwen3.6-27B-Q4_K_M.gguf",
                 True,
                 "kv-Qwen3.6-27B-Q8_0w",
                 [("f16", "f16", ""), ("f16", "f16", "-rep2"),
@@ -51,13 +55,12 @@ def post(path, payload, timeout=300):
 
 
 def serve(gguf, ctk, ctv, logname):
-    log = open(OUT / logname, "w")
+    log = open(LOGS / logname, "w")
     proc = subprocess.Popen(
-        [str(BIN / "llama-server"), "-m", gguf, "--port", str(PORT),
+        [str(BIN / "llama-server"), "-m", str(gguf), "--port", str(PORT),
          "-ngl", "99", "-c", "2048", "--no-webui", "-fa", "on",
          "--parallel", "4", "-ctk", ctk, "-ctv", ctv],
-        env={"LD_LIBRARY_PATH": str(BIN), "CUDA_VISIBLE_DEVICES": "0",
-             "CUDA_DEVICE_ORDER": "PCI_BUS_ID"},
+        env={**os.environ, "LD_LIBRARY_PATH": str(BIN)},
         stdout=log, stderr=log)
     for _ in range(300):
         try:
@@ -83,7 +86,6 @@ def check_template(name):
     p = render([{"role": "user", "content": "ping"}])
     print(f"[{name}] template tail: ...{p[-100:].rstrip()[-60:]!r}", flush=True)
     if p.rstrip().endswith("<think>"):
-        import sys
         sys.exit(f"OPEN <think> for {name} — refusing to bench")
 
 
@@ -110,7 +112,15 @@ def sheet(label):
     return answers
 
 
-for key, (name, gguf, think_off, orig_prefix, legs) in MODELS.items():
+if not BIN.is_dir():
+    sys.exit("set CHURN_LLAMA_BIN to your llama.cpp build/bin directory")
+LOGS.mkdir(exist_ok=True)
+RESULTS.mkdir(exist_ok=True)
+for key, (name, fname, think_off, orig_prefix, legs) in MODELS.items():
+    gguf = MODELS_DIR / fname
+    if not gguf.exists():
+        print(f"[{key}] missing model file {gguf} — skipping", flush=True)
+        continue
     CT_KWARGS = {"enable_thinking": False} if think_off else {}
     for ctk, ctv, suffix in legs:
         out_file = RESULTS / f"kv-{name}-{ctk}k-{ctv}v{suffix}.json"

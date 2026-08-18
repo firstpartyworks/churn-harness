@@ -2,20 +2,25 @@
 """Quantization answer-churn bench (repro of arXiv 2607.08734 on our own
 GGUF ladder — method per Dutta et al. 2407.09141's 'flips').
 
-For each (model, quant): quantize from the F16 parent if needed, serve on
-the V100, ask 500 ARC-Challenge questions at temp 0 with a grammar that
+For each (model, quant): quantize from the F16 parent if needed, serve
+it, ask 500 ARC-Challenge questions at temp 0 with a grammar that
 forces a single letter answer — so every answer is deterministic and any
 cross-quant difference is attributable to the weights, not sampling.
 
 Writes results/<model>-<QUANT>.json ({qid: {"ans": "A", "ok": true}}).
+
+Setup:
+  export CHURN_MODELS_DIR=/path/to/ggufs   # holds <model>-f16.gguf
+  export CHURN_LLAMA_BIN=/path/to/llama.cpp/build/bin
+
 Run: python3 run_bench.py [--model qwen|mistral|all]
 """
 import argparse, json, os, subprocess, sys, time, urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).parent
-FAST = Path(os.environ.get("CHURN_MODELS_DIR", "/fast/quant-churn"))
-BIN = Path(os.environ.get("CHURN_LLAMA_BIN", "/fast/llama.cpp-stock/build/bin"))
+FAST = Path(os.environ.get("CHURN_MODELS_DIR", str(HERE / "models")))
+BIN = Path(os.environ.get("CHURN_LLAMA_BIN", ""))
 PORT = 4988
 QUANTS = ["Q8_0", "Q6_K", "Q4_K_M", "Q3_K_M", "Q2_K"]
 MODELS = {
@@ -58,8 +63,7 @@ def serve(gguf):
         [str(BIN / "llama-server"), "-m", str(gguf), "--port", str(PORT),
          "-ngl", "99", "-c", "2048", "--no-webui", "-fa", "on",
          "--parallel", "4"],
-        env={"LD_LIBRARY_PATH": str(BIN), "CUDA_VISIBLE_DEVICES": "0",
-             "CUDA_DEVICE_ORDER": "PCI_BUS_ID"},
+        env={**os.environ, "LD_LIBRARY_PATH": str(BIN)},
         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     for _ in range(240):
         try:
@@ -122,6 +126,8 @@ if __name__ == "__main__":
     ap.add_argument("--model", default="all", choices=[*MODELS, "all"])
     ap.add_argument("--quants", default=None, help="comma list override, e.g. F16")
     args = ap.parse_args()
+    if not BIN.is_dir():
+        sys.exit("set CHURN_LLAMA_BIN to your llama.cpp build/bin directory")
     if args.quants:
         QUANTS[:] = args.quants.split(",")
     for key, name in MODELS.items():
