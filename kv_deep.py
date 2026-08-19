@@ -7,7 +7,9 @@ questions (arc-challenge-padpool.json) are prepended as user/assistant
 chat history to reach the target depth — sized against the model's own
 tokenizer via the server's /tokenize — then the target question is asked.
 The pad pool and the target set share no questions, so there is no answer
-leakage.
+leakage. Depths beyond what the pool holds (~60k tokens for the stock
+pool) cycle it, repeating pad questions — the cache still stores every
+token, so it remains a real KV stress, just with repeated history.
 
 Per depth the cache-type legs run against an f16-cache baseline, and the
 baseline runs TWICE: with temp 0, seed 0, a single-letter grammar,
@@ -22,7 +24,7 @@ Setup:
 
 Run:
   python3 kv_deep.py --gguf /path/to/model.gguf                # 8k deep
-  python3 kv_deep.py --gguf model.gguf --depths 8k,20k,40k
+  python3 kv_deep.py --gguf model.gguf --depths 8k,20k,40k,80k,120k
   python3 kv_deep.py --gguf model.gguf --legs q8_0,q4_0,q4_0:f16
   python3 kv_deep.py --gguf model.gguf --limit 25              # smoke run
 
@@ -35,7 +37,7 @@ Writes results/kv-deep<depth>-<name>-<K>k-<V>v.json; finished legs are
 skipped on re-run, so a sweep resumes for free. kv_analyze.py picks the
 files up for tables.
 """
-import argparse, json, os, subprocess, sys, time, urllib.request
+import argparse, json, os, shlex, subprocess, sys, time, urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).parent
@@ -64,6 +66,9 @@ ap.add_argument("--padpool", default=str(HERE / "arc-challenge-padpool.json"),
 ap.add_argument("--limit", type=int, default=0,
                 help="only ask the first N targets (files get a -nN suffix "
                      "so smoke runs never masquerade as full sheets)")
+ap.add_argument("--server-args", default="",
+                help="extra llama-server flags, e.g. rope scaling to reach "
+                     "past the model's trained context")
 args = ap.parse_args()
 
 BIN = Path(os.environ.get("CHURN_LLAMA_BIN", ""))
@@ -111,7 +116,8 @@ def qtext(q):
 
 def pad_msgs(n):
     msgs = [SYS]
-    for q in POOL[:n]:
+    for i in range(n):
+        q = POOL[i % len(POOL)]
         msgs.append({"role": "user", "content": qtext(q)})
         msgs.append({"role": "assistant", "content": q["answer"]})
     return msgs
@@ -130,7 +136,8 @@ def serve(ctk, ctv, ctx, logname):
     proc = subprocess.Popen(
         [str(BIN / "llama-server"), "-m", str(GGUF), "--port", str(args.port),
          "-ngl", "99", "-c", str(ctx), "--no-webui", "-fa", "on",
-         "--parallel", "1", "-ctk", ctk, "-ctv", ctv],
+         "--parallel", "1", "-ctk", ctk, "-ctv", ctv]
+        + shlex.split(args.server_args),
         env={**os.environ, "LD_LIBRARY_PATH": str(BIN)},
         stdout=log, stderr=log)
     for _ in range(360):
@@ -148,6 +155,19 @@ def serve(ctk, ctv, ctx, logname):
     proc.kill()
     print(f"SERVER NEVER HEALTHY for {ctk}k/{ctv}v — see logs/{logname}", flush=True)
     return None
+
+
+def server_ctx():
+    """The context the server actually granted (it silently caps -c at the
+    model's trained context and rejects longer requests)."""
+    try:
+        with urllib.request.urlopen(
+                f"http://127.0.0.1:{args.port}/props", timeout=5) as r:
+            props = json.load(r)
+        return ((props.get("default_generation_settings") or {}).get("n_ctx")
+                or props.get("n_ctx"))
+    except Exception:
+        return None
 
 
 def render(msgs):
@@ -172,17 +192,17 @@ def check_template():
 
 
 def size_pad(target):
-    """Smallest pool prefix whose rendered chat reaches target tokens."""
-    n = min(len(POOL), 10)
+    """Smallest pad-question count whose rendered chat reaches target
+    tokens; the pool cycles when the depth needs more questions than it
+    holds."""
+    n, cap = 10, 100_000
     t = ntokens(pad_msgs(n))
-    while t < target and n < len(POOL):
+    while t < target and n < cap:
         per_q = max(1, t // n)
-        n = min(len(POOL), n + max(1, (target - t) // per_q))
+        n = min(cap, n + max(1, (target - t) // per_q))
         t = ntokens(pad_msgs(n))
-    if t < target:
-        print(f"  WARNING: pad pool exhausted at {t} tokens "
-              f"(target {target}) — proceeding at max depth", flush=True)
-    print(f"  pad sized: {n} questions -> {t} tokens (target {target})", flush=True)
+    cycled = f" (pool of {len(POOL)} cycled)" if n > len(POOL) else ""
+    print(f"  pad sized: {n} questions -> {t} tokens (target {target}){cycled}", flush=True)
     return n
 
 
@@ -228,6 +248,16 @@ for target, dlabel in DEPTHS:
         proc = serve(ctk, ctv, ctx, f"{run}-{ctk}k-{ctv}v{suffix or ''}.log")
         if proc is None:
             continue
+        got = server_ctx()
+        if got and got + 256 < ctx:
+            print(f"[{run}] server granted only {got} context of the {ctx} "
+                  f"this depth needs (the model's trained limit) — skipping "
+                  f"this depth. Use a longer-context model, or pass rope "
+                  f"scaling via --server-args if you accept the tradeoffs.",
+                  flush=True)
+            proc.terminate()
+            proc.wait(timeout=30)
+            break
         try:
             check_template()
             if pad_n is None:

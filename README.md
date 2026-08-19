@@ -126,12 +126,20 @@ targets) — then the target question:
 ```bash
 export CHURN_LLAMA_BIN=/path/to/llama.cpp/build/bin
 
-python3 kv_deep.py --gguf /path/to/model.gguf --depths 8k,20k,40k
+python3 kv_deep.py --gguf /path/to/model.gguf --depths 8k,20k,40k,80k,120k
 ```
 
 - The f16 baseline runs twice per depth over the cached prefix; the two
   sheets must match byte-for-byte or the script flags that depth as
   untrustworthy.
+- Depths are arbitrary; past what the pool holds (~60k tokens) the pad
+  cycles, repeating questions in the history — the cache stores every
+  token either way, so deep rungs like 80k/120k stay a real KV stress.
+- Your model's trained context is the real ceiling: llama-server caps the
+  slot there, and the harness detects the cap and skips that depth with a
+  message rather than benching a truncated prompt. To push past it anyway,
+  pass rope-scaling flags through with `--server-args` — knowing that any
+  flips you then see mix rope-extension effects with cache quantization.
 - `--legs q8_0,q4_0,q4_0:f16` picks the cache legs (`K:V` syntax for
   splits), `--think-off` is required for thinking models (the template
   check aborts with a hint if you forget), `--limit 25` does a quick
