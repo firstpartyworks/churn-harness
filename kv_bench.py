@@ -46,6 +46,7 @@ MODES = [
     ("q8_0", "q5_1"),  # the pair upstream discussion #23470 ranks next after q8_0/q8_0
     ("q8_0", "q5_0"),
     ("q5_1", "q5_1"),
+    ("q8_0", "q4_0"),  # the pair the OP ranks below q5_1/q5_1
 ]
 
 # weights are a fixed file per model — never requantized by this script.
