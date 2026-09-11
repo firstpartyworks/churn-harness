@@ -289,3 +289,62 @@ generates 2 tokens). No flip-counter sees generation quality. Say so.
 Whole stock grid (3 models × 5 modes + 3 determinism repeats, 9,000
 questions): ~90 min GPU time (7B ≈ 0.12 s/q V100; 27B ≈ 1.05 s/q). The
 TurboQuant suite adds ~50 min on the P40. "Check us yourself tonight" holds.
+
+## q5 pairs vs the asymmetric ranking (run 2026-09-11, discussion #23470 follow-up)
+
+The discussion author's proposed ranking (11 Sep): q8_0/q8_0 ≈ bf16/f16;
+q8_0/q5_1 and q8_0/q5_0 next; q5_1/q5_1 ahead of q8_0/q4_0 while using
+less VRAM; q4_0/q4_0 last; "if we can add only one pair, it is q8_0/q5_1".
+That ordering follows the Qwen3.6 KLD table posted upthread. We ran the
+same pairs through the answer-churn instrument.
+
+**New column, new binary.** The bench rig's pin moved since August
+(432d7ff → **4d91760**), so the whole ladder was re-run as a fresh column
+(`results/4d91760-faq/`, own f16 baselines, rep2 byte-identical on all
+three models) rather than grafting new legs onto old sheets. Stock
+llama.cpp compiles no CUDA flash-attention kernel for a mixed K/V pair or
+for any q5 type — without `GGML_CUDA_FA_ALL_QUANTS` the attention op for
+those pairs is scheduled onto the CPU with no warning. This column used a
+stock 4d91760 built with `-DGGML_CUDA_FA_ALL_QUANTS=ON` so every pair ran
+on the CUDA kernel the thread is deciding whether to ship by default.
+Same models, files, flags and sampling as the main grid; full tables with
+CIs in `results/4d91760-faq/kv-analysis.md`.
+
+Changed answers vs f16 cache, n=500 (VRAM per cached element vs f16):
+
+| pair | bits K+V | vs f16 | Qwen2.5-7B | Mistral-7B | Qwen3.6-27B |
+|---|---|---|---|---|---|
+| q8_0 / q8_0 | 8.5+8.5 | 53% | 0 | 4 | 1 |
+| q8_0 K / q5_1 V | 8.5+6.0 | 45% | **0** | **5** | **1** |
+| q8_0 K / q5_0 V | 8.5+5.5 | 44% | 1 | 11 | 1 |
+| q8_0 K / q4_0 V | 8.5+4.5 | 41% | 1 | 10 | 1 |
+| q4_0 V only (f16 K) | 16+4.5 | 64% | 0 | 14 | 0 |
+| q5_1 / q5_1 | 6.0+6.0 | 38% | **83** (92.0→80.8%) | 11 | 1 |
+| q4_0 K only (f16 V) | 4.5+16 | 64% | 370 | 34 | 1 |
+| q4_0 / q4_0 | 4.5+4.5 | 28% | 375 (→24.2%) | 34 | 2 |
+
+Reading:
+
+1. **q8_0/q5_1 is the right single pair on the answer sheet too.** 0 / 5 / 1
+   flips — within one answer of q8_0/q8_0 on every model, for 15% less cache
+   than q8_0/q8_0. The V side takes q5_1, q5_0, even q4_0 with K held at
+   q8_0: on the collapsing model all three stay at 0–1 flips.
+2. **q5_1/q5_1 is NOT ahead of q8_0/q4_0 — the order inverts on the
+   sensitive model.** Qwen2.5-7B: 83 changed (16.6%, 92.0% → 80.8%) at
+   q5_1/q5_1 vs 1 at q8_0/q4_0. Mistral: 11 vs 10 (a tie). Qwen3.6-27B: 1 vs
+   1. The KLD ordering ranks q5_1/q5_1 above q8_0/q4_0 on Qwen3.6, where
+   nothing distinguishes any pair; the model that discriminates says the
+   opposite. Same mechanism as August: the K side carries the damage, and
+   q5_1 on K is a milder version of q4_0 on K (83 vs 370), not a free one.
+3. **The 27B remains rounding error on every pair** (0–2 flips across nine
+   modes), so "less VRAM at equal quality" is true there for all of them —
+   including q4_0/q4_0. The pair choice only matters on models like Qwen2.5,
+   and there it says: keep K at q8_0.
+4. Cross-binary note: the August column (432d7ff, stock build) and this one
+   agree on every headline (Qwen2.5 collapse 375/375, Mistral churn 34/34,
+   27B 2/2 at q4_0 K+V); the V-only leg moved 8 → 14 on Mistral and 1 → 0 on
+   Qwen2.5 between binaries, which is why each column carries its own
+   baseline and the two are never diffed against each other.
+
+Scope as before: short context, one benchmark, letter-answer MC. Nothing
+here speaks to long-context or open-ended generation quality.
