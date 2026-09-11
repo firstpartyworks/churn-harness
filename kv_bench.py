@@ -21,6 +21,7 @@ and results/kv-meta.json (binary commit, flags, model files).
 Setup:
   export CHURN_LLAMA_BIN=/path/to/llama.cpp/build/bin
   export CHURN_MODELS_DIR=/path/to/ggufs   # holds the files named in MODELS
+  export CHURN_RESULTS_DIR=results/<build>  # optional; one directory per binary
 
 Run: python3 kv_bench.py [--model qwen7b|mistral7b|qwen27b|all]
 """
@@ -31,6 +32,9 @@ HERE = Path(__file__).parent
 BIN = Path(os.environ.get("CHURN_LLAMA_BIN", ""))
 MODELS_DIR = Path(os.environ.get("CHURN_MODELS_DIR", str(HERE / "models")))
 PORT = 4989
+# a new llama.cpp binary is a new column: point this at a fresh directory
+# rather than mixing sheets across builds (cross-binary diffs are not valid)
+RESULTS = Path(os.environ.get("CHURN_RESULTS_DIR", str(HERE / "results")))
 
 # (cache-type-k, cache-type-v) legs, baseline first
 MODES = [
@@ -39,6 +43,9 @@ MODES = [
     ("q4_0", "q4_0"),
     ("q4_0", "f16"),   # K-only: the projection the mechanism paper calls fragile
     ("f16", "q4_0"),   # V-only control
+    ("q8_0", "q5_1"),  # the pair upstream discussion #23470 ranks next after q8_0/q8_0
+    ("q8_0", "q5_0"),
+    ("q5_1", "q5_1"),
 ]
 
 # weights are a fixed file per model — never requantized by this script.
@@ -138,8 +145,8 @@ def run_model(key):
     gguf = MODELS_DIR / fname
     if not gguf.exists():
         sys.exit(f"missing model file: {gguf} (set CHURN_MODELS_DIR)")
-    results_dir = HERE / "results"
-    results_dir.mkdir(exist_ok=True)
+    results_dir = RESULTS
+    results_dir.mkdir(parents=True, exist_ok=True)
     legs = list(MODES) + [("f16", "f16", "rep2")]
     for leg in legs:
         ctk, ctv = leg[0], leg[1]
@@ -183,18 +190,26 @@ def write_meta():
         "llama_cpp_bin": str(BIN), "llama_cpp_commit": commit,
         "server_flags": "-ngl 99 -c 2048 --no-webui -fa on --parallel 4 -ctk <K> -ctv <V>",
         "gpu": gpu,
+        "build_note": os.environ.get("CHURN_BUILD_NOTE", ""),
         "sampling": "temp 0, seed 0, grammar single-letter, cache_prompt false, n_predict 2",
         "models": {k: {"label": n, "file": str(MODELS_DIR / f),
                        "bytes": (MODELS_DIR / f).stat().st_size}
                    for k, (n, f) in MODELS.items() if (MODELS_DIR / f).exists()},
     }
-    (HERE / "results" / "kv-meta.json").write_text(json.dumps(meta, indent=1))
+    RESULTS.mkdir(parents=True, exist_ok=True)
+    (RESULTS / "kv-meta.json").write_text(json.dumps(meta, indent=1))
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default="all", choices=[*MODELS, "all"])
+    ap.add_argument("--legs", default=None,
+                    help="comma list of K/V pairs to run, e.g. q8_0/q5_1,q5_1/q5_1 "
+                         "(the f16 baseline + rep2 always run)")
     args = ap.parse_args()
+    if args.legs:
+        keep = [tuple(l.split("/")) for l in args.legs.split(",")]
+        MODES[:] = [("f16", "f16")] + [m for m in MODES if m in keep]
     if not BIN.is_dir():
         sys.exit("set CHURN_LLAMA_BIN to your llama.cpp build/bin directory")
     write_meta()

@@ -5,16 +5,18 @@ FLIP RATE (the number comment sections attack first), lost/gained/net,
 correctness agreement, and showcase flips (right at f16+q8_0 cache, wrong
 at q4_0). Prints markdown, writes results/kv-analysis.json.
 """
-import json, math
+import json, math, os
 from pathlib import Path
 
 HERE = Path(__file__).parent
-RES = HERE / "results"
-MODES = ["f16k-f16v", "q8_0k-q8_0v", "q4_0k-q4_0v", "q4_0k-f16v", "f16k-q4_0v"]
+RES = Path(os.environ.get("CHURN_RESULTS_DIR", str(HERE / "results")))
+MODES = ["f16k-f16v", "q8_0k-q8_0v", "q4_0k-q4_0v", "q4_0k-f16v", "f16k-q4_0v",
+         "q8_0k-q5_1v", "q8_0k-q5_0v", "q5_1k-q5_1v"]
 LABELS = {
     "f16k-f16v": "f16 cache (baseline)", "q8_0k-q8_0v": "q8_0 K+V",
     "q4_0k-q4_0v": "q4_0 K+V", "q4_0k-f16v": "q4_0 K only",
-    "f16k-q4_0v": "q4_0 V only",
+    "f16k-q4_0v": "q4_0 V only", "q8_0k-q5_1v": "q8_0 K / q5_1 V",
+    "q8_0k-q5_0v": "q8_0 K / q5_0 V", "q5_1k-q5_1v": "q5_1 K+V",
 }
 
 QS = {q["id"]: q for q in json.loads((HERE / "arc-challenge-500.json").read_text())}
