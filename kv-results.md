@@ -325,7 +325,36 @@ Changed answers vs f16 cache, n=500 (VRAM per cached element vs f16):
 | q4_0 K only (f16 V) | 4.5+16 | 64% | 370 | 34 | 1 |
 | q4_0 / q4_0 | 4.5+4.5 | 28% | 375 (→24.2%) | 34 | 2 |
 
+**Qwen3.8-27B added 09-12** (Q6_K weights, thinking disabled, own f16 baseline 96.4%,
+rep2 byte-identical) as a PREDICTION CHECK, not a discovery: GGUF metadata says it is the
+same `qwen35` architecture as Qwen3.6-27B — identical `full_attention_interval` 4, head
+counts 24/4, head dims 256, embedding width 5120; the only structural difference is 65
+blocks against 64 (the extra speculative head). The prediction was that it would behave
+identically. It did: no configuration moved it by more than 3 answers in 500.
+
+Full grid, changed answers vs each model's own f16 baseline, n=500:
+
+| pair | Qwen2.5-7B | Mistral-7B | Qwen3.6-27B | Qwen3.8-27B |
+|---|---|---|---|---|
+| q8_0 / q8_0 | 0 | 4 | 1 | 0 |
+| q8_0 K / q5_1 V | **0** | **5** | **1** | **0** |
+| q8_0 K / q5_0 V | 1 | 11 | 1 | 1 |
+| q8_0 K / q4_0 V | 1 | 10 | 1 | 0 |
+| q4_0 V only | 0 | 14 | 0 | 0 |
+| q5_1 V only | 0 | 3 | 1 | 0 |
+| q5_1 / q5_1 | **83** | 11 | 1 | 1 |
+| q5_0 / q5_0 | **90** | 13 | 1 | 2 |
+| q5_1 K only | 84 | 10 | 1 | 1 |
+| q4_0 K only | 370 | 34 | 1 | 1 |
+| q4_0 / q4_0 | 375 | 34 | 2 | 3 |
+
 Reading:
+
+0. **Only one of these four models can discriminate at all.** Both hybrids sit inside
+   0–3 changed answers across every one of eleven configurations. Any ranking derived
+   from a Qwen 3.x alone is a ranking of noise; the dense models are what carry signal
+   here. This is the reason two published rankings disagree with ours (below) — not a
+   measurement dispute, a choice of subject.
 
 1. **q8_0/q5_1 is the right single pair on the answer sheet too.** 0 / 5 / 1
    flips — within one answer of q8_0/q8_0 on every model, for 15% less cache
@@ -342,6 +371,10 @@ Reading:
    q5_1 on K alone reproduces the whole q5_1/q5_1 result (84 / 10 / 1 changed),
    while q5_1 on V alone costs 0 / 3 / 1. Every changed answer in the
    q5_1/q5_1 row is the K side.
+   `q5_0/q5_0` (added 09-12 after a viewer reported it as worse than q5_1/q5_1) confirms
+   that ordering where it can be seen — 90 vs 83 on Qwen2.5-7B, 13 vs 11 on Mistral — and
+   shows nothing on either hybrid (1 and 2). The viewer's conclusion is right; the model
+   class they drew it from cannot demonstrate it.
 3. **The 27B remains rounding error on every pair** (0–2 flips across nine
    modes), so "less VRAM at equal quality" is true there for all of them —
    including q4_0/q4_0. The pair choice only matters on models like Qwen2.5,

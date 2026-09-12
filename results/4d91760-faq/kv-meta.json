@@ -3,7 +3,7 @@
  "llama_cpp_commit": "4d91760",
  "server_flags": "-ngl 99 -c 2048 --no-webui -fa on --parallel 4 -ctk <K> -ctv <V>",
  "gpu": "Tesla V100-PCIE-32GB\nTesla P4\nTesla P40",
- "build_note": "stock 4d91760 built with -DGGML_CUDA_FA_ALL_QUANTS=ON (build-faq); mixed/q5 pairs run on the CUDA vec kernels, no CPU fallback",
+ "build_note": "stock 4d91760 built with -DGGML_CUDA_FA_ALL_QUANTS=ON (build-faq)",
  "sampling": "temp 0, seed 0, grammar single-letter, cache_prompt false, n_predict 2",
  "models": {
   "qwen7b": {
