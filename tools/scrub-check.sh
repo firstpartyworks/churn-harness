@@ -15,10 +15,12 @@ set -uo pipefail
 PATTERN='/bulk/|/fast/|/home/|chambejp|[Cc]hamberlain|(^|[^[:alnum:]])John([^[:alnum:]]|$)'
 
 scan() {  # scan <file-list-on-stdin>
-    local hits=0 f
+    local hits=0 f root
+    root=$(git rev-parse --show-toplevel 2>/dev/null) || root=.
     while IFS= read -r f; do
         [ -f "$f" ] || continue
-        case "$f" in *scrub-check.sh) continue;; esac   # the pattern list itself
+        case "$f" in *scrub-check.sh|*.scrubignore) continue;; esac  # the check's own config
+        if [ -f "$root/.scrubignore" ] && grep -qxF -- "$f" "$root/.scrubignore"; then continue; fi
         if grep -HnE "$PATTERN" -- "$f" 2>/dev/null; then hits=1; fi
     done
     return $hits

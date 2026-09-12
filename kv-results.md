@@ -134,7 +134,7 @@ cache setting tested is universally safe.
 ## Deep context — Qwen3.6-27B (run 2026-08-12)
 
 The short-context all-clear on 3.6-27B contradicts real-world reports
-(John's own long-session experience included) of q4-cache degradation. The
+(our own long-session experience included) of q4-cache degradation. The
 depth leg re-asks the last 400 questions from inside a genuine quiz
 session: the first 60/100 questions of the set rendered as user/assistant
 chat history (no target overlaps the pad; no answer leakage), stock rig,
@@ -263,7 +263,7 @@ generates 2 tokens). No flip-counter sees generation quality. Say so.
 
 - Scope: short context (~150–400-token prompts). Cache-quant error grows
   with tokens in cache; this instrument says NOTHING about long-context
-  behavior — say so explicitly. John's own observed q4-cache degradation on
+  behavior — say so explicitly. Our own observed q4-cache degradation on
   Qwen3.6 in real (long) sessions is consistent with damage living at depth
   this test cannot reach. Do not extrapolate the 27B all-clear to long
   context.

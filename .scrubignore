@@ -1,0 +1,8 @@
+# Paths the scrub check skips: benchmark DATA whose own question text contains
+# personal names (they are ARC-Challenge questions, not internal references).
+# Keep this list short and justified — it is the only way past the check other
+# than --no-verify.
+arc-challenge-500.json
+arc-challenge-padpool.json
+results/kv-analysis.json
+results/4d91760-faq/kv-analysis.json
