@@ -47,6 +47,7 @@ MODES = [
     ("q8_0", "q5_0"),
     ("q5_1", "q5_1"),
     ("q8_0", "q4_0"),  # the pair the OP ranks below q5_1/q5_1
+    ("q5_0", "q5_0"),  # viewer comment on #36 reports this as worse than q5_1/q5_1
     ("q5_1", "f16"),   # q5_1 K-only: which side of q5_1/q5_1 carries its churn
     ("f16", "q5_1"),   # q5_1 V-only control
 ]
