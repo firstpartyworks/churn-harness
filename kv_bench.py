@@ -190,13 +190,15 @@ def write_meta():
             capture_output=True, text=True).stdout.strip() or "unknown"
     except FileNotFoundError:
         gpu = "unknown"
+    # PUBLICATION SCRUB: this file ships in a public repo. Never write absolute
+    # paths here -- the build is identified by its commit, models by basename.
     meta = {
-        "llama_cpp_bin": str(BIN), "llama_cpp_commit": commit,
+        "llama_cpp_build": f"llama.cpp @ {commit}", "llama_cpp_commit": commit,
         "server_flags": "-ngl 99 -c 2048 --no-webui -fa on --parallel 4 -ctk <K> -ctv <V>",
         "gpu": gpu,
         "build_note": os.environ.get("CHURN_BUILD_NOTE", ""),
         "sampling": "temp 0, seed 0, grammar single-letter, cache_prompt false, n_predict 2",
-        "models": {k: {"label": n, "file": str(MODELS_DIR / f),
+        "models": {k: {"label": n, "file": f,
                        "bytes": (MODELS_DIR / f).stat().st_size}
                    for k, (n, f) in MODELS.items() if (MODELS_DIR / f).exists()},
     }

@@ -9,7 +9,7 @@ byte-identical (0/500 mismatches, every model), so **every flip below is an
 exact count with zero run-to-run noise** — the Wilson CIs speak to
 generalization beyond these 500 questions, not measurement error.
 
-Main grid: vanilla llama.cpp **432d7ff** (/bulk/bench rig, stock upstream),
+Main grid: vanilla llama.cpp **432d7ff** (our permanent bench rig, stock upstream),
 V100 32GB, `-ngl 99 -c 2048 -fa on --parallel 4`. TurboQuant suite: PR #21089
 build **0aae7d7** (separate checkout — NOT the bench rig), P40. Full flag sets
 and model files in `results/kv-meta.json`; per-question matrices in
@@ -107,7 +107,7 @@ cannot serve on GPU, and did not rescue this model in our test."
 
 ## Ternary-lab fork: Bonsai + our tq3_0 port (run 2026-08-12)
 
-Fork = /bulk/ternary-lab/llama.cpp @ 8fb14733e — carries OUR TurboQuant-family
+Fork = our ternary-lab llama.cpp @ 8fb14733e — carries OUR TurboQuant-family
 cache type `tq3_0` (lucebox WHT port + packed-decode CUDA work; ~3-bit,
 predates and is unrelated to the upstream PR's tbq naming). NOT the stock
 rig; self-contained per model with own f16 baselines + determinism repeats
