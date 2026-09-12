@@ -320,6 +320,8 @@ Changed answers vs f16 cache, n=500 (VRAM per cached element vs f16):
 | q8_0 K / q4_0 V | 8.5+4.5 | 41% | 1 | 10 | 1 |
 | q4_0 V only (f16 K) | 16+4.5 | 64% | 0 | 14 | 0 |
 | q5_1 / q5_1 | 6.0+6.0 | 38% | **83** (92.0→80.8%) | 11 | 1 |
+| q5_1 K only (f16 V) | 6.0+16 | 69% | 84 | 10 | 1 |
+| q5_1 V only (f16 K) | 16+6.0 | 69% | 0 | 3 | 1 |
 | q4_0 K only (f16 V) | 4.5+16 | 64% | 370 | 34 | 1 |
 | q4_0 / q4_0 | 4.5+4.5 | 28% | 375 (→24.2%) | 34 | 2 |
 
@@ -336,6 +338,10 @@ Reading:
    nothing distinguishes any pair; the model that discriminates says the
    opposite. Same mechanism as August: the K side carries the damage, and
    q5_1 on K is a milder version of q4_0 on K (83 vs 370), not a free one.
+   The K-only/V-only split measures that directly rather than inferring it:
+   q5_1 on K alone reproduces the whole q5_1/q5_1 result (84 / 10 / 1 changed),
+   while q5_1 on V alone costs 0 / 3 / 1. Every changed answer in the
+   q5_1/q5_1 row is the K side.
 3. **The 27B remains rounding error on every pair** (0–2 flips across nine
    modes), so "less VRAM at equal quality" is true there for all of them —
    including q4_0/q4_0. The pair choice only matters on models like Qwen2.5,
