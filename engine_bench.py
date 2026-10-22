@@ -63,7 +63,30 @@ def parse_answer(text, letters):
     if m and (m.group(2) is None or len(t) < 40):
         return m.group(1)
     hits = re.findall(rf"(?:answer is|answer:|\\boxed\{{)\s*\**\s*\(?([{letters}])\b", t, re.I)
-    return hits[-1] if hits else ""
+    if hits:
+        return hits[-1]
+    last = t.splitlines()[-1].strip() if t else ""
+    m = re.fullmatch(rf"\**\(?([{letters}])\)?[.)]?\**", last)
+    return m.group(1) if m else ""
+
+
+def reparse(path, set_path):
+    """Re-score a finished sheet's unparsed replies from their saved tails (parser fixes, no rerun)."""
+    qs = {str(q["id"]): q for q in load_set(set_path)}
+    sheet = json.loads(Path(path).read_text())
+    fixed = 0
+    for qid, v in sheet["answers"].items():
+        if v["ans"] or not (v.get("tail") or v.get("raw")):
+            continue
+        q = qs[qid]
+        a = parse_answer(v.get("tail") or v["raw"], "ABCDEFGHIJ"[:len(q["choices"])])
+        if a:
+            v.update(ans=a, ok=a == q["answer"], reparsed=True); fixed += 1
+    a = sheet["answers"].values()
+    sheet["meta"]["accuracy"] = sum(x["ok"] for x in a) / len(sheet["answers"])
+    sheet["meta"]["unparsed"] = sum(1 for x in a if not x["ans"])
+    Path(path).write_text(json.dumps(sheet, indent=0))
+    print(f"{Path(path).stem}: re-read {fixed}, acc {sheet['meta']['accuracy']:.3f}, unparsed {sheet['meta']['unparsed']}")
 
 
 def run(args):
@@ -130,12 +153,15 @@ if __name__ == "__main__":
                     help="room for a model that works a problem out before answering")
     ap.add_argument("--diff", nargs=2)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--reparse", help="re-score a finished sheet's unparsed answers (needs --set)")
     ap.add_argument("--pad-questions", type=int, default=0,
                     help="prepend this many pad-pool Q/A turns as chat history (long-context run)")
     ap.add_argument("--padpool", default=str(Path(__file__).resolve().parent / "arc-challenge-padpool.json"))
     args = ap.parse_args()
     if args.diff:
         diff(*args.diff)
+    elif args.reparse:
+        reparse(args.reparse, args.set)
     elif args.url and args.set and args.out:
         run(args)
     else:
