@@ -50,10 +50,20 @@ def ask(url, q, max_tokens, history=()):
             "chat_template_kwargs": {"enable_thinking": False}}
     req = urllib.request.Request(f"{url}/v1/chat/completions", json.dumps(body).encode(),
                                  {"Content-Type": "application/json"})
-    res = json.load(urllib.request.urlopen(req, timeout=600))
+    res = json.load(urllib.request.urlopen(req, timeout=1800))
     text = res["choices"][0]["message"].get("content") or ""
-    m = re.search(rf"\b([{letters}])\b", text.strip())
-    return (m.group(1) if m else ""), text, res.get("timings") or {}
+    return parse_answer(text, letters), text, res.get("timings") or {}
+
+
+def parse_answer(text, letters):
+    """A bare letter reply, else the LAST explicit 'answer is X' / 'Answer: X' / boxed X.
+    Never the first capital letter in prose: the article 'A' would read as choice A."""
+    t = text.strip()
+    m = re.fullmatch(rf"\**\(?([{letters}])\)?[.):]?\**(\s.*)?", t, re.S)
+    if m and (m.group(2) is None or len(t) < 40):
+        return m.group(1)
+    hits = re.findall(rf"(?:answer is|answer:|\\boxed\{{)\s*\**\s*\(?([{letters}])\b", t, re.I)
+    return hits[-1] if hits else ""
 
 
 def run(args):
@@ -77,6 +87,7 @@ def run(args):
             continue
         ans, text, tm = ask(args.url, q, args.max_tokens, history)
         sheet["answers"][qid] = {"ans": ans, "ok": ans == q["answer"], "raw": text[:80],
+                                 "tail": text[-80:] if len(text) > 80 else "", "gen_n": tm.get("predicted_n"),
                                  "decode_tps": tm.get("predicted_per_second")}
         if history and "prompt_tokens" not in sheet["meta"]:
             sheet["meta"]["prompt_tokens"] = (tm.get("prompt_n") or 0) + (tm.get("cache_n") or 0)
@@ -115,7 +126,8 @@ if __name__ == "__main__":
     ap.add_argument("--set")
     ap.add_argument("--out")
     ap.add_argument("--label", default="")
-    ap.add_argument("--max-tokens", type=int, default=8)
+    ap.add_argument("--max-tokens", type=int, default=1024,
+                    help="room for a model that works a problem out before answering")
     ap.add_argument("--diff", nargs=2)
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--pad-questions", type=int, default=0,
