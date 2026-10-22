@@ -92,8 +92,8 @@ def run(args):
         if history and "prompt_tokens" not in sheet["meta"]:
             sheet["meta"]["prompt_tokens"] = (tm.get("prompt_n") or 0) + (tm.get("cache_n") or 0)
             print(f"  first padded prompt: {sheet['meta']['prompt_tokens']} tokens", flush=True)
+        out.write_text(json.dumps(sheet, indent=0))
         if (i + 1) % 50 == 0:
-            out.write_text(json.dumps(sheet, indent=0))
             a = sheet["answers"].values()
             print(f"  {i+1}/{len(qs)} acc {sum(v['ok'] for v in a)/len(sheet['answers']):.3f} "
                   f"({(time.time()-t0)/(i+1):.2f}s/q)", flush=True)
