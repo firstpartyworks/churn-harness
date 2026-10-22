@@ -6,3 +6,5 @@ arc-challenge-500.json
 arc-challenge-padpool.json
 results/kv-analysis.json
 results/4d91760-faq/kv-analysis.json
+# MMLU-Pro questions (same reason: names inside the question text).
+mmlu-pro-500.json
