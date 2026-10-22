@@ -62,7 +62,7 @@ def parse_answer(text, letters):
     m = re.fullmatch(rf"\**\(?([{letters}])\)?[.):]?\**(\s.*)?", t, re.S)
     if m and (m.group(2) is None or len(t) < 40):
         return m.group(1)
-    hits = re.findall(rf"(?:answer is|answer:|\\boxed\{{)\s*\**\s*\(?([{letters}])\b", t, re.I)
+    hits = re.findall(rf"(?:answer is|answer:|choice is|option is|\\boxed\{{)\s*\**\s*\(?([{letters}])\b", t, re.I)
     if hits:
         return hits[-1]
     last = t.splitlines()[-1].strip() if t else ""
