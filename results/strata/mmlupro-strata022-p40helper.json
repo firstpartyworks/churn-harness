@@ -1,0 +1,4061 @@
+{
+"meta": {
+"url": "http://127.0.0.1:8083",
+"set": "mmlu-pro-500.json",
+"label": "strata022-p40helper",
+"pad_questions": 0,
+"started": "2026-10-22T12:28:38",
+"finished": "2026-10-22T12:53:45",
+"accuracy": 0.652,
+"unparsed": 56
+},
+"answers": {
+"mmlupro-6313": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.1
+},
+"mmlupro-5181": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.6
+},
+"mmlupro-12051": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.0
+},
+"mmlupro-2283": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.2
+},
+"mmlupro-5371": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-72": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.9
+},
+"mmlupro-2532": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.9
+},
+"mmlupro-7114": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.3
+},
+"mmlupro-991": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-4908": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.9
+},
+"mmlupro-8227": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.2
+},
+"mmlupro-7799": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.9
+},
+"mmlupro-1623": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-3943": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.3
+},
+"mmlupro-10164": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.4
+},
+"mmlupro-11907": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the heating required per pound of $CO_2$, we need to determine the ",
+"tail": " reference) $\\approx 35.5 \\, \\text{kJ/kg}$.\n*   **State 2:** $P = 68.6 \\, \\text{",
+"gen_n": 1024,
+"decode_tps": 75.3
+},
+"mmlupro-3948": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.9
+},
+"mmlupro-9362": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.0
+},
+"mmlupro-2244": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.9
+},
+"mmlupro-4072": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.8
+},
+"mmlupro-6691": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.9
+},
+"mmlupro-6904": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.4
+},
+"mmlupro-6340": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-4199": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.5
+},
+"mmlupro-10815": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-6996": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-6362": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-1018": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-1422": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.6
+},
+"mmlupro-2507": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-10121": {
+"ans": "",
+"ok": false,
+"raw": "To determine the maximum pressure at which freeze drying can be carried out, we ",
+"tail": "P_2}{624}\\right) = -0.4228 $$\n$$ \\frac{P_2}{624} = e^{-0.4228} \\approx 0.6552 $$",
+"gen_n": 1024,
+"decode_tps": 78.2
+},
+"mmlupro-8363": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.9
+},
+"mmlupro-4810": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.2
+},
+"mmlupro-8025": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-3375": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-2484": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.5
+},
+"mmlupro-4477": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-7671": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.3
+},
+"mmlupro-595": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.4
+},
+"mmlupro-11837": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-327": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-9391": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.3
+},
+"mmlupro-10439": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.4
+},
+"mmlupro-9471": {
+"ans": "G",
+"ok": true,
+"raw": "To calculate the reciprocal of the dispersive power, we first need to determine ",
+"tail": "\nG. 42.84\nH. 62.84\nI. 37.84\nJ. 32.84\n\nOption G matches the calculated result.\n\nG",
+"gen_n": 613,
+"decode_tps": 88.5,
+"reparsed": true
+},
+"mmlupro-8515": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.3
+},
+"mmlupro-6072": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.1
+},
+"mmlupro-6879": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-11645": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.4
+},
+"mmlupro-1168": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.9
+},
+"mmlupro-4969": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-224": {
+"ans": "",
+"ok": false,
+"raw": "To find the annual interest rate, we can use the formula for the monthly payment",
+"tail": "er, it is much closer to the value for 21%. Let's re-calculate more precisely or",
+"gen_n": 1024,
+"decode_tps": 88.7
+},
+"mmlupro-9381": {
+"ans": "",
+"ok": false,
+"raw": "To determine the number of electrons required, we follow these steps:\n\n**1. Iden",
+"tail": ".\n$n = 2.22 \\times 10^{-9} / 1.6 \\times 10^{-19} \\approx 1.39 \\times 10^{10}$.\n\n",
+"gen_n": 1024,
+"decode_tps": 87.0
+},
+"mmlupro-2921": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.4
+},
+"mmlupro-9479": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.6
+},
+"mmlupro-7297": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 30.6
+},
+"mmlupro-8348": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-898": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.8
+},
+"mmlupro-290": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.0
+},
+"mmlupro-4110": {
+"ans": "E",
+"ok": true,
+"raw": "To calculate the freezing point of the solution, we use the formula for freezing",
+"tail": "\nH. - 98.34\u00b0C\nI. - 94.0\u00b0C\nJ. - 96.0\u00b0C\n\nThe calculated value matches option E.\n\nE",
+"gen_n": 707,
+"decode_tps": 87.9,
+"reparsed": true
+},
+"mmlupro-10182": {
+"ans": "",
+"ok": false,
+"raw": "To find the position $X$ where the car reaches its maximum x-velocity, we need t",
+"tail": "e.g., $v_0 = 5 \\text{ m/s}$?\n    $$x(20) = 400 - 133.33 + 5(20) = 266.67 + 100 =",
+"gen_n": 1024,
+"decode_tps": 84.9
+},
+"mmlupro-8950": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-3610": {
+"ans": "F",
+"ok": true,
+"raw": "To find the distance between the planes passing through the centers of adjacent ",
+"tail": "0 nm\nH. .150 nm\nI. .250 nm\nJ. .710 nm\n\nThe calculated value matches option F.\n\nF",
+"gen_n": 932,
+"decode_tps": 82.7,
+"reparsed": true
+},
+"mmlupro-11605": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-838": {
+"ans": "",
+"ok": false,
+"raw": "To determine the Open-to-Buy (OTB), we use the following formula:\n\n**Open-to-Buy",
+"tail": " (Jan 17-31)} + \\text{Planned Markdowns (Jan 17-31)}$$\n    $$\\text{Needed} = 15,",
+"gen_n": 1024,
+"decode_tps": 83.2
+},
+"mmlupro-10335": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.8
+},
+"mmlupro-3064": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.8
+},
+"mmlupro-9065": {
+"ans": "",
+"ok": false,
+"raw": "To find the final temperature of the air in the bicycle pump, we use the adiabat",
+"tail": " a pump. Let's look at the options again.\nA. 300K\nB. 347K\nC. 275K\nD. 74.1K\nE. 50",
+"gen_n": 1024,
+"decode_tps": 87.7
+},
+"mmlupro-10193": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.1
+},
+"mmlupro-4678": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-3172": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.1
+},
+"mmlupro-7090": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-3682": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-1305": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-8444": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.9
+},
+"mmlupro-1586": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.9
+},
+"mmlupro-9868": {
+"ans": "G",
+"ok": true,
+"raw": "To determine the factor by which the heat transfer increases, we analyze the for",
+"tail": "5\nJ. 8.7\n\nThe calculated value is approximately 10.2, which matches option G.\n\nG",
+"gen_n": 819,
+"decode_tps": 87.8,
+"reparsed": true
+},
+"mmlupro-9845": {
+"ans": "G",
+"ok": true,
+"raw": "To determine the expected number of proton decays per year, we need to calculate",
+"tail": "\nH. 2.4\nI. 3.0\nJ. 0.003\n\nThe calculated value $0.081$ is closest to option G.\n\nG",
+"gen_n": 827,
+"decode_tps": 87.9,
+"reparsed": true
+},
+"mmlupro-10031": {
+"ans": "",
+"ok": false,
+"raw": "To determine the total heat required, we need to calculate the heat for three di",
+"tail": "s very close to 18,000.\n\nIf the unit \"Cal\" in the options refers to **Calories**",
+"gen_n": 1024,
+"decode_tps": 87.5
+},
+"mmlupro-8923": {
+"ans": "E",
+"ok": true,
+"raw": "To express the quadratic expression $3x^2 + x - 4$ in the vertex form $a(x - h)^",
+"tail": "$\nF. $-49$\nG. $7$\nH. $12$\nI. $-7$\nJ. $\\frac{7}{12}$\n\nThe correct option is E.\n\nE",
+"gen_n": 704,
+"decode_tps": 84.5,
+"reparsed": true
+},
+"mmlupro-4463": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-3370": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.5
+},
+"mmlupro-2415": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-3598": {
+"ans": "",
+"ok": false,
+"raw": "To find the solubility of benzoic acid in ethanol at 80\u00b0C and the vapor pressure",
+"tail": "^\\circ_{ethanol} (80^\\circ\\text{C}) = 1 \\text{ atm} $$\n\nNow, calculate $P_{total",
+"gen_n": 1024,
+"decode_tps": 84.4
+},
+"mmlupro-5185": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-418": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-7041": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-499": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-9759": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-1923": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-6522": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.9
+},
+"mmlupro-2359": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.1
+},
+"mmlupro-11072": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.8
+},
+"mmlupro-6554": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-3791": {
+"ans": "",
+"ok": false,
+"raw": "To find the number of electrons that can be removed, we need to compare the ener",
+"tail": "ength $\\lambda_0 = 700$ nm.\nSo, $\\Phi = \\frac{hc}{\\lambda_0} \\approx 1.77$ eV.\n\n",
+"gen_n": 1024,
+"decode_tps": 81.5
+},
+"mmlupro-7779": {
+"ans": "I",
+"ok": false,
+"raw": "To find the time $T$ at which the concentration of dye reaches a specific value,",
+"tail": "ours\nD. 6.875 hours\nE. 8.255 hours\nF. 9.100 hours\nG. 7.136 hour\nH. 8.670 hours\nI",
+"gen_n": 1024,
+"decode_tps": 89.4,
+"reparsed": true
+},
+"mmlupro-11154": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-1355": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 31.9
+},
+"mmlupro-4273": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-1696": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.5
+},
+"mmlupro-3937": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.0
+},
+"mmlupro-11422": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-1869": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.3
+},
+"mmlupro-1842": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.7
+},
+"mmlupro-730": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-168": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-5277": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-11021": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.8
+},
+"mmlupro-885": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-10372": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.5
+},
+"mmlupro-2781": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-12242": {
+"ans": "",
+"ok": false,
+"raw": "To determine the temperature distribution and the specific temperature at $r = 5",
+"tail": "t{F}$ is closest to $176^\\circ\\text{F}$. Let's re-check if using inches directly",
+"gen_n": 1024,
+"decode_tps": 83.2
+},
+"mmlupro-5610": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.8
+},
+"mmlupro-10122": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-11673": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-2015": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-3910": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-3709": {
+"ans": "F",
+"ok": false,
+"raw": "To determine the mass of Astatine-210 ($^{210}\\text{At}$) that corresponds to an",
+"tail": "prox 15432 \\text{ grains}$). Assuming the unit \"g\" in the options is correct:\n\nF",
+"gen_n": 956,
+"decode_tps": 86.0,
+"reparsed": true
+},
+"mmlupro-8397": {
+"ans": "",
+"ok": false,
+"raw": "To find the points where the polar curve $r = \\sin(3\\theta)$ has a vertical tang",
+"tail": "t in case.\n**Option G: $\\theta = 0.60$**\n$\\tan(0.60) \\approx 0.684$\n$3\\theta = 1",
+"gen_n": 1024,
+"decode_tps": 83.5
+},
+"mmlupro-1706": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-6861": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.6
+},
+"mmlupro-4134": {
+"ans": "I",
+"ok": true,
+"raw": "To find the weight of the test tube, we need to determine the mass of the calciu",
+"tail": "weight of the test tube is $9.960 \\, \\text{g}$. This corresponds to option I.\n\nI",
+"gen_n": 903,
+"decode_tps": 89.5,
+"reparsed": true
+},
+"mmlupro-11487": {
+"ans": "",
+"ok": false,
+"raw": "To determine the rate of heat loss and the interface temperature, we treat this ",
+"tail": " - T_2}{R'_{pipe}} $$\n$$ T_2 = T_1 - q' R'_{pipe} $$\n$$ T_2 = 500 - (120.33)(0.0",
+"gen_n": 1024,
+"decode_tps": 86.2
+},
+"mmlupro-2147": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.3
+},
+"mmlupro-9730": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-9221": {
+"ans": "",
+"ok": false,
+"raw": "To find the refractive power of the glasses, we need to determine the focal leng",
+"tail": "\\text{ cm}$ from eye, so $61.5 \\text{ cm}$ from lens) so the eye can focus on it",
+"gen_n": 1024,
+"decode_tps": 82.4
+},
+"mmlupro-6569": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-1156": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.5
+},
+"mmlupro-8447": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-12150": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-9860": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-11933": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.4
+},
+"mmlupro-2855": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.6
+},
+"mmlupro-4532": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.3
+},
+"mmlupro-9354": {
+"ans": "D",
+"ok": true,
+"raw": "To find the amount of rotation of the plane of polarization, we use Faraday's La",
+"tail": ".5 degrees\nJ. 0.8 degrees\n\nThe calculated value is approximately 1.3 degrees.\n\nD",
+"gen_n": 995,
+"decode_tps": 86.2,
+"reparsed": true
+},
+"mmlupro-10850": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.4
+},
+"mmlupro-3291": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.0
+},
+"mmlupro-11691": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-10348": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-8156": {
+"ans": "C",
+"ok": true,
+"raw": "To determine the number of structurally distinct Abelian groups of order 72, we ",
+"tail": "bb{Z}_3$\n\nThus, there are 6 structurally distinct Abelian groups of order 72.\n\nC",
+"gen_n": 852,
+"decode_tps": 90.0,
+"reparsed": true
+},
+"mmlupro-5687": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-6611": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 37.6
+},
+"mmlupro-5622": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.2
+},
+"mmlupro-5889": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-8344": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-4176": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.3
+},
+"mmlupro-10486": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.1
+},
+"mmlupro-10410": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-10741": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.6
+},
+"mmlupro-6796": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 40.5
+},
+"mmlupro-9678": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.3
+},
+"mmlupro-2374": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-8964": {
+"ans": "",
+"ok": false,
+"raw": "To determine the time it takes to drain the tank, we apply Torricelli's Law and ",
+"tail": "late the square roots:\n$\\sqrt{3} \\approx 1.73205$\n$\\sqrt{19.62} \\approx 4.42945$",
+"gen_n": 1024,
+"decode_tps": 86.3
+},
+"mmlupro-9321": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-6907": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.5
+},
+"mmlupro-8525": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.1
+},
+"mmlupro-8425": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the Riemann Sum $S_{3,2}$ for $\\iint_R xy \\, dA$ over the rectangle",
+"tail": "ions).\nOption F is 2.812.\n\nLet's double check the calculation.\nSum = $1 + 1.5 + ",
+"gen_n": 1024,
+"decode_tps": 90.2
+},
+"mmlupro-8502": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.5
+},
+"mmlupro-4320": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the Q value of the reaction $^{106}_{46}\\text{Pd} + n \\rightarrow ^",
+"tail": "eV}/c^2$.\n\nNow back to Reaction 1:\n$$ Q_1 = [M(^{106}\\text{Pd}) + m_n] - [M(^{10",
+"gen_n": 1024,
+"decode_tps": 77.9
+},
+"mmlupro-10266": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-7934": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.7
+},
+"mmlupro-729": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-5156": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.1
+},
+"mmlupro-582": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-8383": {
+"ans": "",
+"ok": false,
+"raw": "To find the probability that 5 different integers chosen from the set $\\{20, 21,",
+"tail": "69 = 7 \\times 7567$.\n$7567 / 7 = 1081$. So $52,969 = 49 \\times 1081$.\n$1081 / 23",
+"gen_n": 1024,
+"decode_tps": 92.6
+},
+"mmlupro-7568": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.9
+},
+"mmlupro-8371": {
+"ans": "D",
+"ok": true,
+"raw": "To find the value of $f(2)$, we need to solve the given differential equation wi",
+"tail": "ns**\n\nThe calculated value is $\\frac{e^2}{2}$, which corresponds to option D.\n\nD",
+"gen_n": 826,
+"decode_tps": 85.4,
+"reparsed": true
+},
+"mmlupro-11562": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.1
+},
+"mmlupro-10096": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-6004": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.6
+},
+"mmlupro-5822": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.1
+},
+"mmlupro-6224": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 28.9
+},
+"mmlupro-7096": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-3787": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.8
+},
+"mmlupro-10221": {
+"ans": "",
+"ok": false,
+"raw": "To determine the final pressure in the sealed vessel, we must analyze the change",
+"tail": "imes 10^{-5} \\, \\mathrm{bar}^{-1}} $$\n$$ \\Delta P = \\frac{4.24328}{4.59} \\times ",
+"gen_n": 1024,
+"decode_tps": 84.4
+},
+"mmlupro-1499": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-5362": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.5
+},
+"mmlupro-7638": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.1
+},
+"mmlupro-6578": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.5
+},
+"mmlupro-7405": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.4
+},
+"mmlupro-664": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-10422": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-10114": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-10903": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.2
+},
+"mmlupro-10129": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-3102": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-9740": {
+"ans": "F",
+"ok": true,
+"raw": "To determine the ratio of the radius of a uranium-238 nucleus to the radius of a",
+"tail": ".0\n\nThe calculated value is approximately 3.9, which corresponds to option F.\n\nF",
+"gen_n": 680,
+"decode_tps": 92.4,
+"reparsed": true
+},
+"mmlupro-9778": {
+"ans": "E",
+"ok": true,
+"raw": "To determine the number of coulombs required to deposit a specific mass of zinc,",
+"tail": "oulomb\nI. 250 coulomb\nJ. 325 coulomb\n\nOption E matches the calculated result.\n\nE",
+"gen_n": 578,
+"decode_tps": 92.2,
+"reparsed": true
+},
+"mmlupro-10437": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.3
+},
+"mmlupro-9133": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the speed of the electrons, we can use the principle of conservatio",
+"tail": " (\\gamma - 1)mc^2$.\n$K = 25 \\text{ keV}$. Rest mass energy of electron $\\approx ",
+"gen_n": 1024,
+"decode_tps": 90.6
+},
+"mmlupro-4588": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-10383": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.9
+},
+"mmlupro-1920": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.5
+},
+"mmlupro-10306": {
+"ans": "J",
+"ok": true,
+"raw": "To determine the amount of silver deposited, we use Faraday's laws of electrolys",
+"tail": "m\nH. 1.000 gm\nI. 0.540 gm\nJ. 0.671 gm\n\nThe calculated value matches option J.\n\nJ",
+"gen_n": 609,
+"decode_tps": 93.2,
+"reparsed": true
+},
+"mmlupro-2214": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-3237": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.8
+},
+"mmlupro-3179": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.9
+},
+"mmlupro-1112": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-5683": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.0
+},
+"mmlupro-10160": {
+"ans": "G",
+"ok": true,
+"raw": "To determine the tension in the cables pulling an elevator, we apply Newton's Se",
+"tail": "ation).\n    *   J. Includes unnecessary variables.\n\nThe correct choice is **G**.",
+"gen_n": 522,
+"decode_tps": 80.3,
+"reparsed": true
+},
+"mmlupro-4727": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.1
+},
+"mmlupro-2480": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.3
+},
+"mmlupro-3823": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.9
+},
+"mmlupro-1988": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-12035": {
+"ans": "",
+"ok": false,
+"raw": "To determine the effective input source noise power, we use the formula for ther",
+"tail": "0.75dbm\nD. - 124.53dbm\nE. - 118.99 dbm\nF. - 130.22dbm\nG. - 126.38 dbm\nH. - 134.5",
+"gen_n": 1024,
+"decode_tps": 92.7
+},
+"mmlupro-3473": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-4022": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.5
+},
+"mmlupro-2356": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-4671": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-6961": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.9
+},
+"mmlupro-10611": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-4624": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-9597": {
+"ans": "",
+"ok": false,
+"raw": "To determine the ratio of the kinetic energies of the two cylinders, we follow t",
+"tail": "    E. 1:1\n    F. 1:4\n    G. 1:16\n    H. 8:1\n    I. 2:1\n    J. 2:8\n\n    Option G",
+"gen_n": 1024,
+"decode_tps": 80.8
+},
+"mmlupro-4699": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.8
+},
+"mmlupro-8804": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.4
+},
+"mmlupro-7979": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.3
+},
+"mmlupro-3773": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-10011": {
+"ans": "I",
+"ok": true,
+"raw": "To determine the electric power required, we follow these steps:\n\n**1. Calculate",
+"tail": "7 \\text{ W}$ or slightly different approximations for lb/ft/min conversions).\n\nI",
+"gen_n": 762,
+"decode_tps": 90.5,
+"reparsed": true
+},
+"mmlupro-5543": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.6
+},
+"mmlupro-4910": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.4
+},
+"mmlupro-4178": {
+"ans": "",
+"ok": false,
+"raw": "To find the uncertainty in the speed of an electron, we use Heisenberg's Uncerta",
+"tail": "is not among the options. Let's look at the options again. They are in the range",
+"gen_n": 1024,
+"decode_tps": 85.0
+},
+"mmlupro-3713": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.9
+},
+"mmlupro-11300": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-2747": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.0
+},
+"mmlupro-308": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.1
+},
+"mmlupro-12073": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the effect of armature reaction, we typically determine the **Armat",
+"tail": " (given).\nWinding Factor $k_w = k_d \\times k_p = 0.966 \\times 0.833 \\approx 0.80",
+"gen_n": 1024,
+"decode_tps": 77.9
+},
+"mmlupro-1915": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-11889": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-10343": {
+"ans": "",
+"ok": false,
+"raw": "To find the shortest path between two points on a conical surface, we can \"unrol",
+"tail": " since the total angle is $\\pi\\sqrt{2} \\approx 4.44$, and the separation is $2.2",
+"gen_n": 1024,
+"decode_tps": 80.3
+},
+"mmlupro-4019": {
+"ans": "G",
+"ok": true,
+"raw": "To compare the ionic bond strength of NaCl and KF, we can use Coulomb's Law, whi",
+"tail": " of NaCl as a percentage of KF's strength.\nResult: ~95.7%. Option G is 95.6%.\n\nG",
+"gen_n": 858,
+"decode_tps": 84.4,
+"reparsed": true
+},
+"mmlupro-1271": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.1
+},
+"mmlupro-5182": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.3
+},
+"mmlupro-3950": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.6
+},
+"mmlupro-8514": {
+"ans": "",
+"ok": false,
+"raw": "To find the arc length of the curve defined by the parametric equations $x=t$, $",
+"tail": "2$ or similar context implying this range. Given the options, G is the only math",
+"gen_n": 1024,
+"decode_tps": 83.6
+},
+"mmlupro-7417": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-7080": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.8
+},
+"mmlupro-2762": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 31.4
+},
+"mmlupro-5078": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-10135": {
+"ans": "",
+"ok": false,
+"raw": "To find the velocity and distance covered by the automobile, we apply Newton's S",
+"tail": "city part is missing or the options are formatted strangely. However, $166 \\frac",
+"gen_n": 1024,
+"decode_tps": 90.4
+},
+"mmlupro-8339": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.2
+},
+"mmlupro-4521": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-1928": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-7968": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-9130": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.8
+},
+"mmlupro-7465": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-9692": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-5300": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.5
+},
+"mmlupro-5357": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.8
+},
+"mmlupro-3267": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.4
+},
+"mmlupro-9526": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.8
+},
+"mmlupro-7769": {
+"ans": "D",
+"ok": true,
+"raw": "To find the sum of the series $\\sum_{n=1}^{\\infty} \\left(\\frac{1}{e^n} + \\frac{1",
+"tail": "ight be listed as 1.581 or 1.582. Given the options, D is the correct choice.\n\nD",
+"gen_n": 945,
+"decode_tps": 88.3,
+"reparsed": true
+},
+"mmlupro-11925": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-10716": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-9824": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.3
+},
+"mmlupro-7314": {
+"ans": "J",
+"ok": true,
+"raw": "To determine which statements are true when $R^2 = 0$, let's analyze the definit",
+"tail": "iv) only - Incorrect because of (iv).\nJ. (i), (ii), and (iii) only - Correct.\n\nJ",
+"gen_n": 1020,
+"decode_tps": 85.3,
+"reparsed": true
+},
+"mmlupro-7708": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.8
+},
+"mmlupro-6222": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-10884": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-11243": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.8
+},
+"mmlupro-11573": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-7848": {
+"ans": "D",
+"ok": true,
+"raw": "To find the number of positive integers that are factors of both 120 and 40, we ",
+"tail": "A. 2\nB. 1\nC. 4\nD. 8\nE. 5\nF. 7\nG. 3\nH. 12\nI. 10\nJ. 6\n\nThe correct option is D.\n\nD",
+"gen_n": 654,
+"decode_tps": 93.3,
+"reparsed": true
+},
+"mmlupro-10374": {
+"ans": "",
+"ok": false,
+"raw": "To determine the number of bits required to describe the decay time with 3-digit",
+"tail": "/\\lambda \\approx 115$ years.\nIf we want 3 significant digits, we need to resolve",
+"gen_n": 1024,
+"decode_tps": 80.2
+},
+"mmlupro-3732": {
+"ans": "J",
+"ok": true,
+"raw": "To find the original energy level ($n_i$) of the electron, we use the Rydberg fo",
+"tail": " \\mathrm{~m}$.\n\nThe original energy level is 3. This corresponds to option J.\n\nJ",
+"gen_n": 746,
+"decode_tps": 86.8,
+"reparsed": true
+},
+"mmlupro-6466": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.2
+},
+"mmlupro-8274": {
+"ans": "B",
+"ok": true,
+"raw": "To find the value of $b$ in the equation $\\log_{b}343 = -\\frac{3}{2}$, we can co",
+"tail": ". 7\nG. 3\nH. -\\frac{1}{49}\nI. -7\nJ. 49\n\nThe calculated value matches option B.\n\nB",
+"gen_n": 501,
+"decode_tps": 87.7,
+"reparsed": true
+},
+"mmlupro-1984": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-11441": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.0
+},
+"mmlupro-5464": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.6
+},
+"mmlupro-4383": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.0
+},
+"mmlupro-8864": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-7481": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-831": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.8
+},
+"mmlupro-8162": {
+"ans": "F",
+"ok": true,
+"raw": "To find the sum of all integers $k$ such that $\\binom{23}{4} + \\binom{23}{5} = \\",
+"tail": "ll integers $k$ satisfying the condition is 24. This corresponds to option F.\n\nF",
+"gen_n": 486,
+"decode_tps": 90.6,
+"reparsed": true
+},
+"mmlupro-793": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.9
+},
+"mmlupro-2601": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.2
+},
+"mmlupro-7909": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.0
+},
+"mmlupro-5792": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.0
+},
+"mmlupro-5880": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.4
+},
+"mmlupro-6612": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.3
+},
+"mmlupro-7469": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-7782": {
+"ans": "D",
+"ok": true,
+"raw": "To find the expected cost $E(Z)$, we first analyze the components of the cost fu",
+"tail": " 9\nB. 8\nC. 4\nD. 5\nE. 12\nF. 3\nG. 10\nH. 4.5\nI. 7\nJ. 6\n\nThe correct option is D.\n\nD",
+"gen_n": 981,
+"decode_tps": 84.6,
+"reparsed": true
+},
+"mmlupro-3415": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-11980": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the work done during an isentropic expansion of an ideal gas, we ca",
+"tail": "rmodynamics:\n$$Q - W = \\Delta U \\implies -W = m c_v (T_2 - T_1)$$\n$$W = m c_v (T",
+"gen_n": 1024,
+"decode_tps": 87.4
+},
+"mmlupro-8435": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.6
+},
+"mmlupro-3324": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-1314": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-11731": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.8
+},
+"mmlupro-10174": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.8
+},
+"mmlupro-10441": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-9918": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.3
+},
+"mmlupro-11826": {
+"ans": "",
+"ok": false,
+"raw": "To find the minimum force applied to the piston that will cause the water to boi",
+"tail": "d = 300 \\text{ mm} = 0.3 \\text{ m}$.\nRadius $r = 0.15 \\text{ m}$.\n$$ A = \\pi r^2",
+"gen_n": 1024,
+"decode_tps": 76.7
+},
+"mmlupro-6923": {
+"ans": "B",
+"ok": true,
+"raw": "To find the correct answer, we need to determine two things:\n1.  The Marginal Ph",
+"tail": "$24\nJ. MPPK = 0.6, total cost = $20\n\nOption B matches both calculated values.\n\nB",
+"gen_n": 808,
+"decode_tps": 86.9,
+"reparsed": true
+},
+"mmlupro-11197": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-9508": {
+"ans": "",
+"ok": false,
+"raw": "To find the mass of ice originally present, we apply the principle of conservati",
+"tail": "quate Heat Lost and Heat Gained:**\n$$Q_{lost} = Q_{gained}$$\n$$2090 = 80 m_{ice}",
+"gen_n": 1024,
+"decode_tps": 88.8
+},
+"mmlupro-5779": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.3
+},
+"mmlupro-9114": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.8
+},
+"mmlupro-7239": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-10790": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.9
+},
+"mmlupro-8720": {
+"ans": "C",
+"ok": true,
+"raw": "To find the value of $(2^{20} + 2^{20} + 2^{20} + 2^{21}) \\div 2^{17}$, we can s",
+"tail": " \\times 8 = 40 $$\n\nThe calculated value is 40, which corresponds to option C.\n\nC",
+"gen_n": 422,
+"decode_tps": 86.2,
+"reparsed": true
+},
+"mmlupro-630": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.1
+},
+"mmlupro-136": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.0
+},
+"mmlupro-11338": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-2674": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-9204": {
+"ans": "",
+"ok": false,
+"raw": "To find the velocity of the little cart after the collision, we can use the prin",
+"tail": "city of approach equals relative velocity of separation:\n$v_{2i} - v_{1i} = v_{1",
+"gen_n": 1024,
+"decode_tps": 84.6
+},
+"mmlupro-2892": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.8
+},
+"mmlupro-6188": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.3
+},
+"mmlupro-9957": {
+"ans": "",
+"ok": false,
+"raw": "To find the angular speed of the neutron star, we use the principle of conservat",
+"tail": "pprox (2.424 \\times 10^{-6}) \\times (1.914 \\times 10^9) $$\n$$ \\omega_f \\approx 2",
+"gen_n": 1024,
+"decode_tps": 86.1
+},
+"mmlupro-8576": {
+"ans": "H",
+"ok": true,
+"raw": "To find the greatest possible value of $f(0)$, we can use the Mean Value Theorem",
+"tail": ". 3\nB. 11\nC. 9\nD. 5\nE. 4\nF. 10\nG. 12\nH. 8\nI. 6\nJ. 7\n\nThe correct option is H.\n\nH",
+"gen_n": 627,
+"decode_tps": 90.3,
+"reparsed": true
+},
+"mmlupro-9369": {
+"ans": "",
+"ok": false,
+"raw": "To find the distance the particle travels in the lab frame, we must account for ",
+"tail": "2.5 \\times 10^{-6}) = 1.8 \\times 10^8 \\times 2.5 \\times 10^{-6} = 4.5 \\times 10^",
+"gen_n": 1024,
+"decode_tps": 89.1
+},
+"mmlupro-3623": {
+"ans": "B",
+"ok": true,
+"raw": "To find the partial pressure of nitrogen, we use Dalton's Law of Partial Pressur",
+"tail": " atm\nG. 0.75 atm\nH. 1.2 atm\nI. 0.40 atm\nJ. 0.20 atm\n\nThe correct option is B.\n\nB",
+"gen_n": 713,
+"decode_tps": 90.8,
+"reparsed": true
+},
+"mmlupro-10764": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 31.9
+},
+"mmlupro-1962": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-7364": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.2
+},
+"mmlupro-4354": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.4
+},
+"mmlupro-166": {
+"ans": "B",
+"ok": true,
+"raw": "To find the cost accrued and the rate of change of cost, we use the fundamental ",
+"tail": "n, $11 million\nC. $27 million, $13 million\n...\n\nOption B matches our results.\n\nB",
+"gen_n": 616,
+"decode_tps": 91.5,
+"reparsed": true
+},
+"mmlupro-4171": {
+"ans": "",
+"ok": false,
+"raw": "To determine the pressure of the nitrogen gas at $500 \\mathrm{~K}$ using the van",
+"tail": "prox 15,126,093 \\mathrm{~dm}^6 \\mathrm{~atm} $$\n\n    Calculate the denominator $",
+"gen_n": 1024,
+"decode_tps": 85.1
+},
+"mmlupro-11460": {
+"ans": "",
+"ok": false,
+"raw": "To solve this problem, we need to analyze the circuit of a DC shunt motor under ",
+"tail": "/\\phi_2}{E_{b1}/\\phi_1} = \\frac{209.99/0.5}{220/1} = \\frac{419.98}{220} \\approx ",
+"gen_n": 1024,
+"decode_tps": 86.2
+},
+"mmlupro-4070": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-7519": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 31.7
+},
+"mmlupro-8945": {
+"ans": "",
+"ok": false,
+"raw": "To find the approximate value of $y(0.2)$ for the initial value problem $y' + 2y",
+"tail": ", 0.818010) \\approx 0.001(0.818731) - 1.636020 = 0.000819 - 1.636020 = -1.635201",
+"gen_n": 1024,
+"decode_tps": 90.0
+},
+"mmlupro-1025": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-332": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.4
+},
+"mmlupro-2614": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 31.4
+},
+"mmlupro-8664": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.7
+},
+"mmlupro-4398": {
+"ans": "",
+"ok": false,
+"raw": "To solve this problem, we need to calculate the total length of the polypeptide ",
+"tail": " N_{aa} \\times 3.5 \\, \\text{\\AA} = (1.67 \\times 10^8) \\times (3.5 \\times 10^{-8}",
+"gen_n": 1024,
+"decode_tps": 86.3
+},
+"mmlupro-7105": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-8999": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-1077": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.6
+},
+"mmlupro-9862": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-7183": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.1
+},
+"mmlupro-6058": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.4
+},
+"mmlupro-11469": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-11866": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.3
+},
+"mmlupro-8763": {
+"ans": "I",
+"ok": true,
+"raw": "To calculate the work done by a variable force $F(x)$ moving an object from $x=a",
+"tail": " 4.5\nJ. 4.0\n\nThe calculated work is 4.5 ft-lb, which corresponds to option I.\n\nI",
+"gen_n": 398,
+"decode_tps": 86.6,
+"reparsed": true
+},
+"mmlupro-3145": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.6
+},
+"mmlupro-412": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.0
+},
+"mmlupro-10623": {
+"ans": "",
+"ok": false,
+"raw": "To determine which conditions can be expressed by a Boolean formula using only t",
+"tail": "nt $B = (1, 0, 0, 0)$. Count is 1 (odd), so $f_{III}(B) = 0$.\n*   Note that $A \\",
+"gen_n": 1024,
+"decode_tps": 90.8
+},
+"mmlupro-5972": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-4916": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.1
+},
+"mmlupro-276": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.3
+},
+"mmlupro-6232": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.4
+},
+"mmlupro-4143": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.8
+},
+"mmlupro-2064": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-3856": {
+"ans": "",
+"ok": false,
+"raw": "To determine the volume of carbon dioxide ($CO_2$) gas, we use the Ideal Gas Law",
+"tail": "7$ liters\nE. $2.7 \\times 10^5$ liters\nF. $5.5 \\times 10^8$ liters\nG. $2.7 \\times",
+"gen_n": 1024,
+"decode_tps": 90.2
+},
+"mmlupro-9009": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-3406": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-11698": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.7
+},
+"mmlupro-9739": {
+"ans": "A",
+"ok": true,
+"raw": "To calculate the number of proton decays per day, we follow these steps:\n\n**1. C",
+"tail": "mes 10^{-6}$\n...\n\nThe calculated value is approximately $3.5 \\times 10^{-8}$.\n\nA",
+"gen_n": 614,
+"decode_tps": 88.2,
+"reparsed": true
+},
+"mmlupro-3119": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.2
+},
+"mmlupro-9183": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.4
+},
+"mmlupro-2068": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-8092": {
+"ans": "C",
+"ok": true,
+"raw": "To find the consumer surplus, we follow these steps:\n\n**1. Identify the given in",
+"tail": ". 8500 $\\$$\nI. 8000 $\\$$\nJ. 5000 $\\$$\n\nThe calculated value matches option C.\n\nC",
+"gen_n": 886,
+"decode_tps": 94.0,
+"reparsed": true
+},
+"mmlupro-4250": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-3308": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-4610": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.6
+},
+"mmlupro-4268": {
+"ans": "J",
+"ok": true,
+"raw": "To find the distance between the slits, we can use the formula for the fringe sp",
+"tail": "20mm\nH. 0.089mm\nI. 0.175mm\nJ. 0.139mm\n\nThe calculated value matches option J.\n\nJ",
+"gen_n": 727,
+"decode_tps": 89.7,
+"reparsed": true
+},
+"mmlupro-8899": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-2324": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-12025": {
+"ans": "F",
+"ok": true,
+"raw": "To determine the diameter of the bolts, we will follow these steps:\n\n**1. Identi",
+"tail": ".\nI. 0.1200 in.\nJ. 0.1230 in.\n\nOption F matches the calculated value exactly.\n\nF",
+"gen_n": 885,
+"decode_tps": 91.2,
+"reparsed": true
+},
+"mmlupro-3755": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-3385": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.9
+},
+"mmlupro-3863": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-12043": {
+"ans": "",
+"ok": false,
+"raw": "To find the steady-state temperature of the water drop, we need to balance the h",
+"tail": "_p \\approx 1007 \\text{ J/kg}\\cdot\\text{K}$\n*   $\\rho_a \\approx 1.184 \\text{ kg/m",
+"gen_n": 1024,
+"decode_tps": 76.8
+},
+"mmlupro-11965": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.5
+},
+"mmlupro-5198": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.4
+},
+"mmlupro-7951": {
+"ans": "J",
+"ok": true,
+"raw": "To find the value of the sum $21^2 + 22^2 + \\cdots + 40^2$, we can use the given",
+"tail": "500\nE. 4030\nF. 2870\nG. 22140\nH. 5010\nI. 41\nJ. 19270\n\nThe correct option is J.\n\nJ",
+"gen_n": 737,
+"decode_tps": 89.3,
+"reparsed": true
+},
+"mmlupro-11758": {
+"ans": "",
+"ok": false,
+"raw": "To determine the change in head loss, we need to calculate the head loss at both",
+"tail": "04}{3.7} \\approx 0.001081$$\n$$\\frac{5.74}{Re^{0.9}} = \\frac{5.74}{(1.95 \\times 1",
+"gen_n": 1024,
+"decode_tps": 84.6
+},
+"mmlupro-9514": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-546": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.4
+},
+"mmlupro-2639": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.4
+},
+"mmlupro-660": {
+"ans": "",
+"ok": false,
+"raw": "To determine the minimum life of the machine, we need to find the number of year",
+"tail": "em type.\nAt $n=5$, PVIFA = 2.9906. The required factor is 3.0. Since $2.9906 < 3",
+"gen_n": 1024,
+"decode_tps": 83.3
+},
+"mmlupro-10767": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.6
+},
+"mmlupro-5333": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-7056": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.6
+},
+"mmlupro-4978": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.6
+},
+"mmlupro-5715": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-2188": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.1
+},
+"mmlupro-8461": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.3
+},
+"mmlupro-6270": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.3
+},
+"mmlupro-6046": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.3
+},
+"mmlupro-2971": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.6
+},
+"mmlupro-5633": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-4232": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.7
+},
+"mmlupro-5601": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.6
+},
+"mmlupro-599": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.6
+},
+"mmlupro-762": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.1
+},
+"mmlupro-11700": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.9
+},
+"mmlupro-9233": {
+"ans": "H",
+"ok": true,
+"raw": "To calculate the magnitude of the electrostatic force between the two particles,",
+"tail": " 3.67 N\nH. 2.81 N\nI. 1.23 N\nJ. 0.75 N\n\nThe calculated value matches option H.\n\nH",
+"gen_n": 693,
+"decode_tps": 87.4,
+"reparsed": true
+},
+"mmlupro-847": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.6
+},
+"mmlupro-6534": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.9
+},
+"mmlupro-1052": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-6125": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.9
+},
+"mmlupro-3982": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.8
+},
+"mmlupro-680": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.2
+},
+"mmlupro-7075": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-868": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.6
+},
+"mmlupro-6433": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.6
+},
+"mmlupro-1183": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.0
+},
+"mmlupro-2413": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.6
+},
+"mmlupro-4833": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.3
+},
+"mmlupro-10909": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.9
+},
+"mmlupro-7780": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-10036": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-744": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-3668": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-3562": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.1
+},
+"mmlupro-894": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-1311": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.6
+},
+"mmlupro-8594": {
+"ans": "",
+"ok": false,
+"raw": "To find the probability that the product of the two rolls is a multiple of 3, we",
+"tail": " intersection $A \\cap B$ is where both are multiples of 3. Size of $A \\cap B = 2",
+"gen_n": 1024,
+"decode_tps": 87.5
+},
+"mmlupro-1836": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.4
+},
+"mmlupro-2970": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-10742": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.5
+},
+"mmlupro-4977": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.6
+},
+"mmlupro-2978": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.1
+},
+"mmlupro-2919": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.6
+},
+"mmlupro-349": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-9127": {
+"ans": "",
+"ok": false,
+"raw": "To determine the work required to put a satellite into orbit, we need to calcula",
+"tail": " calculate $W$:\n$$W = (3.984 \\times 10^{17}) \\times (0.8189 \\times 10^{-7})$$\n$$",
+"gen_n": 1024,
+"decode_tps": 85.4
+},
+"mmlupro-10914": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.9
+},
+"mmlupro-12061": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the minimum power required to cool the air, we treat this as a reve",
+"tail": "$T_H = 550$\n\n$$ \\dot{W}_{min} = 100 \\times 7.0 \\left[ (500 - 550) - 550 \\ln\\left",
+"gen_n": 1024,
+"decode_tps": 84.5
+},
+"mmlupro-6609": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.8
+},
+"mmlupro-4010": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.1
+},
+"mmlupro-5427": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.7
+},
+"mmlupro-12233": {
+"ans": "D",
+"ok": false,
+"raw": "To calculate the power delivered by a roller chain, we typically use empirical f",
+"tail": "appears.\n\nTherefore, the calculated/looked-up power is approximately 5.73 hp.\n\nD",
+"gen_n": 854,
+"decode_tps": 83.0,
+"reparsed": true
+},
+"mmlupro-6805": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.1
+},
+"mmlupro-12123": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-10852": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-3525": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.0
+},
+"mmlupro-4056": {
+"ans": "",
+"ok": false,
+"raw": "To find the molarity of the $H_2SO_4$ in the cloud, we need to determine the num",
+"tail": "s 10^{-3}$ M\n\nRounding to two significant figures, we get $5.6 \\times 10^{-3}$ M",
+"gen_n": 1024,
+"decode_tps": 84.3
+},
+"mmlupro-11050": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-1060": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-655": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.0
+},
+"mmlupro-2725": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.0
+},
+"mmlupro-8767": {
+"ans": "D",
+"ok": true,
+"raw": "To find the value of the Wronskian $W(y_1, y_2)(4)$, we use Abel's Identity (als",
+"tail": "1\nG. 3.876\nH. 5.276\nI. 4.000\nJ. 7.204\n\nThe calculated value matches option D.\n\nD",
+"gen_n": 828,
+"decode_tps": 90.4,
+"reparsed": true
+},
+"mmlupro-5911": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.3
+},
+"mmlupro-6919": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-9264": {
+"ans": "H",
+"ok": true,
+"raw": "To determine the uncertainty in the kinetic energy, we start with the formula fo",
+"tail": "imes 10\\% = 20\\% $$\n\nTherefore, the uncertainty in the kinetic energy is 20%.\n\nH",
+"gen_n": 242,
+"decode_tps": 88.2,
+"reparsed": true
+},
+"mmlupro-11378": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-155": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.2
+},
+"mmlupro-9118": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.1
+},
+"mmlupro-10949": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.8
+},
+"mmlupro-7128": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.5
+},
+"mmlupro-7897": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.7
+},
+"mmlupro-5987": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.8
+},
+"mmlupro-8751": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.5
+},
+"mmlupro-551": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-8761": {
+"ans": "F",
+"ok": true,
+"raw": "To find the work done by the gorilla, we use the definition of mechanical work a",
+"tail": "\nI. 1800 $\\mathrm{ft-lb}$\nJ. 21600 $\\mathrm{ft-lb}$\n\nThe correct option is F.\n\nF",
+"gen_n": 374,
+"decode_tps": 83.7,
+"reparsed": true
+},
+"mmlupro-11680": {
+"ans": "",
+"ok": false,
+"raw": "To determine the correct option, we will calculate the parameters step-by-step b",
+"tail": "max torque happens at $s=1$).\n$$R_2 + R_x = X_2$$\n$$0.3 + R_x = 1.08$$\n$$R_x = 1",
+"gen_n": 1024,
+"decode_tps": 78.9
+},
+"mmlupro-8060": {
+"ans": "",
+"ok": false,
+"raw": "To determine the minimum number of points guaranteed to be covered by a circle o",
+"tail": " $\\frac{\\sqrt{2}}{3} \\approx 0.471$. The distance $1/3 \\approx 0.333$.\nActually,",
+"gen_n": 1024,
+"decode_tps": 80.8
+},
+"mmlupro-8300": {
+"ans": "",
+"ok": false,
+"raw": "To solve the problem of finding the number of ways to place 10 distinct balls in",
+"tail": "^{10} = 2^{20} = 1,048,576$. Correct.\n\nSum:\n$1,048,576 - 236,196 + 6,144 - 4$\n$1",
+"gen_n": 1024,
+"decode_tps": 89.9
+},
+"mmlupro-6677": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 49.0
+},
+"mmlupro-10287": {
+"ans": "",
+"ok": false,
+"raw": "To find the phase difference between the two emergent beams (ordinary and extrao",
+"tail": " 10^{-4} \\text{ m}$\n$\\lambda = 5.461 \\times 10^{-7} \\text{ m}$\n$\\Delta n = 0.009",
+"gen_n": 1024,
+"decode_tps": 83.0
+},
+"mmlupro-7997": {
+"ans": "",
+"ok": false,
+"raw": "To solve for $P(Y_2 < \\pi_{0.5} < Y_5)$, we utilize the properties of order stat",
+"tail": "interpretation.\nA. 0.7137\nB. 0.8426\nC. 0.6561\nD. 0.8750 ($56/64$)\nE. 0.9000\nF. 0",
+"gen_n": 1024,
+"decode_tps": 86.2
+},
+"mmlupro-3185": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.0
+},
+"mmlupro-9077": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.6
+},
+"mmlupro-137": {
+"ans": "",
+"ok": false,
+"raw": "To find the fair value of the stock, we need to calculate the present value of a",
+"tail": "\n\nComparing this result with the given options:\nA. 280.0\nB. 305.0\nC. 290.0\nD. 25",
+"gen_n": 1024,
+"decode_tps": 90.5
+},
+"mmlupro-2479": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.7
+},
+"mmlupro-2522": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.1
+},
+"mmlupro-11088": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.2
+},
+"mmlupro-11130": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.6
+},
+"mmlupro-11812": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.5
+},
+"mmlupro-4142": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-11796": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.0
+},
+"mmlupro-7949": {
+"ans": "F",
+"ok": true,
+"raw": "To find the greatest possible quotient $\\frac{x}{y}$ where $x$ and $y$ are disti",
+"tail": "\nB. 2\nC. 20\nD. 4\nE. 15\nF. 25\nG. 5\nH. 30\nI. 50\nJ. 10\n\nThe correct option is F.\n\nF",
+"gen_n": 509,
+"decode_tps": 86.2,
+"reparsed": true
+},
+"mmlupro-1053": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-5489": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.6
+},
+"mmlupro-858": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.2
+},
+"mmlupro-7606": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.6
+},
+"mmlupro-8297": {
+"ans": "A",
+"ok": true,
+"raw": "To find $g'(1)$ for the function $g(x) = \\frac{1}{1 + x^{3/2}}$, we first determ",
+"tail": "E. -1.5\nF. 0.375\nG. -1.375\nH. 1.375\nI. -0.5\nJ. 0.25\n\nThe correct option is A.\n\nA",
+"gen_n": 646,
+"decode_tps": 83.6,
+"reparsed": true
+},
+"mmlupro-615": {
+"ans": "",
+"ok": false,
+"raw": "To determine the dollar-value LIFO inventory cost for December 31, 1974, we need",
+"tail": " the inventory composition at **Dec 31, 1974**.\nBase-year inventory at Dec 31, 1",
+"gen_n": 1024,
+"decode_tps": 91.6
+},
+"mmlupro-8445": {
+"ans": "A",
+"ok": true,
+"raw": "To find the probability that a randomly chosen resistor has a resistance greater",
+"tail": "0\n\nThe calculated value is approximately 0.93, which corresponds to option A.\n\nA",
+"gen_n": 748,
+"decode_tps": 90.7,
+"reparsed": true
+},
+"mmlupro-8090": {
+"ans": "D",
+"ok": true,
+"raw": "To find the number of different 6-letter arrangements that can be made from the ",
+"tail": "$$\n\nThe number of different arrangements is 60. This corresponds to option D.\n\nD",
+"gen_n": 386,
+"decode_tps": 89.7,
+"reparsed": true
+},
+"mmlupro-2915": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-3501": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.6
+},
+"mmlupro-2312": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.8
+},
+"mmlupro-11280": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.1
+},
+"mmlupro-6003": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.2
+},
+"mmlupro-426": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-3200": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-6097": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.6
+},
+"mmlupro-12127": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.2
+},
+"mmlupro-6747": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-8032": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.3
+},
+"mmlupro-2291": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.1
+},
+"mmlupro-11613": {
+"ans": "",
+"ok": false,
+"raw": "To estimate the depth to which the water pipe should be laid, we model the groun",
+"tail": "or if an approximation suffices. The options are in cm: 5, 10, 15, 20, 25, 30, 3",
+"gen_n": 1024,
+"decode_tps": 84.6
+},
+"mmlupro-11301": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 36.0
+},
+"mmlupro-10229": {
+"ans": "I",
+"ok": true,
+"raw": "To estimate the gas temperature after the adiabatic expansion, we use the relati",
+"tail": " $-15.9^\\circ\\text{C}$ matches option I ($-15.8^\\circ\\text{C}$) most closely.\n\nI",
+"gen_n": 804,
+"decode_tps": 92.7,
+"reparsed": true
+},
+"mmlupro-3736": {
+"ans": "G",
+"ok": true,
+"raw": "To calculate the work done by the system, we use the formula for expansion work ",
+"tail": "0^2 \\mathrm{J}$\nJ. $3.0 \\times 10^2 \\mathrm{J}$\n\nOption G matches the result.\n\nG",
+"gen_n": 771,
+"decode_tps": 89.9,
+"reparsed": true
+},
+"mmlupro-5112": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.0
+},
+"mmlupro-8619": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.4
+},
+"mmlupro-85": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.4
+},
+"mmlupro-5161": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.2
+},
+"mmlupro-8532": {
+"ans": "",
+"ok": false,
+"raw": "To find the velocity of the mass when it hits the ground, we need to solve the e",
+"tail": " 9.8}{0.2} = \\frac{2.45}{0.2} = 12.25 \\mathrm{~m/s}$\n\nThe equation becomes:\n$$ 1",
+"gen_n": 1024,
+"decode_tps": 83.4
+},
+"mmlupro-10058": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.7
+},
+"mmlupro-9363": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.5
+},
+"mmlupro-4764": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.4
+},
+"mmlupro-3811": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.6
+},
+"mmlupro-11958": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.9
+},
+"mmlupro-5011": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 33.4
+},
+"mmlupro-3441": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 34.6
+},
+"mmlupro-2373": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 32.7
+},
+"mmlupro-3233": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 35.7
+}
+}
+}

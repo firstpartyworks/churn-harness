@@ -1,0 +1,3014 @@
+{
+"meta": {
+"url": "http://127.0.0.1:8083",
+"set": "mmlu-pro-500.json",
+"label": "strata 0.1.39 V100+P40 helper, MMLU-Pro run 1",
+"pad_questions": 0,
+"started": "2026-10-22T11:35:32",
+"finished": "2026-10-22T11:51:31",
+"accuracy": 0.592,
+"unparsed": 78
+},
+"answers": {
+"mmlupro-6313": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 20.6
+},
+"mmlupro-5181": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 21.8
+},
+"mmlupro-12051": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.2
+},
+"mmlupro-2283": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 19.4
+},
+"mmlupro-5371": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.7
+},
+"mmlupro-72": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 17.0
+},
+"mmlupro-2532": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"decode_tps": 21.0
+},
+"mmlupro-7114": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"decode_tps": 17.3
+},
+"mmlupro-991": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"decode_tps": 21.3
+},
+"mmlupro-4908": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 19.4
+},
+"mmlupro-8227": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 19.8
+},
+"mmlupro-7799": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 21.4
+},
+"mmlupro-1623": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 23.2
+},
+"mmlupro-3943": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.2
+},
+"mmlupro-10164": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"decode_tps": 21.9
+},
+"mmlupro-11907": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the heating required per pound of",
+"decode_tps": 36.8
+},
+"mmlupro-3948": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 21.0
+},
+"mmlupro-9362": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 19.6
+},
+"mmlupro-2244": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 14.9
+},
+"mmlupro-4072": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"decode_tps": 22.1
+},
+"mmlupro-6691": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 21.1
+},
+"mmlupro-6904": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 21.9
+},
+"mmlupro-6340": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 20.0
+},
+"mmlupro-4199": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 22.1
+},
+"mmlupro-10815": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 21.0
+},
+"mmlupro-6996": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 20.8
+},
+"mmlupro-6362": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 21.8
+},
+"mmlupro-1018": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.8
+},
+"mmlupro-1422": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"decode_tps": 20.9
+},
+"mmlupro-2507": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 21.0
+},
+"mmlupro-10121": {
+"ans": "",
+"ok": false,
+"raw": "To determine the maximum pressure at which freeze",
+"decode_tps": 48.3
+},
+"mmlupro-8363": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.1
+},
+"mmlupro-4810": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 22.8
+},
+"mmlupro-8025": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 20.9
+},
+"mmlupro-3375": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.7
+},
+"mmlupro-2484": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 19.5
+},
+"mmlupro-4477": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 21.4
+},
+"mmlupro-7671": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 19.2
+},
+"mmlupro-595": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 21.4
+},
+"mmlupro-11837": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 22.0
+},
+"mmlupro-327": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"decode_tps": 20.1
+},
+"mmlupro-9391": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 21.9
+},
+"mmlupro-10439": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.5
+},
+"mmlupro-9471": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 21.2
+},
+"mmlupro-8515": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 21.6
+},
+"mmlupro-6072": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.0
+},
+"mmlupro-6879": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.1
+},
+"mmlupro-11645": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 23.0
+},
+"mmlupro-1168": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.7
+},
+"mmlupro-4969": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 20.9
+},
+"mmlupro-224": {
+"ans": "",
+"ok": false,
+"raw": "To find the annual interest rate, we",
+"decode_tps": 39.6
+},
+"mmlupro-9381": {
+"ans": "",
+"ok": false,
+"raw": "To determine the number of electrons required,",
+"decode_tps": 38.3
+},
+"mmlupro-2921": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.4
+},
+"mmlupro-9479": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 19.5
+},
+"mmlupro-7297": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 21.0
+},
+"mmlupro-8348": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 19.8
+},
+"mmlupro-898": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 22.4
+},
+"mmlupro-290": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 21.7
+},
+"mmlupro-4110": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.4
+},
+"mmlupro-10182": {
+"ans": "",
+"ok": false,
+"raw": "To find the position $X$ where",
+"decode_tps": 38.0
+},
+"mmlupro-8950": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 17.8
+},
+"mmlupro-3610": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 21.8
+},
+"mmlupro-11605": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.9
+},
+"mmlupro-838": {
+"ans": "",
+"ok": false,
+"raw": "To determine the Open-to-Buy (",
+"decode_tps": 58.1
+},
+"mmlupro-10335": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 20.3
+},
+"mmlupro-3064": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 21.0
+},
+"mmlupro-9065": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 22.1
+},
+"mmlupro-10193": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 21.8
+},
+"mmlupro-4678": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"decode_tps": 20.7
+},
+"mmlupro-3172": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.2
+},
+"mmlupro-7090": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 19.9
+},
+"mmlupro-3682": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 21.6
+},
+"mmlupro-1305": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 21.0
+},
+"mmlupro-8444": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 21.3
+},
+"mmlupro-1586": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 21.0
+},
+"mmlupro-9868": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"decode_tps": 22.0
+},
+"mmlupro-9845": {
+"ans": "",
+"ok": false,
+"raw": "To determine the expected number of proton dec",
+"decode_tps": 41.1
+},
+"mmlupro-10031": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 23.4
+},
+"mmlupro-8923": {
+"ans": "",
+"ok": false,
+"raw": "To express the quadratic expression $3x",
+"decode_tps": 43.3
+},
+"mmlupro-4463": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"decode_tps": 19.2
+},
+"mmlupro-3370": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 20.8
+},
+"mmlupro-2415": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.0
+},
+"mmlupro-3598": {
+"ans": "",
+"ok": false,
+"raw": "To solve this problem, we need to",
+"decode_tps": 51.6
+},
+"mmlupro-5185": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.7
+},
+"mmlupro-418": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.5
+},
+"mmlupro-7041": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.2
+},
+"mmlupro-499": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 19.9
+},
+"mmlupro-9759": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 21.7
+},
+"mmlupro-1923": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 21.3
+},
+"mmlupro-6522": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 22.0
+},
+"mmlupro-2359": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 20.0
+},
+"mmlupro-11072": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.3
+},
+"mmlupro-6554": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 21.5
+},
+"mmlupro-3791": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 23.0
+},
+"mmlupro-7779": {
+"ans": "",
+"ok": false,
+"raw": "To find the time $T$ at",
+"decode_tps": 38.2
+},
+"mmlupro-11154": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.0
+},
+"mmlupro-1355": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 21.3
+},
+"mmlupro-4273": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 22.0
+},
+"mmlupro-1696": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 22.3
+},
+"mmlupro-3937": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.6
+},
+"mmlupro-11422": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 22.4
+},
+"mmlupro-1869": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 21.0
+},
+"mmlupro-1842": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 21.2
+},
+"mmlupro-730": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.7
+},
+"mmlupro-168": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"decode_tps": 22.1
+},
+"mmlupro-5277": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 20.2
+},
+"mmlupro-11021": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.2
+},
+"mmlupro-885": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.4
+},
+"mmlupro-10372": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 23.0
+},
+"mmlupro-2781": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.9
+},
+"mmlupro-12242": {
+"ans": "",
+"ok": false,
+"raw": "To determine the temperature distribution and the temperature",
+"decode_tps": 41.0
+},
+"mmlupro-5610": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 19.6
+},
+"mmlupro-10122": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.0
+},
+"mmlupro-11673": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.3
+},
+"mmlupro-2015": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.0
+},
+"mmlupro-3910": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 22.1
+},
+"mmlupro-3709": {
+"ans": "",
+"ok": false,
+"raw": "To determine the mass of Astatine",
+"decode_tps": 42.5
+},
+"mmlupro-8397": {
+"ans": "",
+"ok": false,
+"raw": "To find the points where the polar curve",
+"decode_tps": 33.0
+},
+"mmlupro-1706": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.9
+},
+"mmlupro-6861": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.6
+},
+"mmlupro-4134": {
+"ans": "",
+"ok": false,
+"raw": "To find the weight of the test tube",
+"decode_tps": 47.0
+},
+"mmlupro-11487": {
+"ans": "",
+"ok": false,
+"raw": "To determine the rate of heat loss and",
+"decode_tps": 57.5
+},
+"mmlupro-2147": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.3
+},
+"mmlupro-9730": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 20.5
+},
+"mmlupro-9221": {
+"ans": "",
+"ok": false,
+"raw": "To find the refractive power of the",
+"decode_tps": 44.9
+},
+"mmlupro-6569": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.0
+},
+"mmlupro-1156": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 22.1
+},
+"mmlupro-8447": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.9
+},
+"mmlupro-12150": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 21.5
+},
+"mmlupro-9860": {
+"ans": "",
+"ok": false,
+"raw": "To determine the fraction of the fringe width",
+"decode_tps": 45.2
+},
+"mmlupro-11933": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"decode_tps": 21.1
+},
+"mmlupro-2855": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.7
+},
+"mmlupro-4532": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 21.5
+},
+"mmlupro-9354": {
+"ans": "",
+"ok": false,
+"raw": "To find the amount of rotation of the",
+"decode_tps": 54.3
+},
+"mmlupro-10850": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 21.5
+},
+"mmlupro-3291": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.3
+},
+"mmlupro-11691": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 22.0
+},
+"mmlupro-10348": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"decode_tps": 21.4
+},
+"mmlupro-8156": {
+"ans": "",
+"ok": false,
+"raw": "To determine the number of structurally distinct",
+"decode_tps": 56.3
+},
+"mmlupro-5687": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 21.3
+},
+"mmlupro-6611": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 27.5
+},
+"mmlupro-5622": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.6
+},
+"mmlupro-5889": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 19.9
+},
+"mmlupro-8344": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"decode_tps": 21.4
+},
+"mmlupro-4176": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 21.7
+},
+"mmlupro-10486": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.6
+},
+"mmlupro-10410": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.9
+},
+"mmlupro-10741": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 21.0
+},
+"mmlupro-6796": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"decode_tps": 26.8
+},
+"mmlupro-9678": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 22.7
+},
+"mmlupro-2374": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 19.7
+},
+"mmlupro-8964": {
+"ans": "",
+"ok": false,
+"raw": "To determine the time it takes to drain",
+"decode_tps": 48.3
+},
+"mmlupro-9321": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"decode_tps": 20.8
+},
+"mmlupro-6907": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 22.1
+},
+"mmlupro-8525": {
+"ans": "",
+"ok": false,
+"raw": "To determine the smallest positive root of the",
+"decode_tps": 44.1
+},
+"mmlupro-8425": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the Riemann Sum $",
+"decode_tps": 43.3
+},
+"mmlupro-8502": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 22.1
+},
+"mmlupro-4320": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the Q value of the reaction",
+"decode_tps": 46.9
+},
+"mmlupro-10266": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 21.8
+},
+"mmlupro-7934": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"decode_tps": 20.6
+},
+"mmlupro-729": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 21.1
+},
+"mmlupro-5156": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"decode_tps": 20.0
+},
+"mmlupro-582": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"decode_tps": 20.3
+},
+"mmlupro-8383": {
+"ans": "",
+"ok": false,
+"raw": "To find the probability that 5 different",
+"decode_tps": 41.3
+},
+"mmlupro-7568": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.7
+},
+"mmlupro-8371": {
+"ans": "",
+"ok": false,
+"raw": "To find the value of $f(",
+"decode_tps": 33.8
+},
+"mmlupro-11562": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 20.6
+},
+"mmlupro-10096": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.1
+},
+"mmlupro-6004": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 20.7
+},
+"mmlupro-5822": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 20.9
+},
+"mmlupro-6224": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"decode_tps": 20.0
+},
+"mmlupro-7096": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 20.2
+},
+"mmlupro-3787": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.1
+},
+"mmlupro-10221": {
+"ans": "",
+"ok": false,
+"raw": "To determine the final pressure in the sealed",
+"decode_tps": 39.4
+},
+"mmlupro-1499": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 22.2
+},
+"mmlupro-5362": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.1
+},
+"mmlupro-7638": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 19.9
+},
+"mmlupro-6578": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.0
+},
+"mmlupro-7405": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.1
+},
+"mmlupro-664": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"decode_tps": 21.2
+},
+"mmlupro-10422": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 21.2
+},
+"mmlupro-10114": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 21.2
+},
+"mmlupro-10903": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 21.1
+},
+"mmlupro-10129": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 21.5
+},
+"mmlupro-3102": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.9
+},
+"mmlupro-9740": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"decode_tps": 20.4
+},
+"mmlupro-9778": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.7
+},
+"mmlupro-10437": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.7
+},
+"mmlupro-9133": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"decode_tps": 21.9
+},
+"mmlupro-4588": {
+"ans": "",
+"ok": false,
+"raw": "To find the correct answer, we need",
+"decode_tps": 48.8
+},
+"mmlupro-10383": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 21.1
+},
+"mmlupro-1920": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 21.4
+},
+"mmlupro-10306": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.7
+},
+"mmlupro-2214": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 21.2
+},
+"mmlupro-3237": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 21.0
+},
+"mmlupro-3179": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.6
+},
+"mmlupro-1112": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 22.2
+},
+"mmlupro-5683": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 21.8
+},
+"mmlupro-10160": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.1
+},
+"mmlupro-4727": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.6
+},
+"mmlupro-2480": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.3
+},
+"mmlupro-3823": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.4
+},
+"mmlupro-1988": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.2
+},
+"mmlupro-12035": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.7
+},
+"mmlupro-3473": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 20.3
+},
+"mmlupro-4022": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 21.2
+},
+"mmlupro-2356": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.0
+},
+"mmlupro-4671": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 21.4
+},
+"mmlupro-6961": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 19.9
+},
+"mmlupro-10611": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 21.6
+},
+"mmlupro-4624": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.2
+},
+"mmlupro-9597": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"decode_tps": 20.6
+},
+"mmlupro-4699": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.0
+},
+"mmlupro-8804": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 21.8
+},
+"mmlupro-7979": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"decode_tps": 22.0
+},
+"mmlupro-3773": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"decode_tps": 21.3
+},
+"mmlupro-10011": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 23.1
+},
+"mmlupro-5543": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 20.2
+},
+"mmlupro-4910": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 20.0
+},
+"mmlupro-4178": {
+"ans": "",
+"ok": false,
+"raw": "To find the uncertainty in the speed of",
+"decode_tps": 57.1
+},
+"mmlupro-3713": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 22.4
+},
+"mmlupro-11300": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.3
+},
+"mmlupro-2747": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 19.9
+},
+"mmlupro-308": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.3
+},
+"mmlupro-12073": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the effect of armature reaction",
+"decode_tps": 45.7
+},
+"mmlupro-1915": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 21.6
+},
+"mmlupro-11889": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.8
+},
+"mmlupro-10343": {
+"ans": "",
+"ok": false,
+"raw": "To find the shortest path between the points",
+"decode_tps": 41.2
+},
+"mmlupro-4019": {
+"ans": "",
+"ok": false,
+"raw": "To compare the ionic bond strength of",
+"decode_tps": 40.9
+},
+"mmlupro-1271": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 20.9
+},
+"mmlupro-5182": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.7
+},
+"mmlupro-3950": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.2
+},
+"mmlupro-8514": {
+"ans": "",
+"ok": false,
+"raw": "To find the arc length of the curve",
+"decode_tps": 54.3
+},
+"mmlupro-7417": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 22.1
+},
+"mmlupro-7080": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"decode_tps": 19.7
+},
+"mmlupro-2762": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.4
+},
+"mmlupro-5078": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.9
+},
+"mmlupro-10135": {
+"ans": "",
+"ok": false,
+"raw": "To find the velocity and distance covered,",
+"decode_tps": 39.1
+},
+"mmlupro-8339": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 23.4
+},
+"mmlupro-4521": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 21.6
+},
+"mmlupro-1928": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.6
+},
+"mmlupro-7968": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 21.9
+},
+"mmlupro-9130": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"decode_tps": 21.7
+},
+"mmlupro-7465": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.3
+},
+"mmlupro-9692": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 20.7
+},
+"mmlupro-5300": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.5
+},
+"mmlupro-5357": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 19.2
+},
+"mmlupro-3267": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 21.9
+},
+"mmlupro-9526": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.2
+},
+"mmlupro-7769": {
+"ans": "",
+"ok": false,
+"raw": "To find the sum of the series $\\",
+"decode_tps": 54.0
+},
+"mmlupro-11925": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 21.5
+},
+"mmlupro-10716": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 21.8
+},
+"mmlupro-9824": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 22.3
+},
+"mmlupro-7314": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 22.2
+},
+"mmlupro-7708": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.4
+},
+"mmlupro-6222": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"decode_tps": 20.9
+},
+"mmlupro-10884": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.2
+},
+"mmlupro-11243": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 19.3
+},
+"mmlupro-11573": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 21.8
+},
+"mmlupro-7848": {
+"ans": "",
+"ok": false,
+"raw": "To find the number of positive integers that",
+"decode_tps": 57.0
+},
+"mmlupro-10374": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"decode_tps": 21.4
+},
+"mmlupro-3732": {
+"ans": "",
+"ok": false,
+"raw": "To find the original energy level ($n",
+"decode_tps": 55.1
+},
+"mmlupro-6466": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.2
+},
+"mmlupro-8274": {
+"ans": "",
+"ok": false,
+"raw": "To find the value of $b$",
+"decode_tps": 50.6
+},
+"mmlupro-1984": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 21.8
+},
+"mmlupro-11441": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 21.8
+},
+"mmlupro-5464": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 20.8
+},
+"mmlupro-4383": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.2
+},
+"mmlupro-8864": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"decode_tps": 21.1
+},
+"mmlupro-7481": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"decode_tps": 20.3
+},
+"mmlupro-831": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.3
+},
+"mmlupro-8162": {
+"ans": "",
+"ok": false,
+"raw": "To find the sum of all integers $",
+"decode_tps": 55.3
+},
+"mmlupro-793": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 22.9
+},
+"mmlupro-2601": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.0
+},
+"mmlupro-7909": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.5
+},
+"mmlupro-5792": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.3
+},
+"mmlupro-5880": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 21.4
+},
+"mmlupro-6612": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 21.5
+},
+"mmlupro-7469": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.9
+},
+"mmlupro-7782": {
+"ans": "E",
+"ok": false,
+"raw": "To find the expected cost $E(Z",
+"decode_tps": 41.5
+},
+"mmlupro-3415": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 20.8
+},
+"mmlupro-11980": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 21.6
+},
+"mmlupro-8435": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 21.3
+},
+"mmlupro-3324": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.6
+},
+"mmlupro-1314": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"decode_tps": 21.6
+},
+"mmlupro-11731": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"decode_tps": 22.2
+},
+"mmlupro-10174": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 20.8
+},
+"mmlupro-10441": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.9
+},
+"mmlupro-9918": {
+"ans": "",
+"ok": false,
+"raw": "To find the theoretical speed of sound in",
+"decode_tps": 56.8
+},
+"mmlupro-11826": {
+"ans": "",
+"ok": false,
+"raw": "To find the minimum force applied to the",
+"decode_tps": 41.3
+},
+"mmlupro-6923": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"decode_tps": 21.1
+},
+"mmlupro-11197": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.3
+},
+"mmlupro-9508": {
+"ans": "",
+"ok": false,
+"raw": "To find the mass of ice originally present",
+"decode_tps": 40.4
+},
+"mmlupro-5779": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 21.3
+},
+"mmlupro-9114": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 21.8
+},
+"mmlupro-7239": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 20.2
+},
+"mmlupro-10790": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.7
+},
+"mmlupro-8720": {
+"ans": "",
+"ok": false,
+"raw": "To find the value of the expression $(",
+"decode_tps": 45.9
+},
+"mmlupro-630": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 19.3
+},
+"mmlupro-136": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.6
+},
+"mmlupro-11338": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"decode_tps": 21.5
+},
+"mmlupro-2674": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 19.9
+},
+"mmlupro-9204": {
+"ans": "",
+"ok": false,
+"raw": "To find the velocity of the little cart",
+"decode_tps": 37.9
+},
+"mmlupro-2892": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.1
+},
+"mmlupro-6188": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 27.8
+},
+"mmlupro-9957": {
+"ans": "",
+"ok": false,
+"raw": "To find the angular speed of the neutron",
+"decode_tps": 40.3
+},
+"mmlupro-8576": {
+"ans": "",
+"ok": false,
+"raw": "To find the greatest possible value of $",
+"decode_tps": 46.3
+},
+"mmlupro-9369": {
+"ans": "",
+"ok": false,
+"raw": "To find the distance the particle travels in",
+"decode_tps": 36.2
+},
+"mmlupro-3623": {
+"ans": "",
+"ok": false,
+"raw": "To find the partial pressure of nitrogen,",
+"decode_tps": 35.9
+},
+"mmlupro-10764": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 21.0
+},
+"mmlupro-1962": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.0
+},
+"mmlupro-7364": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.4
+},
+"mmlupro-4354": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 22.0
+},
+"mmlupro-166": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 23.6
+},
+"mmlupro-4171": {
+"ans": "",
+"ok": false,
+"raw": "To determine the pressure of the nitrogen gas",
+"decode_tps": 34.6
+},
+"mmlupro-11460": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 23.3
+},
+"mmlupro-4070": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 19.8
+},
+"mmlupro-7519": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.1
+},
+"mmlupro-8945": {
+"ans": "",
+"ok": false,
+"raw": "To find the approximate value of $y",
+"decode_tps": 39.8
+},
+"mmlupro-1025": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 21.0
+},
+"mmlupro-332": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 22.2
+},
+"mmlupro-2614": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 19.9
+},
+"mmlupro-8664": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 22.0
+},
+"mmlupro-4398": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 22.6
+},
+"mmlupro-7105": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.0
+},
+"mmlupro-8999": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 21.1
+},
+"mmlupro-1077": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"decode_tps": 22.1
+},
+"mmlupro-9862": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.1
+},
+"mmlupro-7183": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"decode_tps": 21.3
+},
+"mmlupro-6058": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.8
+},
+"mmlupro-11469": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.8
+},
+"mmlupro-11866": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 21.0
+},
+"mmlupro-8763": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the work done by a variable",
+"decode_tps": 38.8
+},
+"mmlupro-3145": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.6
+},
+"mmlupro-412": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.7
+},
+"mmlupro-10623": {
+"ans": "",
+"ok": false,
+"raw": "To determine which conditions can be expressed by",
+"decode_tps": 50.5
+},
+"mmlupro-5972": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.2
+},
+"mmlupro-4916": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.2
+},
+"mmlupro-276": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 21.7
+},
+"mmlupro-6232": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 27.4
+},
+"mmlupro-4143": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.3
+},
+"mmlupro-2064": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 21.0
+},
+"mmlupro-3856": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 21.1
+},
+"mmlupro-9009": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"decode_tps": 21.4
+},
+"mmlupro-3406": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.4
+},
+"mmlupro-11698": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"decode_tps": 21.6
+},
+"mmlupro-9739": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the number of proton decays",
+"decode_tps": 49.1
+},
+"mmlupro-3119": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"decode_tps": 20.3
+},
+"mmlupro-9183": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"decode_tps": 20.9
+},
+"mmlupro-2068": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 22.3
+},
+"mmlupro-8092": {
+"ans": "",
+"ok": false,
+"raw": "To find the consumer surplus, we follow",
+"decode_tps": 56.8
+},
+"mmlupro-4250": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 21.0
+},
+"mmlupro-3308": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 20.5
+},
+"mmlupro-4610": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.7
+},
+"mmlupro-4268": {
+"ans": "",
+"ok": false,
+"raw": "To find the distance between the slits",
+"decode_tps": 55.2
+},
+"mmlupro-8899": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 20.4
+},
+"mmlupro-2324": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.7
+},
+"mmlupro-12025": {
+"ans": "",
+"ok": false,
+"raw": "To determine the diameter of the bolts,",
+"decode_tps": 37.1
+},
+"mmlupro-3755": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"decode_tps": 21.2
+},
+"mmlupro-3385": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.2
+},
+"mmlupro-3863": {
+"ans": "",
+"ok": false,
+"raw": "To determine the concentrations of $H_",
+"decode_tps": 29.5
+},
+"mmlupro-12043": {
+"ans": "",
+"ok": false,
+"raw": "To find the steady-state temperature of the",
+"decode_tps": 47.5
+},
+"mmlupro-11965": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.3
+},
+"mmlupro-5198": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.1
+},
+"mmlupro-7951": {
+"ans": "",
+"ok": false,
+"raw": "To find the value of the sum $",
+"decode_tps": 60.1
+},
+"mmlupro-11758": {
+"ans": "",
+"ok": false,
+"raw": "To determine the change in head loss,",
+"decode_tps": 47.2
+},
+"mmlupro-9514": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.3
+},
+"mmlupro-546": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.7
+},
+"mmlupro-2639": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 20.3
+},
+"mmlupro-660": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"decode_tps": 21.9
+},
+"mmlupro-10767": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"decode_tps": 21.7
+},
+"mmlupro-5333": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.2
+},
+"mmlupro-7056": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.6
+},
+"mmlupro-4978": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.4
+},
+"mmlupro-5715": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.8
+},
+"mmlupro-2188": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.5
+},
+"mmlupro-8461": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 19.9
+},
+"mmlupro-6270": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.1
+},
+"mmlupro-6046": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 23.2
+},
+"mmlupro-2971": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 20.0
+},
+"mmlupro-5633": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.7
+},
+"mmlupro-4232": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 21.8
+},
+"mmlupro-5601": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 20.4
+},
+"mmlupro-599": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"decode_tps": 21.6
+},
+"mmlupro-762": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 21.7
+},
+"mmlupro-11700": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.5
+},
+"mmlupro-9233": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the magnitude of the electrostatic",
+"decode_tps": 38.2
+},
+"mmlupro-847": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.4
+},
+"mmlupro-6534": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.3
+},
+"mmlupro-1052": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 21.4
+},
+"mmlupro-6125": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.7
+},
+"mmlupro-3982": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.8
+},
+"mmlupro-680": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 22.5
+},
+"mmlupro-7075": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 22.4
+},
+"mmlupro-868": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 23.1
+},
+"mmlupro-6433": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 22.1
+},
+"mmlupro-1183": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 21.9
+},
+"mmlupro-2413": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 21.7
+},
+"mmlupro-4833": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 21.3
+},
+"mmlupro-10909": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.8
+},
+"mmlupro-7780": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"decode_tps": 20.9
+},
+"mmlupro-10036": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"decode_tps": 21.5
+},
+"mmlupro-744": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.9
+},
+"mmlupro-3668": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.4
+},
+"mmlupro-3562": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 22.8
+},
+"mmlupro-894": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 21.8
+},
+"mmlupro-1311": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 23.5
+},
+"mmlupro-8594": {
+"ans": "",
+"ok": false,
+"raw": "To find the probability that the product of",
+"decode_tps": 57.8
+},
+"mmlupro-1836": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.1
+},
+"mmlupro-2970": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.5
+},
+"mmlupro-10742": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 21.0
+},
+"mmlupro-4977": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 19.8
+},
+"mmlupro-2978": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"decode_tps": 19.9
+},
+"mmlupro-2919": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.5
+},
+"mmlupro-349": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 21.4
+},
+"mmlupro-9127": {
+"ans": "",
+"ok": false,
+"raw": "To determine the work required to put the",
+"decode_tps": 49.0
+},
+"mmlupro-10914": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 21.0
+},
+"mmlupro-12061": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the minimum power required to cool",
+"decode_tps": 49.8
+},
+"mmlupro-6609": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 21.1
+},
+"mmlupro-4010": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.4
+},
+"mmlupro-5427": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"decode_tps": 19.9
+},
+"mmlupro-12233": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the power delivered by the roller",
+"decode_tps": 30.6
+},
+"mmlupro-6805": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 21.1
+},
+"mmlupro-12123": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 20.3
+},
+"mmlupro-10852": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 22.1
+},
+"mmlupro-3525": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 19.6
+},
+"mmlupro-4056": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"decode_tps": 20.6
+},
+"mmlupro-11050": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.5
+},
+"mmlupro-1060": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 21.3
+},
+"mmlupro-655": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.7
+},
+"mmlupro-2725": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 20.2
+},
+"mmlupro-8767": {
+"ans": "",
+"ok": false,
+"raw": "To find the value of the Wron",
+"decode_tps": 54.6
+},
+"mmlupro-5911": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 22.0
+},
+"mmlupro-6919": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 20.8
+},
+"mmlupro-9264": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 21.3
+},
+"mmlupro-11378": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 21.1
+},
+"mmlupro-155": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.1
+},
+"mmlupro-9118": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 20.5
+},
+"mmlupro-10949": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 22.5
+},
+"mmlupro-7128": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"decode_tps": 20.0
+},
+"mmlupro-7897": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 21.4
+},
+"mmlupro-5987": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 20.6
+},
+"mmlupro-8751": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 21.7
+},
+"mmlupro-551": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.4
+},
+"mmlupro-8761": {
+"ans": "",
+"ok": false,
+"raw": "To find the work done by the gor",
+"decode_tps": 40.4
+},
+"mmlupro-11680": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 21.7
+},
+"mmlupro-8060": {
+"ans": "",
+"ok": false,
+"raw": "To determine the minimum number of points guaranteed",
+"decode_tps": 42.4
+},
+"mmlupro-8300": {
+"ans": "",
+"ok": false,
+"raw": "To solve the problem of finding the number",
+"decode_tps": 40.1
+},
+"mmlupro-6677": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 40.2
+},
+"mmlupro-10287": {
+"ans": "",
+"ok": false,
+"raw": "To find the phase difference between the two",
+"decode_tps": 41.1
+},
+"mmlupro-7997": {
+"ans": "",
+"ok": false,
+"raw": "To solve for $P(Y_2",
+"decode_tps": 37.5
+},
+"mmlupro-3185": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 19.1
+},
+"mmlupro-9077": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 21.4
+},
+"mmlupro-137": {
+"ans": "",
+"ok": false,
+"raw": "To find the fair value of the stock",
+"decode_tps": 41.2
+},
+"mmlupro-2479": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 21.8
+},
+"mmlupro-2522": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 20.4
+},
+"mmlupro-11088": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"decode_tps": 20.1
+},
+"mmlupro-11130": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 22.0
+},
+"mmlupro-11812": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 20.4
+},
+"mmlupro-4142": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"decode_tps": 21.1
+},
+"mmlupro-11796": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 21.1
+},
+"mmlupro-7949": {
+"ans": "",
+"ok": false,
+"raw": "To find the greatest possible quotient $\\frac",
+"decode_tps": 33.3
+},
+"mmlupro-1053": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.7
+},
+"mmlupro-5489": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 19.8
+},
+"mmlupro-858": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 21.2
+},
+"mmlupro-7606": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 20.2
+},
+"mmlupro-8297": {
+"ans": "",
+"ok": false,
+"raw": "To find $g'(1)$ for",
+"decode_tps": 37.4
+},
+"mmlupro-615": {
+"ans": "",
+"ok": false,
+"raw": "To determine the dollar-value LIFO inventory",
+"decode_tps": 58.0
+},
+"mmlupro-8445": {
+"ans": "",
+"ok": false,
+"raw": "To find the probability that a randomly chosen",
+"decode_tps": 49.7
+},
+"mmlupro-8090": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"decode_tps": 20.9
+},
+"mmlupro-2915": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 19.8
+},
+"mmlupro-3501": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 19.8
+},
+"mmlupro-2312": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"decode_tps": 19.4
+},
+"mmlupro-11280": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 20.2
+},
+"mmlupro-6003": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 20.5
+},
+"mmlupro-426": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 23.0
+},
+"mmlupro-3200": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"decode_tps": 19.9
+},
+"mmlupro-6097": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.4
+},
+"mmlupro-12127": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 21.6
+},
+"mmlupro-6747": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 22.3
+},
+"mmlupro-8032": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 21.9
+},
+"mmlupro-2291": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"decode_tps": 21.6
+},
+"mmlupro-11613": {
+"ans": "",
+"ok": false,
+"raw": "To estimate the depth to which the water",
+"decode_tps": 41.0
+},
+"mmlupro-11301": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 22.1
+},
+"mmlupro-10229": {
+"ans": "",
+"ok": false,
+"raw": "To estimate the gas temperature after the ad",
+"decode_tps": 47.3
+},
+"mmlupro-3736": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 22.0
+},
+"mmlupro-5112": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"decode_tps": 20.0
+},
+"mmlupro-8619": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"decode_tps": 20.6
+},
+"mmlupro-85": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 19.7
+},
+"mmlupro-5161": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"decode_tps": 20.4
+},
+"mmlupro-8532": {
+"ans": "",
+"ok": false,
+"raw": "To find the velocity of the mass when",
+"decode_tps": 39.5
+},
+"mmlupro-10058": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 19.6
+},
+"mmlupro-9363": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"decode_tps": 20.9
+},
+"mmlupro-4764": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"decode_tps": 21.7
+},
+"mmlupro-3811": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"decode_tps": 20.9
+},
+"mmlupro-11958": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"decode_tps": 21.1
+},
+"mmlupro-5011": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"decode_tps": 20.9
+},
+"mmlupro-3441": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"decode_tps": 20.2
+},
+"mmlupro-2373": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"decode_tps": 19.6
+},
+"mmlupro-3233": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"decode_tps": 21.5
+}
+}
+}

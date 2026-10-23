@@ -1,0 +1,37 @@
+[
+ {
+  "prompt": "Write a Python function that merges overlapping intervals, with a docstring.",
+  "sha256": "ae890b1e936e64270fd8cb53ce72d45e9a1f9faebc5fa87447a11d9a39b3fd7f",
+  "text": "```python\ndef merge_intervals(intervals: list[list[int]]) -> list[list[int]]:\n    \"\"\"\n    Merge overlapping intervals and return the non-overlapping intervals.\n    \n    Given a collection of intervals represented as [start, end], this function\n    merges all overlapping intervals and returns a list of non-overlapping\n    intervals that cover all the input intervals.\n    \n    Args:\n        intervals: A list of intervals, where each interval is a list of two\n                   integers [start, end] with start <= end.\n    \n    Returns:\n        A list of merged, non-overlapping intervals sorted by their start time.\n    \n    Examples:\n        >>> merge_intervals([[1, 3], [2, 6], [8, 10], [15, 18]])\n        [[1, 6], [8, 10], [15, 18]]\n        \n        >>> merge_intervals([[1, 4], [4, 5]])\n        [[1, 5]]\n        \n        >>> merge_intervals([])\n        []\n    \"\"\"\n    if not intervals:\n        return []\n    \n    # Sort intervals by their start time\n    sorted_intervals = sorted(intervals, key=lambda x: x[0])\n    \n    merged = [sorted_intervals[0]]\n    \n    for current in sorted_intervals[1:]:\n        last = merged[-1",
+  "draft_n": 0,
+  "draft_ok": 0
+ },
+ {
+  "prompt": "Explain how a refrigerator works to a ten-year-old.",
+  "sha256": "51db4471cc968fcd80aa5b9f7aa77009b5856d06f0656a03b090a95f924813f2",
+  "text": "Imagine your refrigerator is like a **heat thief**. \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\u2744\ufe0f\n\nYou know how when you hold an ice cube, it feels cold? That\u2019s because the heat from your hand is moving *into* the ice cube to melt it. The ice isn\u2019t \"cold\"\u2014it\u2019s just taking the heat away from you!\n\nA refrigerator works the same way, but instead of using ice, it uses a special liquid called **refrigerant** that flows through tubes inside and outside the fridge. Here\u2019s how it happens in three simple steps:\n\n### 1. **Absorb the Heat (Inside the Fridge)**\nThe refrigerant starts as a cold liquid inside the tubes behind the shelves. When warm air from your food touches these cold tubes, the heat jumps out of the food and into the refrigerant. This makes your food colder! \ud83e\udd5b\ud83c\udf4e\n\n### 2. **Carry the Heat Away**\nNow that the refrigerant has soaked up all the heat, it turns into a gas (like steam). It flows through tubes to the **back or bottom of the fridge**, where there\u2019s a fan and some metal coils.\n\n### 3. **Release the Heat (Outside the Fridge)**\nThe fan blows air over those hot coils outside the fridge. The refrigerant gives up its heat to the room air, cools down, turns back into a liquid, and starts the cycle all",
+  "draft_n": 0,
+  "draft_ok": 0
+ },
+ {
+  "prompt": "A train leaves at 3:40 pm and the trip takes 2 hours 35 minutes. When does it arrive? Explain step by step.",
+  "sha256": "eab0a2d73bc34a88904c76dbd891c1b02a5132830403c297d4857e2c5fedafdf",
+  "text": "To determine the arrival time, we will add the duration of the trip to the departure time step by step.\n\n**1. Identify the given information:**\n*   **Departure Time:** 3:40 PM\n*   **Trip Duration:** 2 hours and 35 minutes\n\n**2. Add the hours:**\nFirst, we add the full hours from the duration to the departure time.\n$$3:40 \\text{ PM} + 2 \\text{ hours} = 5:40 \\text{ PM}$$\n\n**3. Add the minutes:**\nNext, we add the remaining minutes (35 minutes) to the new time.\n$$5:40 \\text{ PM} + 35 \\text{ minutes}$$\n\nTo make this easier, we can break down the addition:\n*   There are 60 minutes in an hour.\n*   From 5:40 PM, it takes **20 minutes** to reach the next full hour (6:00 PM).\n    $$5:40 \\text{ PM} + 20 \\text{ minutes} = 6:00 \\text{ PM}$$\n*   We have used 20 of the 35 minutes. We subtract this from the total minutes to find what is left:\n    $$35 \\text{ minutes} - 20 \\text{ minutes}",
+  "draft_n": 0,
+  "draft_ok": 0
+ },
+ {
+  "prompt": "Write a short poem about rust on an old bicycle.",
+  "sha256": "4f1f0e86416275b03f70a7eb8d4943a686d4b8f23baddccc23bc0cd01100d63e",
+  "text": "Beneath the peeling, faded blue,\nA quiet time begins to chew.\nThe chain that once sang smooth and bright,\nNow bites with orange, brittle bite.\n\nOn handlebars where hands once gripped,\nThe metal flakes like skin has slipped.\nEach bolt a star of oxidized red,\nWhere memories of speed are spread.\n\nNo longer swift on wind or wheel,\nIt stands as time\u2019s own rusted seal\u2014\nA monument to days gone by,\nUnderneath the open sky.",
+  "draft_n": 0,
+  "draft_ok": 0
+ },
+ {
+  "prompt": "List five differences between TCP and UDP.",
+  "sha256": "954778994b03500f860cc44bdf444b38cbf07c8a69854d2c92ed23099815ebf6",
+  "text": "Here are five key differences between **TCP** (Transmission Control Protocol) and **UDP** (User Datagram Protocol):\n\n1. **Connection Type**  \n   - **TCP**: Connection-oriented. It establishes a connection using a three-way handshake (SYN, SYN-ACK, ACK) before data transmission begins.  \n   - **UDP**: Connectionless. No handshake is required; data is sent immediately without establishing a prior connection.\n\n2. **Reliability**  \n   - **TCP**: Reliable. It ensures that all packets are delivered in the correct order and without errors through acknowledgments (ACKs), retransmissions, and error-checking mechanisms.  \n   - **UDP**: Unreliable. It does not guarantee delivery, order, or error checking. Lost or corrupted packets are not retransmitted.\n\n3. **Speed and Overhead**  \n   - **TCP**: Slower due to higher overhead from connection setup, acknowledgments, flow control, and congestion control.  \n   - **UDP**: Faster with lower overhead because it lacks these mechanisms, making it suitable for time-sensitive applications.\n\n4. **Data Transmission Unit**  \n   - **TCP**: Stream-oriented. Data is sent as a continuous stream of bytes; the receiver reassembles it into the original message. There are no explicit message boundaries.  \n   - **UDP**: Message-oriented (datagram-based). Each packet is treated as an independent unit with clear boundaries. The application must handle message framing",
+  "draft_n": 0,
+  "draft_ok": 0
+ }
+]

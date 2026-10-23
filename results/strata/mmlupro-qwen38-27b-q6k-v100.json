@@ -1,0 +1,4014 @@
+{
+"meta": {
+"url": "http://127.0.0.1:8086",
+"set": "mmlu-pro-500.json",
+"label": "qwen38-27b-q6k-v100",
+"pad_questions": 0,
+"started": "2026-10-22T15:44:33",
+"finished": "2026-10-22T15:55:22",
+"accuracy": 0.606,
+"unparsed": 1
+},
+"answers": {
+"mmlupro-6313": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.54232321183021
+},
+"mmlupro-5181": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.739159105896267
+},
+"mmlupro-12051": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.787867739215642
+},
+"mmlupro-2283": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.726239716376526
+},
+"mmlupro-5371": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.774892958003097
+},
+"mmlupro-72": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.845654756465322
+},
+"mmlupro-2532": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.87648983140027
+},
+"mmlupro-7114": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.733989587832767
+},
+"mmlupro-991": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.705083668233318
+},
+"mmlupro-4908": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.818026240730177
+},
+"mmlupro-8227": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.77956217681496
+},
+"mmlupro-7799": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.778005557833357
+},
+"mmlupro-1623": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.717979008587395
+},
+"mmlupro-3943": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.722624917630483
+},
+"mmlupro-10164": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.81698496360691
+},
+"mmlupro-11907": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.349365278026106
+},
+"mmlupro-3948": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.602445584612255
+},
+"mmlupro-9362": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.35985958008184
+},
+"mmlupro-2244": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.768151909109537
+},
+"mmlupro-4072": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.69426289034132
+},
+"mmlupro-6691": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.70972430394695
+},
+"mmlupro-6904": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.81230039237157
+},
+"mmlupro-6340": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.677793904209
+},
+"mmlupro-4199": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.58661968649772
+},
+"mmlupro-10815": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.665457842248415
+},
+"mmlupro-6996": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.671110204266704
+},
+"mmlupro-6362": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.6690544737379
+},
+"mmlupro-1018": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.698899103393487
+},
+"mmlupro-1422": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.66237592349182
+},
+"mmlupro-2507": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.6736803918012
+},
+"mmlupro-10121": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.773855613755412
+},
+"mmlupro-8363": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.731405710129117
+},
+"mmlupro-4810": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.707145938826947
+},
+"mmlupro-8025": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.726239716376526
+},
+"mmlupro-3375": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.67316630767487
+},
+"mmlupro-2484": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.20347262311826
+},
+"mmlupro-4477": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.77022565293622
+},
+"mmlupro-7671": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.81854691493246
+},
+"mmlupro-595": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.664944130912716
+},
+"mmlupro-11837": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.390900338102593
+},
+"mmlupro-327": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.850353037954438
+},
+"mmlupro-9391": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.705599200762908
+},
+"mmlupro-10439": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.40394309398454
+},
+"mmlupro-9471": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.84304543481737
+},
+"mmlupro-8515": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.765042001502493
+},
+"mmlupro-6072": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.741744746656963
+},
+"mmlupro-6879": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.822713164140954
+},
+"mmlupro-11645": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.429571146599674
+},
+"mmlupro-1168": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.564704289550285
+},
+"mmlupro-4969": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.720559834594326
+},
+"mmlupro-224": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.708692887637387
+},
+"mmlupro-9381": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.72830583208328
+},
+"mmlupro-2921": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.68190890945382
+},
+"mmlupro-9479": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.683966972144088
+},
+"mmlupro-7297": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.717979008587395
+},
+"mmlupro-8348": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.740710419793515
+},
+"mmlupro-898": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.77696793002915
+},
+"mmlupro-290": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.762451060730218
+},
+"mmlupro-4110": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.714882791204797
+},
+"mmlupro-10182": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.693747872461138
+},
+"mmlupro-8950": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.66648533478399
+},
+"mmlupro-3610": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.732955966264296
+},
+"mmlupro-11605": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.715914769887785
+},
+"mmlupro-838": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.66597157687164
+},
+"mmlupro-10335": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.769188733805414
+},
+"mmlupro-3064": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.60397830018083
+},
+"mmlupro-9065": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.78579078086905
+},
+"mmlupro-10193": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.644927536231886
+},
+"mmlupro-4678": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.369362920544024
+},
+"mmlupro-3172": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.634164007152396
+},
+"mmlupro-7090": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.727272727272727
+},
+"mmlupro-3682": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.739159105896267
+},
+"mmlupro-1305": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.503262973131104
+},
+"mmlupro-8444": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.657241254304875
+},
+"mmlupro-1586": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.266259936318495
+},
+"mmlupro-9868": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.652108911339646
+},
+"mmlupro-9845": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.688598979013044
+},
+"mmlupro-10031": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.715914769887785
+},
+"mmlupro-8923": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.749505198261936
+},
+"mmlupro-4463": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.664944130912716
+},
+"mmlupro-3370": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.707145938826947
+},
+"mmlupro-2415": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.65467479214336
+},
+"mmlupro-3598": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.659294842744494
+},
+"mmlupro-5185": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.638775695010416
+},
+"mmlupro-418": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.663403136614992
+},
+"mmlupro-7041": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.75519956310017
+},
+"mmlupro-499": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.650569661826996
+},
+"mmlupro-9759": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.58355916892502
+},
+"mmlupro-1923": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.377872759415492
+},
+"mmlupro-6522": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.661348803480784
+},
+"mmlupro-2359": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.717462913741794
+},
+"mmlupro-11072": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.659808298021797
+},
+"mmlupro-6554": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.725206799381876
+},
+"mmlupro-3791": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.73605711297547
+},
+"mmlupro-7779": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.714366837024418
+},
+"mmlupro-11154": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.731405710129117
+},
+"mmlupro-1355": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.671110204266704
+},
+"mmlupro-4273": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.472920131241853
+},
+"mmlupro-1696": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.274195344693172
+},
+"mmlupro-3937": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.634164007152396
+},
+"mmlupro-11422": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.52810380950235
+},
+"mmlupro-1869": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.357859905649832
+},
+"mmlupro-1842": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.704052673402202
+},
+"mmlupro-730": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.571834864456132
+},
+"mmlupro-168": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.76193294334555
+},
+"mmlupro-5277": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.268243258289356
+},
+"mmlupro-11021": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.629554197782305
+},
+"mmlupro-885": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.72159232919043
+},
+"mmlupro-10372": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.682937894116048
+},
+"mmlupro-2781": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.661862351848075
+},
+"mmlupro-12242": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.642876551037045
+},
+"mmlupro-5610": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.684996143550656
+},
+"mmlupro-10122": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.58151928461747
+},
+"mmlupro-11673": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.675736961451246
+},
+"mmlupro-2015": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.689628570780297
+},
+"mmlupro-3910": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57947976878613
+},
+"mmlupro-3709": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.507314877335133
+},
+"mmlupro-8397": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.66597157687164
+},
+"mmlupro-1706": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.650569661826996
+},
+"mmlupro-6861": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.711271604097114
+},
+"mmlupro-4134": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.714366837024418
+},
+"mmlupro-11487": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.526581366011893
+},
+"mmlupro-2147": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.75934271018253
+},
+"mmlupro-9730": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.767115178835688
+},
+"mmlupro-9221": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.707661565012035
+},
+"mmlupro-6569": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.661348803480784
+},
+"mmlupro-1156": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.561649707826636
+},
+"mmlupro-8447": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.617270547790294
+},
+"mmlupro-12150": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.364360155655948
+},
+"mmlupro-9860": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.748987670048685
+},
+"mmlupro-11933": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.672138209354525
+},
+"mmlupro-2855": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.752093192573717
+},
+"mmlupro-4532": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.683452421458547
+},
+"mmlupro-9354": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.797218739313802
+},
+"mmlupro-10850": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.670596236681025
+},
+"mmlupro-3291": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.67933685619032
+},
+"mmlupro-11691": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.265764161026006
+},
+"mmlupro-10348": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.71178741766977
+},
+"mmlupro-8156": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.631090592255642
+},
+"mmlupro-5687": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.709208584080848
+},
+"mmlupro-6611": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.69426289034132
+},
+"mmlupro-5622": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.70972430394695
+},
+"mmlupro-5889": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.694777931597937
+},
+"mmlupro-8344": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.682423390114998
+},
+"mmlupro-4176": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.68448154617426
+},
+"mmlupro-10486": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.678308198208413
+},
+"mmlupro-10410": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.428565020409994
+},
+"mmlupro-10741": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.63928822077834
+},
+"mmlupro-6796": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.603467371894848
+},
+"mmlupro-9678": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.633651713367435
+},
+"mmlupro-2374": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.546389195770296
+},
+"mmlupro-8964": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.655701307233965
+},
+"mmlupro-9321": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.658268001993928
+},
+"mmlupro-6907": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.740193291642978
+},
+"mmlupro-8525": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.720559834594326
+},
+"mmlupro-8425": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.658781410735727
+},
+"mmlupro-8502": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.647491790284224
+},
+"mmlupro-4320": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.606533288120268
+},
+"mmlupro-10266": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.693747872461138
+},
+"mmlupro-7934": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.66083527838836
+},
+"mmlupro-729": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.657241254304875
+},
+"mmlupro-5156": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.6927179068237
+},
+"mmlupro-582": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.704052673402202
+},
+"mmlupro-8383": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.70353721109749
+},
+"mmlupro-7568": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.659808298021797
+},
+"mmlupro-8371": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.69580808424684
+},
+"mmlupro-11562": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.765560260438008
+},
+"mmlupro-10096": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.683452421458547
+},
+"mmlupro-6004": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.678822515534993
+},
+"mmlupro-5822": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.595806218365873
+},
+"mmlupro-6224": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.648004710784978
+},
+"mmlupro-7096": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.762451060730218
+},
+"mmlupro-3787": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.66648533478399
+},
+"mmlupro-10221": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.525566517997927
+},
+"mmlupro-1499": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.426050099795923
+},
+"mmlupro-5362": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.63928822077834
+},
+"mmlupro-7638": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.601934725612512
+},
+"mmlupro-6578": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.716430794393585
+},
+"mmlupro-7405": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.704052673402202
+},
+"mmlupro-664": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.552999548940008
+},
+"mmlupro-10422": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.68190890945382
+},
+"mmlupro-10114": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.685510764274856
+},
+"mmlupro-10903": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.551982319245862
+},
+"mmlupro-10129": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.66648533478399
+},
+"mmlupro-3102": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.56419513515953
+},
+"mmlupro-9740": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.73088900506899
+},
+"mmlupro-9778": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.659808298021797
+},
+"mmlupro-10437": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.670596236681025
+},
+"mmlupro-9133": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.655188038060714
+},
+"mmlupro-4588": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.573363431151243
+},
+"mmlupro-10383": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.708692887637387
+},
+"mmlupro-1920": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.50680830951363
+},
+"mmlupro-10306": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.720559834594326
+},
+"mmlupro-2214": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.572344363685612
+},
+"mmlupro-3237": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.5377507324769
+},
+"mmlupro-3179": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57591150242691
+},
+"mmlupro-1112": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.526581366011893
+},
+"mmlupro-5683": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.650056625141563
+},
+"mmlupro-10160": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.544356020470275
+},
+"mmlupro-4727": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.301516503122212
+},
+"mmlupro-2480": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.58253918070548
+},
+"mmlupro-3823": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.62136361579876
+},
+"mmlupro-1988": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.55096518130976
+},
+"mmlupro-12035": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.631090592255642
+},
+"mmlupro-3473": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.537242793716615
+},
+"mmlupro-4022": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.495669583605153
+},
+"mmlupro-2356": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.54181506694919
+},
+"mmlupro-4671": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.616759018432656
+},
+"mmlupro-6961": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.447696866301516
+},
+"mmlupro-10611": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.119978764820388
+},
+"mmlupro-4624": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.633651713367435
+},
+"mmlupro-9597": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.58406919758802
+},
+"mmlupro-4699": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.43560979987436
+},
+"mmlupro-8804": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.607555445029732
+},
+"mmlupro-7979": {
+"ans": "I",
+"ok": true,
+"raw": "I.",
+"tail": "",
+"gen_n": 3,
+"decode_tps": 19.642506383814577
+},
+"mmlupro-3773": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.52049364922079
+},
+"mmlupro-10011": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.63621341422007
+},
+"mmlupro-5543": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.561649707826636
+},
+"mmlupro-4910": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.56368600374557
+},
+"mmlupro-4178": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.506301764494058
+},
+"mmlupro-3713": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.58151928461747
+},
+"mmlupro-11300": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.55554302469832
+},
+"mmlupro-2747": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.571834864456132
+},
+"mmlupro-308": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.50528874285457
+},
+"mmlupro-12073": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.53571911479695
+},
+"mmlupro-1915": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.426050099795923
+},
+"mmlupro-11889": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.529626458793313
+},
+"mmlupro-10343": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.428565020409994
+},
+"mmlupro-4019": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.574892204889725
+},
+"mmlupro-1271": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.422530158303065
+},
+"mmlupro-5182": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.545372562281592
+},
+"mmlupro-3950": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.505795242274885
+},
+"mmlupro-8514": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.634164007152396
+},
+"mmlupro-7417": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.531656978054166
+},
+"mmlupro-7080": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.63160277010818
+},
+"mmlupro-2762": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.68808421816862
+},
+"mmlupro-5078": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.571325388226796
+},
+"mmlupro-10135": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.501237568066244
+},
+"mmlupro-8339": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.55096518130976
+},
+"mmlupro-4521": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.625458165527853
+},
+"mmlupro-1928": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57795037366508
+},
+"mmlupro-7968": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.56572266726842
+},
+"mmlupro-9130": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.616759018432656
+},
+"mmlupro-7465": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.628018011902338
+},
+"mmlupro-9692": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.62699400384659
+},
+"mmlupro-5300": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.671624195157342
+},
+"mmlupro-5357": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.662889518413596
+},
+"mmlupro-3267": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.54130694497667
+},
+"mmlupro-9526": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.629554197782305
+},
+"mmlupro-7769": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.612156295224313
+},
+"mmlupro-11925": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.544864279917036
+},
+"mmlupro-10716": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.585089324028274
+},
+"mmlupro-9824": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.59835935911053
+},
+"mmlupro-7314": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.613690328124648
+},
+"mmlupro-7708": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.60448925156536
+},
+"mmlupro-6222": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.599891520520703
+},
+"mmlupro-10884": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.60551122363632
+},
+"mmlupro-11243": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.703021772197882
+},
+"mmlupro-11573": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.600402287160712
+},
+"mmlupro-7848": {
+"ans": "D",
+"ok": true,
+"raw": "To find the number of positive integers that are factors of both 120 and 40, we ",
+"tail": "ion:**\n    There are 8 such positive integers.\n\nThis corresponds to option D.\n\nD",
+"gen_n": 369,
+"decode_tps": 25.17798543686165
+},
+"mmlupro-10374": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.529626458793313
+},
+"mmlupro-3732": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.566741136912416
+},
+"mmlupro-6466": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.665457842248415
+},
+"mmlupro-8274": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.56114069127335
+},
+"mmlupro-1984": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.36285976250643
+},
+"mmlupro-11441": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57591150242691
+},
+"mmlupro-5464": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.616759018432656
+},
+"mmlupro-4383": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.550456646747097
+},
+"mmlupro-8864": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.58151928461747
+},
+"mmlupro-7481": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.634164007152396
+},
+"mmlupro-831": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.638775695010416
+},
+"mmlupro-8162": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.597848684805204
+},
+"mmlupro-793": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.112152839200427
+},
+"mmlupro-2601": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.554525565554727
+},
+"mmlupro-7909": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.638263192447873
+},
+"mmlupro-5792": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.659294842744494
+},
+"mmlupro-5880": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.560631697687533
+},
+"mmlupro-6612": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.547405920948794
+},
+"mmlupro-7469": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.659294842744494
+},
+"mmlupro-7782": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.679851220175998
+},
+"mmlupro-3415": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.602445584612255
+},
+"mmlupro-11980": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 21.87752958935877
+},
+"mmlupro-8435": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.543339570323948
+},
+"mmlupro-3324": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.640825937330195
+},
+"mmlupro-1314": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.470395254252523
+},
+"mmlupro-11731": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.657241254304875
+},
+"mmlupro-10174": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.62699400384659
+},
+"mmlupro-10441": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.67933685619032
+},
+"mmlupro-9918": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.621875353466802
+},
+"mmlupro-11826": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.568269013766642
+},
+"mmlupro-6923": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.159682673344115
+},
+"mmlupro-11197": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.614201718679332
+},
+"mmlupro-9508": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.636725823976818
+},
+"mmlupro-5779": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.505795242274885
+},
+"mmlupro-9114": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.676765386185316
+},
+"mmlupro-7239": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57947976878613
+},
+"mmlupro-10790": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57795037366508
+},
+"mmlupro-8720": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.64338926250481
+},
+"mmlupro-630": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.69117313365101
+},
+"mmlupro-136": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.555034283652112
+},
+"mmlupro-11338": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.62034020991676
+},
+"mmlupro-2674": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.547405920948794
+},
+"mmlupro-9204": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57642118571364
+},
+"mmlupro-2892": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57591150242691
+},
+"mmlupro-6188": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.568778352027806
+},
+"mmlupro-9957": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.453745284713488
+},
+"mmlupro-8576": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.573363431151243
+},
+"mmlupro-9369": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57642118571364
+},
+"mmlupro-3623": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.58304916329803
+},
+"mmlupro-10764": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.612156295224313
+},
+"mmlupro-1962": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.630066306094278
+},
+"mmlupro-7364": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.622387114288298
+},
+"mmlupro-4354": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.651595804924458
+},
+"mmlupro-166": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.521508040178368
+},
+"mmlupro-4171": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.54130694497667
+},
+"mmlupro-11460": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.03662487053483
+},
+"mmlupro-4070": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.549439646424787
+},
+"mmlupro-7519": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.495669583605153
+},
+"mmlupro-8945": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.564704289550285
+},
+"mmlupro-1025": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.452736988638918
+},
+"mmlupro-332": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.631090592255642
+},
+"mmlupro-2614": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.05412081247381
+},
+"mmlupro-8664": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.515423064799386
+},
+"mmlupro-4398": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.58304916329803
+},
+"mmlupro-7105": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.433093299235033
+},
+"mmlupro-8999": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.633651713367435
+},
+"mmlupro-1077": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.521000833277032
+},
+"mmlupro-9862": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.598870056497177
+},
+"mmlupro-7183": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.667512920482366
+},
+"mmlupro-6058": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.539782716494614
+},
+"mmlupro-11469": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.55554302469832
+},
+"mmlupro-11866": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.572853885916796
+},
+"mmlupro-8763": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.5392746861406
+},
+"mmlupro-3145": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.501743885151097
+},
+"mmlupro-412": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.534195641886562
+},
+"mmlupro-10623": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.273203109339153
+},
+"mmlupro-5972": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.58253918070548
+},
+"mmlupro-4916": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.355360815523564
+},
+"mmlupro-276": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.656727915354463
+},
+"mmlupro-6232": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.484036334202717
+},
+"mmlupro-4143": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.260807622100533
+},
+"mmlupro-2064": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.605000226050002
+},
+"mmlupro-3856": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.39942657467969
+},
+"mmlupro-9009": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.166068182825732
+},
+"mmlupro-3406": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.616759018432656
+},
+"mmlupro-11698": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.197558268590456
+},
+"mmlupro-9739": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.53825869413329
+},
+"mmlupro-3119": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.67727963353516
+},
+"mmlupro-9183": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.657754616517504
+},
+"mmlupro-2068": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.55096518130976
+},
+"mmlupro-8092": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.52505912828021
+},
+"mmlupro-4250": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.657241254304875
+},
+"mmlupro-3308": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.601934725612512
+},
+"mmlupro-4610": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.628018011902338
+},
+"mmlupro-4268": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.52505912828021
+},
+"mmlupro-8899": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.616759018432656
+},
+"mmlupro-2324": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.39541341933172
+},
+"mmlupro-12025": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.125851845296044
+},
+"mmlupro-3755": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.525566517997927
+},
+"mmlupro-3385": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.59938077696671
+},
+"mmlupro-3863": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.294555669505506
+},
+"mmlupro-12043": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.60960003617536
+},
+"mmlupro-11965": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.7102400472373
+},
+"mmlupro-5198": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.390900338102593
+},
+"mmlupro-7951": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.665457842248415
+},
+"mmlupro-11758": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57642118571364
+},
+"mmlupro-9514": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.68448154617426
+},
+"mmlupro-546": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.55706938554543
+},
+"mmlupro-2639": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.197558268590456
+},
+"mmlupro-660": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.635188664297516
+},
+"mmlupro-10767": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.658268001993928
+},
+"mmlupro-5333": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.545372562281592
+},
+"mmlupro-7056": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.55147373880883
+},
+"mmlupro-4978": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.52252252252252
+},
+"mmlupro-5715": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.30549607423269
+},
+"mmlupro-2188": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.532164665059373
+},
+"mmlupro-8461": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.400430088257693
+},
+"mmlupro-6270": {
+"ans": "E",
+"ok": false,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.56368600374557
+},
+"mmlupro-6046": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.513395470304832
+},
+"mmlupro-2971": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.657754616517504
+},
+"mmlupro-5633": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.566741136912416
+},
+"mmlupro-4232": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.570306504762335
+},
+"mmlupro-5601": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.63160277010818
+},
+"mmlupro-599": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.5407988459111
+},
+"mmlupro-762": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.56317689530686
+},
+"mmlupro-11700": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.01237095247529
+},
+"mmlupro-9233": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.49313959242431
+},
+"mmlupro-847": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.498706324386347
+},
+"mmlupro-6534": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.483025315886504
+},
+"mmlupro-1052": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.59427461081362
+},
+"mmlupro-6125": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.54283137962128
+},
+"mmlupro-3982": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.55350819820023
+},
+"mmlupro-680": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.304998550175096
+},
+"mmlupro-7075": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.484541877459247
+},
+"mmlupro-868": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.483025315886504
+},
+"mmlupro-6433": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.562667809841837
+},
+"mmlupro-1183": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.49212775528565
+},
+"mmlupro-2413": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.571834864456132
+},
+"mmlupro-4833": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.56368600374557
+},
+"mmlupro-10909": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.47494044140783
+},
+"mmlupro-7780": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.614201718679332
+},
+"mmlupro-10036": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.54130694497667
+},
+"mmlupro-744": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.564704289550285
+},
+"mmlupro-3668": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.60397830018083
+},
+"mmlupro-3562": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.356860202553154
+},
+"mmlupro-894": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.544356020470275
+},
+"mmlupro-1311": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.32242510826376
+},
+"mmlupro-8594": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.597848684805204
+},
+"mmlupro-1836": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.415996054784696
+},
+"mmlupro-2970": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57081593499605
+},
+"mmlupro-10742": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.53825869413329
+},
+"mmlupro-4977": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.56419513515953
+},
+"mmlupro-2978": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.52505912828021
+},
+"mmlupro-2919": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.558087074216107
+},
+"mmlupro-349": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.591212018524793
+},
+"mmlupro-9127": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.588660492432798
+},
+"mmlupro-10914": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.56979709752409
+},
+"mmlupro-12061": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.547914317925592
+},
+"mmlupro-6609": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.61011124174731
+},
+"mmlupro-4010": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.552490922622404
+},
+"mmlupro-5427": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.524551761419946
+},
+"mmlupro-12233": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.675222784063855
+},
+"mmlupro-6805": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.677793904209
+},
+"mmlupro-12123": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.641338555935427
+},
+"mmlupro-10852": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.585599421808652
+},
+"mmlupro-3525": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.584579249288588
+},
+"mmlupro-4056": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.46383322850211
+},
+"mmlupro-11050": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.56114069127335
+},
+"mmlupro-1060": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.58764004336827
+},
+"mmlupro-655": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.622387114288298
+},
+"mmlupro-2725": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.564704289550285
+},
+"mmlupro-8767": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.470395254252523
+},
+"mmlupro-5911": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.55910485471936
+},
+"mmlupro-6919": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.501743885151097
+},
+"mmlupro-9264": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57947976878613
+},
+"mmlupro-11378": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.578460149017836
+},
+"mmlupro-155": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.515423064799386
+},
+"mmlupro-9118": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.659294842744494
+},
+"mmlupro-10949": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.00365260633265
+},
+"mmlupro-7128": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.58917075154171
+},
+"mmlupro-7897": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.59682740543228
+},
+"mmlupro-5987": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.536226984878194
+},
+"mmlupro-8751": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.568269013766642
+},
+"mmlupro-551": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.44467387888854
+},
+"mmlupro-8761": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.572344363685612
+},
+"mmlupro-11680": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.294555669505506
+},
+"mmlupro-8060": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.49971875351558
+},
+"mmlupro-8300": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.601423889705053
+},
+"mmlupro-6677": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.574382590636144
+},
+"mmlupro-10287": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.62699400384659
+},
+"mmlupro-7997": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.559613779412096
+},
+"mmlupro-3185": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.57795037366508
+},
+"mmlupro-9077": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.716430794393585
+},
+"mmlupro-137": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.602956466705848
+},
+"mmlupro-2479": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.55401687040462
+},
+"mmlupro-2522": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.59938077696671
+},
+"mmlupro-11088": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.631090592255642
+},
+"mmlupro-11130": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.56419513515953
+},
+"mmlupro-11812": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.54842273782949
+},
+"mmlupro-4142": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.512888628739955
+},
+"mmlupro-11796": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.453241125356445
+},
+"mmlupro-7949": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.660321776569226
+},
+"mmlupro-1053": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.566741136912416
+},
+"mmlupro-5489": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.600913076888304
+},
+"mmlupro-858": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.466356630945157
+},
+"mmlupro-7606": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.64338926250481
+},
+"mmlupro-8297": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.717462913741794
+},
+"mmlupro-615": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.500731273766398
+},
+"mmlupro-8445": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.55350819820023
+},
+"mmlupro-8090": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.642876551037045
+},
+"mmlupro-2915": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.56928771327977
+},
+"mmlupro-3501": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.632114971144052
+},
+"mmlupro-2312": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.657754616517504
+},
+"mmlupro-11280": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.642363862787274
+},
+"mmlupro-6003": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.597848684805204
+},
+"mmlupro-426": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.621875353466802
+},
+"mmlupro-3200": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.51846514141596
+},
+"mmlupro-6097": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.61522456917997
+},
+"mmlupro-12127": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.612667616398706
+},
+"mmlupro-6747": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.587129853409525
+},
+"mmlupro-8032": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.627505996289088
+},
+"mmlupro-2291": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.565213466919396
+},
+"mmlupro-11613": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.399928320229375
+},
+"mmlupro-11301": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.616759018432656
+},
+"mmlupro-10229": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.63160277010818
+},
+"mmlupro-3736": {
+"ans": "",
+"ok": false,
+"raw": "-1.0 \\times 10^2 \\mathrm{J}",
+"tail": "",
+"gen_n": 17,
+"decode_tps": 24.74103098968763
+},
+"mmlupro-5112": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 21.775580863619535
+},
+"mmlupro-8619": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.680880018144702
+},
+"mmlupro-85": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.746400382139527
+},
+"mmlupro-5161": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.716430794393585
+},
+"mmlupro-8532": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.697353488583232
+},
+"mmlupro-10058": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.68448154617426
+},
+"mmlupro-9363": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.39491187602177
+},
+"mmlupro-4764": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.63313944277211
+},
+"mmlupro-3811": {
+"ans": "D",
+"ok": false,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.5407988459111
+},
+"mmlupro-11958": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.608577694377246
+},
+"mmlupro-5011": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.69529299623258
+},
+"mmlupro-3441": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.644927536231886
+},
+"mmlupro-2373": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.644414755100655
+},
+"mmlupro-3233": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 22.605000226050002
+}
+}
+}

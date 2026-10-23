@@ -1,0 +1,597 @@
+{
+"meta": {
+"url": "http://127.0.0.1:8085",
+"set": "mmlu-pro-500.json",
+"label": "llama-stock-v100p40",
+"pad_questions": 0,
+"started": "2026-10-22T19:42:18"
+},
+"answers": {
+"mmlupro-6313": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.146844263782526
+},
+"mmlupro-5181": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.745547932366065
+},
+"mmlupro-12051": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.84303749764462
+},
+"mmlupro-2283": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 19.092349695477022
+},
+"mmlupro-5371": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.700327255726975
+},
+"mmlupro-72": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.36007784673007
+},
+"mmlupro-2532": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 17.077377597896067
+},
+"mmlupro-7114": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.247509214992153
+},
+"mmlupro-991": {
+"ans": "G",
+"ok": false,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.58666964053381
+},
+"mmlupro-4908": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.826010015437326
+},
+"mmlupro-8227": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.476433309313972
+},
+"mmlupro-7799": {
+"ans": "B",
+"ok": false,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.510291722197543
+},
+"mmlupro-1623": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.787457493377424
+},
+"mmlupro-3943": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.542555164101614
+},
+"mmlupro-10164": {
+"ans": "H",
+"ok": false,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.514061429655825
+},
+"mmlupro-11907": {
+"ans": "",
+"ok": false,
+"raw": "To calculate the heating required per pound of $CO_2$, we need to determine the ",
+"tail": "ext{F}$.\n$\\Delta h \\approx 0.24 \\times 820 = 196.8 \\, \\text{Btu/lbm}$.\n\nHowever,",
+"gen_n": 1024,
+"decode_tps": 23.835089697523628
+},
+"mmlupro-3948": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.83310105842028
+},
+"mmlupro-9362": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.836648583484028
+},
+"mmlupro-2244": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.885741265344663
+},
+"mmlupro-4072": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 19.094901661256447
+},
+"mmlupro-6691": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 19.082512785283566
+},
+"mmlupro-6904": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.772292096865026
+},
+"mmlupro-6340": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.207971449900768
+},
+"mmlupro-4199": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.774054257016804
+},
+"mmlupro-10815": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.854050792812835
+},
+"mmlupro-6996": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.73817152922218
+},
+"mmlupro-6362": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.37019619369535
+},
+"mmlupro-1018": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.801586853930473
+},
+"mmlupro-1422": {
+"ans": "C",
+"ok": false,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.206976913553273
+},
+"mmlupro-2507": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.64245633004605
+},
+"mmlupro-10121": {
+"ans": "",
+"ok": false,
+"raw": "To determine the maximum pressure at which freeze drying can be carried out, we ",
+"tail": "e precise enthalpy of sublimation or checking standard data points.\nAt $0^{\\circ",
+"gen_n": 1024,
+"decode_tps": 23.79138817796386
+},
+"mmlupro-8363": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.58114385521573
+},
+"mmlupro-4810": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.76841650869916
+},
+"mmlupro-8025": {
+"ans": "J",
+"ok": false,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.47848180793466
+},
+"mmlupro-3375": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 19.448063945234253
+},
+"mmlupro-2484": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.423670732156676
+},
+"mmlupro-4477": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 17.785049887064933
+},
+"mmlupro-7671": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 16.85630004214075
+},
+"mmlupro-595": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.7318535169055
+},
+"mmlupro-11837": {
+"ans": "",
+"ok": false,
+"raw": "",
+"crash": "llama.cpp CUDA illegal memory access in ggml_cuda_mul_mat_id, reproduced twice (8K and 16K context)"
+},
+"mmlupro-327": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.560795886927632
+},
+"mmlupro-9391": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.41349340796936
+},
+"mmlupro-10439": {
+"ans": "",
+"ok": false,
+"raw": "",
+"crash": "llama.cpp CUDA illegal memory access in ggml_cuda_mul_mat_id (attempt 2, 2 questions after a fresh start)"
+},
+"mmlupro-9471": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 19.06686750433771
+},
+"mmlupro-8515": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 19.330395113276115
+},
+"mmlupro-6072": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 19.29198418057297
+},
+"mmlupro-6879": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.283875450240433
+},
+"mmlupro-11645": {
+"ans": "",
+"ok": false,
+"raw": "",
+"crash": "llama.cpp CUDA illegal memory access in ggml_cuda_mul_mat_id (attempt 3)"
+},
+"mmlupro-1168": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 17.459624618070713
+},
+"mmlupro-4969": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.10610175629187
+},
+"mmlupro-224": {
+"ans": "",
+"ok": false,
+"raw": "To find the annual interest rate, we can use the formula for the monthly payment",
+"tail": "%. Let's look at the other options.\n\n*   **Option F: 19.5% annual rate**\n    *  ",
+"gen_n": 1024,
+"decode_tps": 24.099364577731546
+},
+"mmlupro-9381": {
+"ans": "H",
+"ok": true,
+"raw": "To determine the number of electrons required, we follow these steps:\n\n**1. Iden",
+"tail": " 10^{-19} \\approx 2.22 \\times 10^{-15} \\text{ C}$.\n$E = k Q / R^2 = 9 \\times 10^",
+"gen_n": 1024,
+"decode_tps": 24.104534225469713
+},
+"mmlupro-2921": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 19.02008520998174
+},
+"mmlupro-9479": {
+"ans": "D",
+"ok": true,
+"raw": "D",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.7125748502994
+},
+"mmlupro-7297": {
+"ans": "I",
+"ok": true,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 19.11790008985413
+},
+"mmlupro-8348": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.409764539111546
+},
+"mmlupro-898": {
+"ans": "C",
+"ok": true,
+"raw": "C",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.755392175250385
+},
+"mmlupro-290": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.75363351649382
+},
+"mmlupro-4110": {
+"ans": "A",
+"ok": false,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.61019094055905
+},
+"mmlupro-10182": {
+"ans": "",
+"ok": false,
+"raw": "To find the position $X$ where the car reaches its maximum x-velocity, we need t",
+"tail": "to 517?)\n    \n    If $v_{0x} = 12.5 \\text{ m/s}$:\n    $X = 266.67 + 250 = 516.67",
+"gen_n": 1024,
+"decode_tps": 24.174831816545776
+},
+"mmlupro-8950": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.32978957401569
+},
+"mmlupro-3610": {
+"ans": "F",
+"ok": true,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.84836490434455
+},
+"mmlupro-11605": {
+"ans": "E",
+"ok": true,
+"raw": "E",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.811490058127504
+},
+"mmlupro-838": {
+"ans": "I",
+"ok": false,
+"raw": "I",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.349970640046976
+},
+"mmlupro-10335": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.79981952173259
+},
+"mmlupro-3064": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 17.812928623595003
+},
+"mmlupro-9065": {
+"ans": "B",
+"ok": true,
+"raw": "B",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.996238744728544
+},
+"mmlupro-10193": {
+"ans": "H",
+"ok": true,
+"raw": "H",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.805829807240247
+},
+"mmlupro-4678": {
+"ans": "F",
+"ok": false,
+"raw": "F",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.399941120188416
+},
+"mmlupro-3172": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.341556464481577
+},
+"mmlupro-7090": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 19.24779612734342
+},
+"mmlupro-3682": {
+"ans": "J",
+"ok": true,
+"raw": "J",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.83416517562859
+},
+"mmlupro-1305": {
+"ans": "G",
+"ok": true,
+"raw": "G",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.388099222183403
+},
+"mmlupro-8444": {
+"ans": "A",
+"ok": true,
+"raw": "A",
+"tail": "",
+"gen_n": 2,
+"decode_tps": 18.737469317393995
+}
+}
+}
