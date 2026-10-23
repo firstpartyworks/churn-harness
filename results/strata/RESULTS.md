@@ -92,7 +92,7 @@ running without it.
 
 Same GGUF, same two cards: Strata 0.2.2 helper over stock llama.cpp is 2.8x (story), 3.7x (code), 3.2x
 (document) decode and 4.2x prompt reading. Split at 64K against current llama.cpp: the engine alone (drafting off)
-is 1.7-1.9x, drafting multiplies that by 1.5-1.8x, together 2.5-3.2x; prompt reading 3.8x. The llama.cpp speed run (2026-10-23, fresh server) did not crash.
+is 1.7-1.9x, drafting multiplies that by 1.5-1.9x, together 2.5-3.2x; prompt reading 3.9x. The llama.cpp speed run (2026-10-23, fresh server) did not crash.
 
 0.1.39 -> 0.2.2 on the helper setup: the same expert hit rate (99%+) and draft acceptance; per 200-token reply
 generation fell from 4.0-5.4 s to 2.6-3.4 s while the V100's wait on the P40 fell only from 0.49-0.92 s to
