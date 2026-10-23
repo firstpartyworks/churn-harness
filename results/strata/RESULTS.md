@@ -55,7 +55,12 @@ Floor: the same setup twice changes 36 answers (7.2%) and moved accuracy by 1.0 
 tail skip on/off 57, HC_Q8 on/off 55, helper vs V100 49, 0.1.39 vs 0.2.2 71. Each setting moves 13-35 near-tie
 answers beyond the floor; none moves accuracy beyond what the floor allows.
 
-Stock llama.cpp could not complete MMLU-Pro on this placement: four crashes in 75 questions, each a CUDA
+**Current llama.cpp (`dfeea52`, 2026-10-22) completed all 500 with no crash: 66.0%** (Strata 64.8-67.2%). Answers
+changed vs the five Strata runs: 49-82, in line with the Strata settings against each other (49-71), floor 36.
+ARC-500 on the same build: 97.0%, 1-4 answers changed vs each Strata run. The crash below was upstream bug
+`dd26678` ("CUDA: fix MMQ memory fault if n_expert >> n_ubatch", merged 2026-10-04), absent from `4d91760`.
+
+Older stock llama.cpp (`4d91760`) could not complete MMLU-Pro on this placement: four crashes in 75 questions, each a CUDA
 "illegal memory access" in `ggml_cuda_mul_mat_id` (V100), on four different questions, two of them reproduced on
 fresh servers; not explained by prompt or answer length; not yet isolated. On the 71 questions it answered:
 llama.cpp 67.6%, Strata 67.6-69.0%, 7-11 answers changed (in line with the floor).
@@ -74,7 +79,10 @@ running without it.
 
 | setup | story | code | 8K-doc summary | 9,750-token prompt read |
 |---|---:|---:|---:|---:|
-| stock llama.cpp, V100+P40 (9 expert layers on CPU), no drafting | 24.3 | 24.3 | 21.6 | 232 |
+| stock llama.cpp `4d91760`, V100+P40 (9 expert layers on CPU), no drafting | 24.3 | 24.3 | 21.6 | 232 |
+| stock llama.cpp `dfeea52` (2026-10-22), same placement | 26.0 | 26.1 | 25.2 | 240 |
+| Strata 0.2.2 helper, 64K context, drafting on | 65.8 | 84.5 | 73.7 | 932 |
+| Strata 0.2.2 helper, 64K context, drafting OFF (`--spec 2`, no MTP, no suffix draft) | 44.7 | 45.7 | 48.2 | 916 |
 | Strata 0.1.39 helper | 42.0 | 55.2 | 52.9 | 1,040 |
 | Strata 0.2.2 helper | 68.6 | 90.7 | 69.5 | 968 |
 | Strata 0.2.2 V100, tail skip on | 39.5 | 45.7 | 39.7 | 998 |
@@ -83,7 +91,8 @@ running without it.
 | Qwen3.8-27B Q6_K, stock llama.cpp, V100, no drafting | 25.6 | 25.6 | 24.5 | 802 |
 
 Same GGUF, same two cards: Strata 0.2.2 helper over stock llama.cpp is 2.8x (story), 3.7x (code), 3.2x
-(document) decode and 4.2x prompt reading. The llama.cpp speed run (2026-10-23, fresh server) did not crash.
+(document) decode and 4.2x prompt reading. Split at 64K against current llama.cpp: the engine alone (drafting off)
+is 1.7-1.9x, drafting multiplies that by 1.5-1.8x, together 2.5-3.2x; prompt reading 3.8x. The llama.cpp speed run (2026-10-23, fresh server) did not crash.
 
 0.1.39 -> 0.2.2 on the helper setup: the same expert hit rate (99%+) and draft acceptance; per 200-token reply
 generation fell from 4.0-5.4 s to 2.6-3.4 s while the V100's wait on the P40 fell only from 0.49-0.92 s to
