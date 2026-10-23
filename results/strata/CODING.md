@@ -77,3 +77,18 @@ of the time. Medium and low were checked headless only.
 Strata 0.2.2 helper, `--max-context 65536` vs 32768 (same speed protocol as `RESULTS.md`): story 65.8 vs 68.6,
 code 84.5 vs 90.7, 8K-doc 73.7 vs 69.5 tok/s, prompt read 932 vs 968 tok/s. Within run-to-run spread; the expert
 cache still hit 98.9% during the 64K coding runs.
+
+## Played by hand (phone), second pass
+
+| set | Breakout | Tower defense |
+|---|---|---|
+| Flash-Next medium | 3 / 3 paddle moves only on tap (mouse-move only; no touch handling) | 3 / 3 work, plainer; #1 shows tower range |
+| Flash-Next low | 3 / 3 same paddle issue | #1 works; #2 enemies can't be killed; #3 works, shows range |
+| Flash-Next thinking off | #3 same paddle issue (listens for pointer moves but lets the page scroll instead) | #1 and #3 no visible map; #2 map hard to read |
+| Flash-Next fix turn | NeonBreaker 0 / 3 | Emberfall 3 / 3 (and it ships a tower-upgrade system) |
+| 27B fix turn | Brickstorm click 3 / 3, power-ups 3 / 3 (and a red danger gradient as the ball nears the floor) | - |
+
+The paddle issue is touch input: the prompt asked for mouse and arrow keys, and the medium/low games handle exactly
+that (likely fine on a desktop, not tested there). Every default-effort (xhigh) Flash-Next Breakout added touch
+support unasked. Verdict after playing: xhigh Flash-Next for polish; thinking-off Flash-Next lands near the 27B at
+xhigh in quality, at a fraction of the time (2-4 min vs 19-44 min).
