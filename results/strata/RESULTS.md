@@ -74,12 +74,16 @@ running without it.
 
 | setup | story | code | 8K-doc summary | 9,750-token prompt read |
 |---|---:|---:|---:|---:|
+| stock llama.cpp, V100+P40 (9 expert layers on CPU), no drafting | 24.3 | 24.3 | 21.6 | 232 |
 | Strata 0.1.39 helper | 42.0 | 55.2 | 52.9 | 1,040 |
 | Strata 0.2.2 helper | 68.6 | 90.7 | 69.5 | 968 |
 | Strata 0.2.2 V100, tail skip on | 39.5 | 45.7 | 39.7 | 998 |
 | Strata 0.2.2 V100, tail skip off | 39.3 | 44.3 | 39.7 | 1,001 |
 | Strata 0.2.2 V100, tail skip off + HC_Q8 | 37.6 | 42.3 | 38.0 | 998 |
 | Qwen3.8-27B Q6_K, stock llama.cpp, V100, no drafting | 25.6 | 25.6 | 24.5 | 802 |
+
+Same GGUF, same two cards: Strata 0.2.2 helper over stock llama.cpp is 2.8x (story), 3.7x (code), 3.2x
+(document) decode and 4.2x prompt reading. The llama.cpp speed run (2026-10-23, fresh server) did not crash.
 
 0.1.39 -> 0.2.2 on the helper setup: the same expert hit rate (99%+) and draft acceptance; per 200-token reply
 generation fell from 4.0-5.4 s to 2.6-3.4 s while the V100's wait on the P40 fell only from 0.49-0.92 s to
