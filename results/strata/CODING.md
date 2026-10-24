@@ -92,3 +92,25 @@ The paddle issue is touch input: the prompt asked for mouse and arrow keys, and 
 that (likely fine on a desktop, not tested there). Every default-effort (xhigh) Flash-Next Breakout added touch
 support unasked. Verdict after playing: xhigh Flash-Next for polish; thinking-off Flash-Next lands near the 27B at
 xhigh in quality, at a fraction of the time (2-4 min vs 19-44 min).
+
+## Rerun at the Qwen model-card sampling (2026-10-23 evening)
+
+Both Qwen3.8 model cards: thinking mode temperature 1.0, top_p 0.95, top_k 20, min_p 0, presence penalty 0;
+non-thinking 0.7 / 0.8 / 20, presence penalty 1.5. Same tasks, seeds 1-3, 60,000-token limit, 64K context
+(`coding_bench.py --preset card`). Checked with `coding/playtest.js` (desktop + phone touch, video per run;
+calibrated against the hand play-through: 7 of 8 games matched) plus a look at each final frame. Not yet hand-played.
+
+| arm | finished | minutes | tokens | likely work | broken | unclear |
+|---|---|---|---|---|---|---|
+| Flash-Next xhigh | 6 / 6 | 7.5-9.3 | 32k-40k | 4 | 2 (syntax errors) | 0 |
+| Flash-Next medium | 6 / 6 | 0.7-1.2 | 3.3k-5.6k | Breakouts mouse-only again; TDs run | 0 errors | - |
+| Flash-Next low | 6 / 6 | 0.7-2.0 | 3.3k-8.9k | Breakouts mouse-only again; TDs run | 0 errors | - |
+| Flash-Next thinking off | 6 / 6 | 1.7-4.1 | 8.1k-18.2k | 2 | 3 | 1 |
+| 27B xhigh | 4 / 6 (2 hit 60k) | 26.8-45.2 | 37k-60k | 3 | 0 | 1 |
+| 27B thinking off | 6 / 6 | 6.1-8.3 | 8.4k-11.2k | 4 | 1 | 1 |
+
+Against the earlier 0.6 sampler: Flash-Next xhigh broken games went from logic slips to syntax errors (2 of 6 both
+times); the 27B at xhigh overthought further (2 of 6 never finished within 60k). Thinking off did worse at the card's
+non-thinking settings: several errors are mismatched identifiers (`last is not defined`, `ball_R is not defined`),
+which fits presence penalty 1.5 pushing the model off tokens it already used, and code reuses its names.
+Hypothesis only: not tested by toggling the penalty alone.

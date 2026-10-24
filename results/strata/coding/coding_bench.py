@@ -27,14 +27,23 @@ TASKS = {
         "Reply with only the HTML file in one code block."),
 }
 SAMPLER = {"temperature": 0.6, "top_p": 0.95, "top_k": 20}
+# Both Qwen3.8 model cards (27B and Flash-Next): thinking vs instruct (non-thinking) sampling.
+CARD = {"thinking": {"temperature": 1.0, "top_p": 0.95, "top_k": 20, "min_p": 0.0, "presence_penalty": 0.0},
+        "instruct": {"temperature": 0.7, "top_p": 0.80, "top_k": 20, "min_p": 0.0, "presence_penalty": 1.5}}
 
 
-def ask(url, prompt, seed, max_tokens, effort=""):
+def sampler_for(preset, effort):
+    if preset == "card":
+        return CARD["instruct" if effort == "off" else "thinking"]
+    return SAMPLER
+
+
+def ask(url, prompt, seed, max_tokens, effort="", sampler=SAMPLER):
     kw = {"enable_thinking": effort != "off"}
     if effort and effort != "off":
         kw["reasoning_effort"] = effort
     body = {"messages": [{"role": "user", "content": prompt}], "max_tokens": max_tokens, "seed": seed,
-            "chat_template_kwargs": kw, "cache_prompt": False, **SAMPLER}
+            "chat_template_kwargs": kw, "cache_prompt": False, **sampler}
     req = urllib.request.Request(f"{url}/v1/chat/completions", json.dumps(body).encode(),
                                  {"Content-Type": "application/json"})
     t = time.time()
@@ -58,6 +67,7 @@ def main():
     ap.add_argument("--seeds", default="1,2,3")
     ap.add_argument("--max-tokens", type=int, default=30000)
     ap.add_argument("--effort", default="", help="template reasoning_effort: low, medium, xhigh; off = thinking off")
+    ap.add_argument("--preset", default="old", choices=["old", "card"], help="old = 0.6/0.95/20 for every mode")
     ap.add_argument("--only", default="", help="comma list of task-sN to run, e.g. breakout-s1")
     a = ap.parse_args()
     out = Path(a.out)
@@ -69,12 +79,13 @@ def main():
             stem = out / f"{a.label}-{task}-s{seed}"
             if stem.with_suffix(".json").exists():
                 continue
-            res, wall = ask(a.url, prompt, seed, a.max_tokens, a.effort)
+            sampler = sampler_for(a.preset, a.effort)
+            res, wall = ask(a.url, prompt, seed, a.max_tokens, a.effort, sampler)
             msg = res["choices"][0]["message"]
             reply, think = msg.get("content") or "", msg.get("reasoning_content") or ""
             html = extract_html(reply)
             tm, usage = res.get("timings") or {}, res.get("usage") or {}
-            rec = {"label": a.label, "task": task, "seed": seed, "sampler": SAMPLER, "effort": a.effort or "default (xhigh)", "max_tokens": a.max_tokens,
+            rec = {"label": a.label, "task": task, "seed": seed, "sampler": sampler, "effort": a.effort or "default (xhigh)", "max_tokens": a.max_tokens,
                    "finish": res["choices"][0].get("finish_reason"), "wall_s": round(wall, 1),
                    "completion_tokens": usage.get("completion_tokens") or tm.get("predicted_n"),
                    "gen_tps": tm.get("predicted_per_second"), "draft_n": tm.get("draft_n"),

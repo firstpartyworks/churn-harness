@@ -1,53 +1,89 @@
-run,phase,model,effort,task,finish,tokens,minutes,tok_s,think_chars,think_share,html_chars
-flashnext-breakout-s1,30K cap,Flash-Next,default (xhigh),breakout,length,30000,6.9,72.9,51449,60,0
-flashnext-breakout-s2,30K cap,Flash-Next,default (xhigh),breakout,length,30000,6.8,73.6,40637,48,0
-flashnext-breakout-s3,30K cap,Flash-Next,default (xhigh),breakout,length,30000,6.8,73.4,64746,76,0
-flashnext-towerdefense-s1,30K cap,Flash-Next,default (xhigh),towerdefense,length,30000,7.1,70.8,62345,73,0
-flashnext-towerdefense-s2,30K cap,Flash-Next,default (xhigh),towerdefense,length,30000,7.1,70.8,48985,58,0
-flashnext-towerdefense-s3,30K cap,Flash-Next,default (xhigh),towerdefense,length,30000,7.0,71.0,55569,66,0
-q27b-breakout-s1,30K cap,27B,default (xhigh),breakout,length,30000,20.9,23.9,66961,77,0
-q27b-breakout-s2,30K cap,27B,default (xhigh),breakout,stop,27010,18.8,24.1,55066,68,26265
-q27b-breakout-s3,30K cap,27B,default (xhigh),breakout,length,30000,21.0,23.9,84860,100,0
-q27b-towerdefense-s1,30K cap,27B,default (xhigh),towerdefense,stop,28273,19.7,24.0,61338,70,26370
-q27b-towerdefense-s2,30K cap,27B,default (xhigh),towerdefense,length,30000,21.0,23.9,85327,100,0
-q27b-towerdefense-s3,30K cap,27B,default (xhigh),towerdefense,length,30000,21.0,23.9,84066,97,0
-flashnext-breakout-s1,64K,Flash-Next,default (xhigh),breakout,stop,30033,6.7,75.4,36732,43,48138
-flashnext-breakout-s2,64K,Flash-Next,default (xhigh),breakout,stop,28992,6.6,73.1,42934,52,39372
-flashnext-breakout-s3,64K,Flash-Next,default (xhigh),breakout,stop,32331,7.5,72.3,53212,56,40972
-flashnext-towerdefense-s1,64K,Flash-Next,default (xhigh),towerdefense,stop,39845,9.3,71.8,59019,52,55033
-flashnext-towerdefense-s2,64K,Flash-Next,default (xhigh),towerdefense,stop,35987,8.2,73.0,44418,45,55181
-flashnext-towerdefense-s3,64K,Flash-Next,default (xhigh),towerdefense,stop,47949,10.9,73.3,79069,61,51311
-q27b-breakout-s1,64K,27B,default (xhigh),breakout,stop,33899,23.9,23.7,66961,69,29605
-q27b-breakout-s3,64K,27B,default (xhigh),breakout,stop,41937,30.1,23.3,86473,75,28801
-q27b-towerdefense-s2,64K,27B,default (xhigh),towerdefense,stop,59112,44.1,22.4,123679,76,38521
-q27b-towerdefense-s3,64K,27B,default (xhigh),towerdefense,stop,42373,30.4,23.3,84066,70,35280
-flashnext-low-breakout-s1,64K,Flash-Next,low,breakout,stop,3791,0.7,86.4,1062,9,10544
-flashnext-low-breakout-s2,64K,Flash-Next,low,breakout,stop,4627,0.9,86.9,882,6,13884
-flashnext-low-breakout-s3,64K,Flash-Next,low,breakout,stop,3850,0.7,85.8,970,8,11159
-flashnext-low-towerdefense-s1,64K,Flash-Next,low,towerdefense,stop,5880,1.2,83.2,2324,13,15333
-flashnext-low-towerdefense-s2,64K,Flash-Next,low,towerdefense,stop,4323,0.9,84.5,2908,23,9889
-flashnext-low-towerdefense-s3,64K,Flash-Next,low,towerdefense,stop,6605,1.3,82.3,4161,22,15050
-flashnext-medium-breakout-s1,64K,Flash-Next,medium,breakout,stop,3333,0.7,86.7,287,3,9005
-flashnext-medium-breakout-s2,64K,Flash-Next,medium,breakout,stop,3558,0.7,88.9,277,3,9669
-flashnext-medium-breakout-s3,64K,Flash-Next,medium,breakout,stop,3438,0.6,89.3,249,3,9485
-flashnext-medium-towerdefense-s1,64K,Flash-Next,medium,towerdefense,stop,5508,1.2,74.9,4149,26,11538
-flashnext-medium-towerdefense-s2,64K,Flash-Next,medium,towerdefense,stop,5450,1.2,75.7,4096,25,12191
-flashnext-medium-towerdefense-s3,64K,Flash-Next,medium,towerdefense,stop,5942,1.2,81.2,4022,23,13159
-flashnext-off-breakout-s1,64K,Flash-Next,off,breakout,stop,10689,2.2,80.7,0,0,29626
-flashnext-off-breakout-s2,64K,Flash-Next,off,breakout,stop,11383,2.4,78.8,0,0,31416
-flashnext-off-breakout-s3,64K,Flash-Next,off,breakout,stop,11383,2.5,77.4,0,0,30915
-flashnext-off-towerdefense-s1,64K,Flash-Next,off,towerdefense,stop,16141,3.6,74.9,0,0,44379
-flashnext-off-towerdefense-s2,64K,Flash-Next,off,towerdefense,stop,18285,4.0,75.3,0,0,48374
-flashnext-off-towerdefense-s3,64K,Flash-Next,off,towerdefense,stop,16339,3.7,74.6,0,0,44320
-flashnext-fix-breakout-orig-s2-fix-s1,fix turn 64K,Flash-Next,default (xhigh),breakout,stop,26275,5.5,83.0,41289,51,39131
-flashnext-fix-breakout-orig-s2-fix-s2,fix turn 64K,Flash-Next,default (xhigh),breakout,stop,32681,6.8,79.6,67815,63,39453
-flashnext-fix-breakout-orig-s2-fix-s3,fix turn 64K,Flash-Next,default (xhigh),breakout,stop,22041,4.2,88.0,24996,39,39447
-flashnext-fix-towerdefense-orig-s2-fix-s1,fix turn 64K,Flash-Next,default (xhigh),towerdefense,stop,29801,5.9,88.9,28283,34,55020
-flashnext-fix-towerdefense-orig-s2-fix-s2,fix turn 64K,Flash-Next,default (xhigh),towerdefense,stop,34901,7.1,82.4,48586,46,55354
-flashnext-fix-towerdefense-orig-s2-fix-s3,fix turn 64K,Flash-Next,default (xhigh),towerdefense,stop,32264,6.3,85.7,38509,41,55340
-q27b-fix-breakout-orig-s1-fix-s1,fix turn 64K,27B,default (xhigh),breakout,stop,12402,9.0,23.6,3052,9,29934
-q27b-fix-breakout-orig-s1-fix-s2,fix turn 64K,27B,default (xhigh),breakout,stop,12430,9.1,23.6,3329,10,29990
-q27b-fix-breakout-orig-s1-fix-s3,fix turn 64K,27B,default (xhigh),breakout,stop,12538,9.2,23.6,4022,12,29714
-q27b-fix-breakout-orig-s3-fix-s1,fix turn 64K,27B,default (xhigh),breakout,stop,12804,9.3,23.5,3355,10,28987
-q27b-fix-breakout-orig-s3-fix-s2,fix turn 64K,27B,default (xhigh),breakout,stop,13011,9.5,23.5,3977,12,29010
-q27b-fix-breakout-orig-s3-fix-s3,fix turn 64K,27B,default (xhigh),breakout,stop,12515,9.1,23.6,3639,11,28864
+run,phase,model,effort,sampler,task,finish,tokens,minutes,tok_s,think_chars,think_share,html_chars
+flashnext-breakout-s1,30K cap,Flash-Next,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,length,30000,6.9,72.9,51449,60,0
+flashnext-breakout-s2,30K cap,Flash-Next,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,length,30000,6.8,73.6,40637,48,0
+flashnext-breakout-s3,30K cap,Flash-Next,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,length,30000,6.8,73.4,64746,76,0
+flashnext-towerdefense-s1,30K cap,Flash-Next,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,length,30000,7.1,70.8,62345,73,0
+flashnext-towerdefense-s2,30K cap,Flash-Next,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,length,30000,7.1,70.8,48985,58,0
+flashnext-towerdefense-s3,30K cap,Flash-Next,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,length,30000,7.0,71.0,55569,66,0
+q27b-breakout-s1,30K cap,27B,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,length,30000,20.9,23.9,66961,77,0
+q27b-breakout-s2,30K cap,27B,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,27010,18.8,24.1,55066,68,26265
+q27b-breakout-s3,30K cap,27B,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,length,30000,21.0,23.9,84860,100,0
+q27b-towerdefense-s1,30K cap,27B,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,28273,19.7,24.0,61338,70,26370
+q27b-towerdefense-s2,30K cap,27B,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,length,30000,21.0,23.9,85327,100,0
+q27b-towerdefense-s3,30K cap,27B,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,length,30000,21.0,23.9,84066,97,0
+flashnext-breakout-s1,64K,Flash-Next,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,30033,6.7,75.4,36732,43,48138
+flashnext-breakout-s2,64K,Flash-Next,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,28992,6.6,73.1,42934,52,39372
+flashnext-breakout-s3,64K,Flash-Next,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,32331,7.5,72.3,53212,56,40972
+flashnext-towerdefense-s1,64K,Flash-Next,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,39845,9.3,71.8,59019,52,55033
+flashnext-towerdefense-s2,64K,Flash-Next,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,35987,8.2,73.0,44418,45,55181
+flashnext-towerdefense-s3,64K,Flash-Next,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,47949,10.9,73.3,79069,61,51311
+q27b-breakout-s1,64K,27B,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,33899,23.9,23.7,66961,69,29605
+q27b-breakout-s3,64K,27B,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,41937,30.1,23.3,86473,75,28801
+q27b-towerdefense-s2,64K,27B,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,59112,44.1,22.4,123679,76,38521
+q27b-towerdefense-s3,64K,27B,default (xhigh),"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,42373,30.4,23.3,84066,70,35280
+flashnext-low-breakout-s1,64K,Flash-Next,low,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,3791,0.7,86.4,1062,9,10544
+flashnext-low-breakout-s2,64K,Flash-Next,low,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,4627,0.9,86.9,882,6,13884
+flashnext-low-breakout-s3,64K,Flash-Next,low,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,3850,0.7,85.8,970,8,11159
+flashnext-low-towerdefense-s1,64K,Flash-Next,low,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,5880,1.2,83.2,2324,13,15333
+flashnext-low-towerdefense-s2,64K,Flash-Next,low,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,4323,0.9,84.5,2908,23,9889
+flashnext-low-towerdefense-s3,64K,Flash-Next,low,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,6605,1.3,82.3,4161,22,15050
+flashnext-medium-breakout-s1,64K,Flash-Next,medium,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,3333,0.7,86.7,287,3,9005
+flashnext-medium-breakout-s2,64K,Flash-Next,medium,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,3558,0.7,88.9,277,3,9669
+flashnext-medium-breakout-s3,64K,Flash-Next,medium,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,3438,0.6,89.3,249,3,9485
+flashnext-medium-towerdefense-s1,64K,Flash-Next,medium,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,5508,1.2,74.9,4149,26,11538
+flashnext-medium-towerdefense-s2,64K,Flash-Next,medium,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,5450,1.2,75.7,4096,25,12191
+flashnext-medium-towerdefense-s3,64K,Flash-Next,medium,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,5942,1.2,81.2,4022,23,13159
+flashnext-off-breakout-s1,64K,Flash-Next,off,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,10689,2.2,80.7,0,0,29626
+flashnext-off-breakout-s2,64K,Flash-Next,off,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,11383,2.4,78.8,0,0,31416
+flashnext-off-breakout-s3,64K,Flash-Next,off,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",breakout,stop,11383,2.5,77.4,0,0,30915
+flashnext-off-towerdefense-s1,64K,Flash-Next,off,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,16141,3.6,74.9,0,0,44379
+flashnext-off-towerdefense-s2,64K,Flash-Next,off,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,18285,4.0,75.3,0,0,48374
+flashnext-off-towerdefense-s3,64K,Flash-Next,off,"{""temperature"": 0.6, ""top_p"": 0.95, ""top_k"": 20}",towerdefense,stop,16339,3.7,74.6,0,0,44320
+flashnext-fix-breakout-orig-s2-fix-s1,fix turn 64K,Flash-Next,default (xhigh),null,breakout,stop,26275,5.5,83.0,41289,51,39131
+flashnext-fix-breakout-orig-s2-fix-s2,fix turn 64K,Flash-Next,default (xhigh),null,breakout,stop,32681,6.8,79.6,67815,63,39453
+flashnext-fix-breakout-orig-s2-fix-s3,fix turn 64K,Flash-Next,default (xhigh),null,breakout,stop,22041,4.2,88.0,24996,39,39447
+flashnext-fix-towerdefense-orig-s2-fix-s1,fix turn 64K,Flash-Next,default (xhigh),null,towerdefense,stop,29801,5.9,88.9,28283,34,55020
+flashnext-fix-towerdefense-orig-s2-fix-s2,fix turn 64K,Flash-Next,default (xhigh),null,towerdefense,stop,34901,7.1,82.4,48586,46,55354
+flashnext-fix-towerdefense-orig-s2-fix-s3,fix turn 64K,Flash-Next,default (xhigh),null,towerdefense,stop,32264,6.3,85.7,38509,41,55340
+q27b-fix-breakout-orig-s1-fix-s1,fix turn 64K,27B,default (xhigh),null,breakout,stop,12402,9.0,23.6,3052,9,29934
+q27b-fix-breakout-orig-s1-fix-s2,fix turn 64K,27B,default (xhigh),null,breakout,stop,12430,9.1,23.6,3329,10,29990
+q27b-fix-breakout-orig-s1-fix-s3,fix turn 64K,27B,default (xhigh),null,breakout,stop,12538,9.2,23.6,4022,12,29714
+q27b-fix-breakout-orig-s3-fix-s1,fix turn 64K,27B,default (xhigh),null,breakout,stop,12804,9.3,23.5,3355,10,28987
+q27b-fix-breakout-orig-s3-fix-s2,fix turn 64K,27B,default (xhigh),null,breakout,stop,13011,9.5,23.5,3977,12,29010
+q27b-fix-breakout-orig-s3-fix-s3,fix turn 64K,27B,default (xhigh),null,breakout,stop,12515,9.1,23.6,3639,11,28864
+flashnext-card-low-breakout-s1,64K card sampling,Flash-Next,low,"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",breakout,stop,3732,0.7,85.9,890,7,11058
+flashnext-card-low-breakout-s2,64K card sampling,Flash-Next,low,"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",breakout,stop,3895,0.8,84.6,1040,9,10928
+flashnext-card-low-breakout-s3,64K card sampling,Flash-Next,low,"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",breakout,stop,3264,0.7,82.2,1146,11,8837
+flashnext-card-low-towerdefense-s1,64K card sampling,Flash-Next,low,"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",towerdefense,stop,5115,1.1,80.7,2429,16,13074
+flashnext-card-low-towerdefense-s2,64K card sampling,Flash-Next,low,"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",towerdefense,stop,8902,2.0,74.7,11547,44,14724
+flashnext-card-low-towerdefense-s3,64K card sampling,Flash-Next,low,"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",towerdefense,stop,5827,1.2,80.8,2754,17,13439
+flashnext-card-medium-breakout-s1,64K card sampling,Flash-Next,medium,"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",breakout,stop,3347,0.7,82.5,301,3,9629
+flashnext-card-medium-breakout-s2,64K card sampling,Flash-Next,medium,"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",breakout,stop,3794,0.8,83.7,251,2,10386
+flashnext-card-medium-breakout-s3,64K card sampling,Flash-Next,medium,"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",breakout,stop,3793,0.7,86.0,256,2,10634
+flashnext-card-medium-towerdefense-s1,64K card sampling,Flash-Next,medium,"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",towerdefense,stop,5602,1.2,78.9,4208,26,12266
+flashnext-card-medium-towerdefense-s2,64K card sampling,Flash-Next,medium,"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",towerdefense,stop,3852,0.8,82.3,1537,13,9921
+flashnext-card-medium-towerdefense-s3,64K card sampling,Flash-Next,medium,"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",towerdefense,stop,4098,0.8,83.7,1142,10,10745
+flashnext-card-off-breakout-s1,64K card sampling,Flash-Next,off,"{""temperature"": 0.7, ""top_p"": 0.8, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 1.5}",breakout,stop,8975,1.9,78.4,0,0,25769
+flashnext-card-off-breakout-s2,64K card sampling,Flash-Next,off,"{""temperature"": 0.7, ""top_p"": 0.8, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 1.5}",breakout,stop,8134,1.7,79.3,0,0,23060
+flashnext-card-off-breakout-s3,64K card sampling,Flash-Next,off,"{""temperature"": 0.7, ""top_p"": 0.8, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 1.5}",breakout,stop,11739,2.6,75.8,0,0,31737
+flashnext-card-off-towerdefense-s1,64K card sampling,Flash-Next,off,"{""temperature"": 0.7, ""top_p"": 0.8, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 1.5}",towerdefense,stop,18186,4.1,74.1,0,0,49250
+flashnext-card-off-towerdefense-s2,64K card sampling,Flash-Next,off,"{""temperature"": 0.7, ""top_p"": 0.8, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 1.5}",towerdefense,stop,17604,3.9,75.8,0,0,48138
+flashnext-card-off-towerdefense-s3,64K card sampling,Flash-Next,off,"{""temperature"": 0.7, ""top_p"": 0.8, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 1.5}",towerdefense,stop,16684,3.7,76.1,0,0,44269
+flashnext-card-xhigh-breakout-s1,64K card sampling,Flash-Next,default (xhigh),"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",breakout,stop,32258,7.5,72.2,43509,50,43772
+flashnext-card-xhigh-breakout-s2,64K card sampling,Flash-Next,default (xhigh),"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",breakout,stop,38195,8.5,74.8,50146,50,49745
+flashnext-card-xhigh-breakout-s3,64K card sampling,Flash-Next,default (xhigh),"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",breakout,stop,39990,9.3,71.9,66666,59,47210
+flashnext-card-xhigh-towerdefense-s1,64K card sampling,Flash-Next,default (xhigh),"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",towerdefense,stop,35815,8.3,71.8,43558,44,55470
+flashnext-card-xhigh-towerdefense-s2,64K card sampling,Flash-Next,default (xhigh),"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",towerdefense,stop,34433,8.1,70.8,36105,39,56468
+flashnext-card-xhigh-towerdefense-s3,64K card sampling,Flash-Next,default (xhigh),"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",towerdefense,stop,38383,9.2,69.6,51771,49,54674
+q27b-card-off-breakout-s1,64K card sampling,27B,off,"{""temperature"": 0.7, ""top_p"": 0.8, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 1.5}",breakout,stop,8583,6.3,22.7,0,0,23602
+q27b-card-off-breakout-s2,64K card sampling,27B,off,"{""temperature"": 0.7, ""top_p"": 0.8, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 1.5}",breakout,stop,8844,6.5,22.7,0,0,24840
+q27b-card-off-breakout-s3,64K card sampling,27B,off,"{""temperature"": 0.7, ""top_p"": 0.8, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 1.5}",breakout,stop,8351,6.1,22.7,0,0,22398
+q27b-card-off-towerdefense-s1,64K card sampling,27B,off,"{""temperature"": 0.7, ""top_p"": 0.8, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 1.5}",towerdefense,stop,9759,7.1,23.0,0,0,26523
+q27b-card-off-towerdefense-s2,64K card sampling,27B,off,"{""temperature"": 0.7, ""top_p"": 0.8, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 1.5}",towerdefense,stop,11118,8.2,22.6,0,0,29111
+q27b-card-off-towerdefense-s3,64K card sampling,27B,off,"{""temperature"": 0.7, ""top_p"": 0.8, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 1.5}",towerdefense,stop,11228,8.3,22.6,0,0,30836
+q27b-card-xhigh-breakout-s1,64K card sampling,27B,default (xhigh),"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",breakout,stop,37284,26.8,23.3,77410,71,31834
+q27b-card-xhigh-breakout-s2,64K card sampling,27B,default (xhigh),"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",breakout,stop,40416,29.3,23.1,87082,74,30993
+q27b-card-xhigh-breakout-s3,64K card sampling,27B,default (xhigh),"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",breakout,length,60000,45.2,22.1,133847,79,0
+q27b-card-xhigh-towerdefense-s1,64K card sampling,27B,default (xhigh),"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",towerdefense,stop,48457,35.4,22.9,93059,70,40517
+q27b-card-xhigh-towerdefense-s2,64K card sampling,27B,default (xhigh),"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",towerdefense,stop,48299,35.2,22.9,93434,70,39652
+q27b-card-xhigh-towerdefense-s3,64K card sampling,27B,default (xhigh),"{""temperature"": 1.0, ""top_p"": 0.95, ""top_k"": 20, ""min_p"": 0.0, ""presence_penalty"": 0.0}",towerdefense,length,60000,44.7,22.4,127413,76,0
