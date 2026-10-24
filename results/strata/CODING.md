@@ -114,3 +114,29 @@ times); the 27B at xhigh overthought further (2 of 6 never finished within 60k).
 non-thinking settings: several errors are mismatched identifiers (`last is not defined`, `ball_R is not defined`),
 which fits presence penalty 1.5 pushing the model off tokens it already used, and code reuses its names.
 Hypothesis only: not tested by toggling the penalty alone.
+
+### Card-sampling rerun, played by hand (desktop, 2026-10-24)
+
+| game | verdict |
+|---|---|
+| Flash-Next xhigh Breakout 1 "Prism Breaker" | works, very laggy |
+| Flash-Next xhigh Breakout 2 "Blockfall" | works, smooth, polished (expanding rings at ball contacts) |
+| Flash-Next xhigh Breakout 3 "Brick Breaker" | broken: ball never launches, stays stuck to the paddle |
+| Flash-Next xhigh TD 1 "Irongrove" | works, polished, good animations |
+| Flash-Next xhigh TD 2 "Emberward", TD 3 "Emberline" | broken: no map, nothing to place (syntax errors) |
+| Flash-Next thinking-off Breakout 1 "NeonBreaker" | broken: bricks fill the play area, ball won't launch |
+| Flash-Next thinking-off Breakout 2 "NeonBreaker" | works, ball very slow, sounds play slightly early |
+| Flash-Next thinking-off Breakout 3 "BrickWorks" | broken: sound only, empty play area |
+| Flash-Next medium Breakouts 1-3 | all work (desktop), plain, no sound, nearly identical |
+| Flash-Next medium TDs 1-3 | all work, plain, no sound (#3 naval-themed) |
+| Flash-Next low Breakouts 1, 3 | work; Breakout 2 mostly works (ball always launches from the centre) |
+| 27B xhigh Breakout 1 | works, looks good, a bit slow, bricks crack before breaking |
+| 27B xhigh Breakout 2 | works, laggy, same crack effect, less polished |
+| 27B xhigh TD 1 "Thornkeep" | works, looks good (the monsters have eyes) |
+| 27B xhigh TD 2 "Thornbrae" | broken: opens on the failed screen |
+| 27B thinking-off Breakout 1 "Bricksmith" | broken: can't start a game |
+| 27B thinking-off Breakout 2 "Breaker" | works, ball very slow, no sound |
+| 27B thinking-off Breakout 3 "NeonBreaker" | broken: freezes on start |
+
+Not yet played: thinking-off TDs (both models), low TDs. So far at xhigh: Flash-Next 3 of 6 work (2 polished
+standouts: Blockfall, Irongrove), 27B 3 of 6 (2 never finished, 1 broken) - same rate, Flash-Next 3-5x faster.
