@@ -56,7 +56,7 @@ tail skip on/off 57, HC_Q8 on/off 55, helper vs V100 49, 0.1.39 vs 0.2.2 71. Eac
 answers beyond the floor; none moves accuracy beyond what the floor allows.
 
 **Current llama.cpp (`dfeea52`, 2026-10-22) completed all 500 with no crash: 66.0%** (Strata 64.8-67.2%). Answers
-changed vs the five Strata runs: 49-82, in line with the Strata settings against each other (49-71), floor 36.
+changed vs the six Strata runs: 49-82, in line with the Strata settings against each other (49-71), floor 36.
 ARC-500 on the same build: 97.0%, 1-4 answers changed vs each Strata run. The crash below was upstream bug
 `dd26678` ("CUDA: fix MMQ memory fault if n_expert >> n_ubatch", merged 2026-10-04), absent from `4d91760`.
 
@@ -102,7 +102,7 @@ but no expert was skipped there; on the V100 alone it skipped 168,180 experts du
 ## Model: Qwen3.8-Flash-Next vs Qwen3.8-27B
 
 Prediction and outcome: `PREDICTION-model-arm.md` (prediction committed before the 27B ran). MMLU-Pro, thinking
-off: Flash-Next 64.8-67.2% (five Strata runs) vs 27B 60.6%; recall subjects 81-83% vs 80.0%, calculation subjects
+off: Flash-Next 64.8-67.2% (six Strata runs) vs 27B 60.6%; recall subjects 81-83% vs 80.0%, calculation subjects
 51-57% vs 45.7%. ARC: 96.8-97.2% vs 96.0% (14 answers differ, against 1-3 between engines). With thinking off,
 Flash-Next still worked 99 of 500 MMLU-Pro answers out in visible text; the 27B answered 498 with a bare letter.
 On the 130 calculation questions Flash-Next also answered at once, it led 60.0% to 51.5%.
