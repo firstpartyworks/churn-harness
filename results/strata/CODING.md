@@ -137,6 +137,13 @@ Hypothesis only: not tested by toggling the penalty alone.
 | 27B thinking-off Breakout 1 "Bricksmith" | broken: can't start a game |
 | 27B thinking-off Breakout 2 "Breaker" | works, ball very slow, no sound |
 | 27B thinking-off Breakout 3 "NeonBreaker" | broken: freezes on start |
+| 27B thinking-off TD 1 "Bastion" | broken: enemies cross the whole map in an instant, towers can't track them |
+| 27B thinking-off TD 2 "Bulwark" | works perfectly, nice look |
+| 27B thinking-off TD 3 "Bulwark" | broken: same as TD 1 |
 
-Not yet played: thinking-off TDs (both models), low TDs. So far at xhigh: Flash-Next 3 of 6 work (2 polished
+Bastion and TD 3 share one bug: the path length is counted in grid cells while enemy speed is in pixels per
+second, so enemies move one cell per pixel - 48x too fast in Bastion (48-px cells), 64x in TD 3 (64-px cells).
+The code otherwise runs; the automated tester saw lives lost but could not tell that from towers being outgunned.
+
+Not yet played: Flash-Next thinking-off TDs, low TDs. So far at xhigh: Flash-Next 3 of 6 work (2 polished
 standouts: Blockfall, Irongrove), 27B 3 of 6 (2 never finished, 1 broken) - same rate, Flash-Next 3-5x faster.
