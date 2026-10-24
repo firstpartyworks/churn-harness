@@ -145,5 +145,26 @@ Bastion and TD 3 share one bug: the path length is counted in grid cells while e
 second, so enemies move one cell per pixel - 48x too fast in Bastion (48-px cells), 64x in TD 3 (64-px cells).
 The code otherwise runs; the automated tester saw lives lost but could not tell that from towers being outgunned.
 
-Not yet played: Flash-Next thinking-off TDs, low TDs. So far at xhigh: Flash-Next 3 of 6 work (2 polished
+| Flash-Next thinking-off TD 1 | broken: map draws, but towers can't be placed (cells only highlight; played on phone, and the automated desktop run placed nothing either) |
+| Flash-Next thinking-off TD 2 | broken: no map (runtime error) |
+| Flash-Next thinking-off TD 3 | broken: enemies fly across the screen |
+| Flash-Next low TDs 1-3 | all work, basic (#2's enemies have eyes; played on phone) |
+
+Flash-Next TD 3's speed bug differs from the 27B's: enemy speed is multiplied by the cell size at spawn and again
+every frame, so enemies run one cell size (about 25-60, depending on screen width) times too fast.
+
+All 36 card-setting games played by hand:
+
+| model / effort | Breakout | Tower defense | total | time per game |
+|---|---:|---:|---:|---|
+| Flash-Next xhigh | 2/3 | 1/3 | 3/6 | 7.5-9.3 min |
+| Flash-Next medium | 3/3 | 3/3 | 6/6 | about 1 min |
+| Flash-Next low | 3/3 (one with a fixed launch point) | 3/3 | 6/6 | about 1 min |
+| Flash-Next thinking off | 1/3 | 0/3 | 1/6 | |
+| 27B xhigh | 2/3 | 1/3 (2 never finished, counted as fails) | 3/6 | 27-45 min |
+| 27B thinking off | 1/3 | 1/3 | 2/6 | |
+
+At the model-card samplers, thinking off was the least reliable setting for both models, and medium/low effort
+the most reliable (plain, but every game worked). Whether presence penalty 1.5 (the card's non-thinking value)
+causes the thinking-off bugs is untested. So far at xhigh: Flash-Next 3 of 6 work (2 polished
 standouts: Blockfall, Irongrove), 27B 3 of 6 (2 never finished, 1 broken) - same rate, Flash-Next 3-5x faster.
