@@ -89,10 +89,21 @@ running without it.
 | Strata 0.2.2 V100, tail skip off | 39.3 | 44.3 | 39.7 | 1,001 |
 | Strata 0.2.2 V100, tail skip off + HC_Q8 | 37.6 | 42.3 | 38.0 | 998 |
 | Qwen3.8-27B Q6_K, stock llama.cpp, V100, no drafting | 25.6 | 25.6 | 24.5 | 802 |
+| Qwen3.8-27B Q6_K, stock llama.cpp `dfeea52`, V100, no drafting | 27.6 | 27.6 | 26.2 | 846 |
+| Qwen3.8-27B Q6_K, stock llama.cpp `dfeea52`, V100, MTP drafting (`--spec-type draft-mtp`, 3 tokens; accepted 42% / 84% / 61%) | 39.2 | 61.1 | 47.3 | 787 |
 
 Same GGUF, same two cards: Strata 0.2.2 helper over stock llama.cpp is 2.8x (story), 3.7x (code), 3.2x
 (document) decode and 4.2x prompt reading. Split at 64K against current llama.cpp: the engine alone (drafting off)
 is 1.7-1.9x, drafting multiplies that by 1.5-1.9x, together 2.5-3.2x; prompt reading 3.9x. The llama.cpp speed run (2026-10-23, fresh server) did not crash.
+
+Drafting on both sides (2026-10-24). The 27B's GGUF carries its MTP layer, and llama.cpp `dfeea52` drafts with it:
+1.4x / 2.2x / 1.8x over drafting off. With both models drafting, Flash-Next on Strata over the 27B on llama.cpp is
+1.7x (story), 1.4x (code), 1.6x (document); the 2.6-3.3x against the older non-drafting 27B row is not a like-for-like
+comparison. Flash-Next with llama.cpp's own MTP drafting (#29761, in `dfeea52`) could not be measured on this
+placement: Unsloth's UD-IQ4_XS-MTP file (the same 1,224 tensors plus the MTP block, `nextn_predict_layers` 1) ran the
+V100 out of memory with the MTP block's experts there, and with them on the P40 the server aborted on its first decode
+(`GGML_ASSERT(buffer)` in `llama_kv_cache::set_input_k_idxs`, from the qwen4exp key pool). Strata vs llama.cpp on
+Flash-Next is therefore like-for-like only with drafting off: 1.7-1.9x.
 
 0.1.39 -> 0.2.2 on the helper setup: the same expert hit rate (99%+) and draft acceptance; per 200-token reply
 generation fell from 4.0-5.4 s to 2.6-3.4 s while the V100's wait on the P40 fell only from 0.49-0.92 s to
