@@ -57,7 +57,7 @@ answers beyond the floor; none moves accuracy beyond what the floor allows.
 
 **Current llama.cpp (`dfeea52`, 2026-10-22) completed all 500 with no crash: 66.0%** (Strata 64.8-67.2%). Answers
 changed vs the six Strata runs: 49-82, in line with the Strata settings against each other (49-71), floor 36.
-ARC-500 on the same build: 97.0%, 1-4 answers changed vs each Strata run. The crash below was upstream bug
+ARC-500 on the same build: 97.0%; answers changed vs the Strata runs 0-4 (1-4 vs the four 0.2.2 runs, 0 and 1 vs the two 0.1.39 runs). The crash below was upstream bug
 `dd26678` ("CUDA: fix MMQ memory fault if n_expert >> n_ubatch", merged 2026-10-04), absent from `4d91760`.
 
 Older stock llama.cpp (`4d91760`) could not complete MMLU-Pro on this placement: four crashes in 75 questions, each a CUDA
