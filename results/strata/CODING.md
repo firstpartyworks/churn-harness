@@ -158,11 +158,11 @@ All 36 card-setting games played by hand:
 | model / effort | Breakout | Tower defense | total | time per game |
 |---|---:|---:|---:|---|
 | Flash-Next xhigh | 2/3 | 1/3 | 3/6 | 7.5-9.3 min |
-| Flash-Next medium | 3/3 | 3/3 | 6/6 | about 1 min |
-| Flash-Next low | 3/3 (one with a fixed launch point) | 3/3 | 6/6 | about 1 min |
-| Flash-Next thinking off | 1/3 | 0/3 | 1/6 | |
-| 27B xhigh | 2/3 | 1/3 (2 never finished, counted as fails) | 3/6 | 27-45 min |
-| 27B thinking off | 1/3 | 1/3 | 2/6 | |
+| Flash-Next medium | 3/3 | 3/3 | 6/6 | 0.7-1.2 min |
+| Flash-Next low | 3/3 (one with a fixed launch point) | 3/3 | 6/6 | 0.7-2.0 min |
+| Flash-Next thinking off | 1/3 | 0/3 | 1/6 | 1.7-4.1 min |
+| 27B xhigh | 2/3 | 1/3 (2 never finished, counted as fails) | 3/6 | 26.8-45.2 min |
+| 27B thinking off | 1/3 | 1/3 | 2/6 | 6.1-8.3 min |
 
 At the model-card samplers, thinking off was the least reliable setting for both models, and medium/low effort
 the most reliable (plain, but every game worked). Whether presence penalty 1.5 (the card's non-thinking value)
